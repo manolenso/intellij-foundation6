@@ -1,0 +1,50 @@
+<idea-plugin version="2" url="https://github.com/manolenso/intellij-foundation6">
+  <id>com.manolenso.intellij.foundation6</id>
+  <name>Zurb Foundation 6</name>
+  <version>1.0</version>
+  <vendor url="https://github.com/manolenso/intellij-foundation6">Manolenso</vendor>
+
+  <description><![CDATA[
+     <h2>Zurb Foundation 6 live template snippets </h2>
+     <br/>
+
+      <p>Follow me on Twitter: <a href="https://twitter.com/manolenso"><b>@manolenso</b></a></p><br />
+      <p>Snippets enhancement: <a href="https://github.com/manolenso/intellij-foundation6/labels/snippets/enhancement"><b>Enhancement</b></a></p>
+
+      <i>Compiled with Java 1.6</i>
+
+    ]]></description>
+
+  <change-notes><![CDATA[
+      <br>
+      1.0 Initial release<br />
+    ]]>
+  </change-notes>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="139"/>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+
+  <depends>com.intellij.modules.lang</depends>
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+    <defaultLiveTemplatesProvider implementation="com.intellij.plugin.foundation6.Foundation6TemplatesProvider"/>
+  </extensions>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>

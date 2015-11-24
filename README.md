@@ -3,7 +3,6 @@ Intellij Zurb Foundation 6 plugin
 
 # Work in progress, not usable yet!
 
-[![Join the chat at https://gitter.im/manolenso/intellij-foundation6](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/manolenso/intellij-foundation5?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin works for the following JetBrains products:
 
@@ -20,7 +19,6 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
  `HTML`
 - [CDN](#cdn)
-- [LAYOUT](#layout)
 - [TYPOGRAPHY](#typography)
 - [CONTROLS](#controls)
 - [LIBRARIES](#libraries)
@@ -43,49 +41,49 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
 ### LAYOUT
 
-| Component:group zf-st `Ctrl + Space`| Snippet code                |
+| Component:group zf-lt `Ctrl + Space`| Snippet code                |
 |----------------------------------| :-----------------------------:|
 
 
 ### TYPOGRAPHY
 
-| Component:group zf-nv `Ctrl + Space` | Snippet code               |
+| Component:group zf-ty `Ctrl + Space` | Snippet code               |
 |----------------------------------| :-----------------------------:|
 
 
 ### CONTROLS
 
-| Component:group zf-md `Ctrl + Space` | Snippet code               |
+| Component:group zf-cr `Ctrl + Space` | Snippet code               |
 |----------------------------------| :-----------------------------:|
 
 ### LIBRARIES
 
-| Component:group zf-fm `Ctrl + Space` | Snippet code               |
+| Component:group zf-lb `Ctrl + Space` | Snippet code               |
 |----------------------------------| :-----------------------------:|
 
 
 ### NAVIGATION
 
-| Component:group zf-bt `Ctrl + Space`  | Snippet code              |
+| Component:group zf-nv `Ctrl + Space`  | Snippet code              |
 |----------------------------------| :-----------------------------:|
 
 
 ### CONTAINERS
 
-| Component:group zf-tx `Ctrl + Space` | Snippet code               |
+| Component:group zf-ct `Ctrl + Space` | Snippet code               |
 |----------------------------------| :-----------------------------:|
 
 
 ### MEDIA
 
-| Component:group zf-cp `Ctrl + Space` | Snippet code               |
+| Component:group zf-md `Ctrl + Space` | Snippet code               |
 |----------------------------------| :-----------------------------:|
 
 
 
 ### PLUGIN
 
-| Component:group zf-ct `Ctrl + Space` | Snippet code               |
+| Component:group zf-pl `Ctrl + Space` | Snippet code               |
 |----------------------------------| :-----------------------------:|
 
 

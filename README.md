@@ -7,18 +7,27 @@ Intellij Zurb Foundation 6 plugin
 An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin works for the following JetBrains products:
 
 - IntelliJ IDEA 14 , PhpStorm 8, RubyMine 7
-- WebStorm 9
-- PyCharm 4
-- RubyMine 7
-- PhpStorm 8
+- WebStorm 9,10,11
+- PyCharm 4,5
+- RubyMine 7,8
+- PhpStorm 8,9,10
 
 
-
+**CDN** zf-cdn
+**LAYOUT** zf-lt
+**TYPOGRAPHY** zf-ty
+**CONTROLS** zf-cr
+**LIBRARIES** zf-lb
+**NAVIGATION** zf-nv
+**CONTAINERS** zf-ct
+**MEDIA** zf-md
+**PLUGIN** zf-pl
 
 ## contents
 
  `HTML`
 - [CDN](#cdn)
+- [LAYOUT](#layout)
 - [TYPOGRAPHY](#typography)
 - [CONTROLS](#controls)
 - [LIBRARIES](#libraries)
@@ -36,7 +45,6 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | CDN link (CSS or CSS.MIN)      |  zf-cdn-css                   |
 | CDN link (ICON or ICON.MIN)    |   zf-cdn-icn                   |
 | CDN link (JS  or JS.MIN)       |   zf-cdn-js                    |
-| CDN link (JS Library)          |   zf-cdn-lib                   |
 | CDN link (JS vendor)           |   zf-cdn-vendor                |
 
 ### LAYOUT

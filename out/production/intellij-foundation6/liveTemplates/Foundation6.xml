@@ -1,57 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- CDN GROUP -->
+
 <templateSet group="Foundation6">
-    <template name="zf-cdn-lib" value="&#10;&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation/foundation.$VAL1$$VAL2$.js&quot;&gt;&lt;/script&gt;" description="CDN js Library Foundation 6.0.1" toReformat="true" toShortenFQNames="true">
-        <variable name="VAL1" expression="enum(&quot;abide&quot;, &quot;accordion&quot;, &quot;alert&quot;, &quot;clearing&quot;, &quot;dropdown&quot;, &quot;equalizer&quot;, &quot;interchange&quot;, &quot;joyride&quot;, &quot;magellan&quot;, &quot;offcanvas&quot;, &quot;orbit&quot;, &quot;reveal&quot;, &quot;slider&quot;, &quot;tab&quot;, &quot;tooltip&quot;, &quot;topbar&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="VAL2" expression="enum(&quot;&quot;, &quot;.min&quot;)" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-cdn-js" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation/$VALUE$.js&quot;&gt;&lt;/script&gt;" description="CDN js Foundation 6.0.1" toReformat="true" toShortenFQNames="true">
+    <!-- CDN GROUP -->
+    <template name="zf-cdn-css" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/$VALUE$.css&quot;/&gt;" description="CDN css Foundation 6.0.1" toReformat="true" toShortenFQNames="true">
         <variable name="VALUE" expression="enum(&quot;foundation&quot;, &quot;foundation.min&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-cdn-vendor" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/$VALUE$.js&quot;&gt;&lt;/script&gt;" description="CDN vendor js Library Foundation 6.0.1" toReformat="true" toShortenFQNames="true">
-        <variable name="VALUE" expression="enum(&quot;fastclick&quot;, &quot;jquery.cookie&quot;, &quot;jquery&quot;, &quot;modernizr&quot;, &quot;placeholder&quot;)" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-cdn-css" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/$VALUE$.css&quot;/&gt;" description="CDN css Foundation 6.0.1" toReformat="true" toShortenFQNames="true">
-        <variable name="VALUE" expression="enum(&quot;foundation&quot;, &quot;foundation.min&quot;, &quot;normalize&quot;, &quot;normalize.min&quot;)" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
+            <option name="HTML_TEXT" value="true" />
+            <option name="HTML" value="true" />
         </context>
     </template>
     <template name="zf-cdn-icon" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-$VALUE$.css&quot;/&gt;" description="CDN icon Foundation 6.0.1" toReformat="true" toShortenFQNames="true">
         <variable name="VALUE" expression="enum(&quot;icons&quot;, &quot;icons.min&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
+            <option name="HTML_TEXT" value="true" />
+            <option name="HTML" value="true" />
         </context>
     </template>
+    <template name="zf-cdn-js" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/$VALUE$.js&quot;&gt;&lt;/script&gt;" description="CDN js Foundation 6.0.1" toReformat="true" toShortenFQNames="true">
+        <variable name="VALUE" expression="enum(&quot;foundation&quot;, &quot;foundation.min&quot;)" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true" />
+            <option name="HTML" value="true" />
+        </context>
+    </template>
+    <template name="zf-cdn-vendor" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/$VALUE$.js&quot;&gt;&lt;/script&gt;" description="CDN vendor Foundation 6.0.1" toReformat="true" toShortenFQNames="true">
+        <variable name="VALUE" expression="enum(&quot;jquery.min&quot;, &quot;what-input.min&quot;)" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true" />
+            <option name="HTML" value="true" />
+        </context>
+    </template>
+
     <!-- END CDN GROUP -->
     
     <!-- STRUCTURE GROUP -->

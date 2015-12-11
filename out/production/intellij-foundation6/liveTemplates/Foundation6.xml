@@ -5,36 +5,48 @@
     <template name="zf-cdn-css" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/$VALUE$.css&quot;/&gt;" description="CDN css Foundation 6.0.1" toReformat="true" toShortenFQNames="true">
         <variable name="VALUE" expression="enum(&quot;foundation&quot;, &quot;foundation.min&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
-            <option name="HTML_TEXT" value="true" />
-            <option name="HTML" value="true" />
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
         </context>
     </template>
     <template name="zf-cdn-icon" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-$VALUE$.css&quot;/&gt;" description="CDN icon Foundation 6.0.1" toReformat="true" toShortenFQNames="true">
         <variable name="VALUE" expression="enum(&quot;icons&quot;, &quot;icons.min&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
-            <option name="HTML_TEXT" value="true" />
-            <option name="HTML" value="true" />
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
         </context>
     </template>
     <template name="zf-cdn-js" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/$VALUE$.js&quot;&gt;&lt;/script&gt;" description="CDN js Foundation 6.0.1" toReformat="true" toShortenFQNames="true">
         <variable name="VALUE" expression="enum(&quot;foundation&quot;, &quot;foundation.min&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
-            <option name="HTML_TEXT" value="true" />
-            <option name="HTML" value="true" />
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
         </context>
     </template>
     <template name="zf-cdn-vendor" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/$VALUE$.js&quot;&gt;&lt;/script&gt;" description="CDN vendor Foundation 6.0.1" toReformat="true" toShortenFQNames="true">
         <variable name="VALUE" expression="enum(&quot;jquery.min&quot;, &quot;what-input.min&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
-            <option name="HTML_TEXT" value="true" />
-            <option name="HTML" value="true" />
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
         </context>
     </template>
 
     <!-- END CDN GROUP -->
     
-    <!-- STRUCTURE GROUP -->
-    <template name="zf-strow" value="&lt;div class=&quot;row&quot;&gt;&#10;    $ADD$$BACK$&#10;&lt;/div&gt;$COMMENTS$" description="class row  Foundation" toReformat="false" toShortenFQNames="true">
+    <!-- LAYOUT GROUP -->
+    <template name="zf-ltrow" value="&lt;div class=&quot;row&quot;&gt;&#10;    $ADD$$BACK$&#10;&lt;/div&gt;$COMMENTS$" description="class row  Foundation" toReformat="false" toShortenFQNames="true">
         <variable name="ADD" expression="enum(&quot;ADDsmall-column-item&quot;, &quot;ADDmedium-column-item&quot;, &quot;ADDlarge-column-item&quot;, &quot;ADDsmall-medium-large-column-item&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="BACK" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="COMMENTS" expression="&quot;&lt;!-- ADDsmall-column-item ** ADDmedium-column-item ** ADDlarge-column-item ** ADDsmall-medium-large-column-item ** End Row  --&gt;&quot;" defaultValue="" alwaysStopAt="false" />
@@ -96,7 +108,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-stro" value="&lt;div class=&quot;row&quot;&gt;&#10;    $END$&#10;&lt;/div&gt;" description="class row  Foundation" toReformat="true" toShortenFQNames="true">
+    <template name="zf-ltro" value="&lt;div class=&quot;row&quot;&gt;&#10;    $END$&#10;&lt;/div&gt;" description="class row  Foundation" toReformat="true" toShortenFQNames="true">
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>
@@ -105,7 +117,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-stslc" value="&lt;div class=&quot;small-$OPT1$ large-$OPT2$ columns&quot;&gt;$OPT3$&lt;/div&gt;" description="small-? large-? columns Foundation" toReformat="true" toShortenFQNames="true">
+    <template name="zf-ltslc" value="&lt;div class=&quot;small-$OPT1$ large-$OPT2$ columns&quot;&gt;$OPT3$&lt;/div&gt;" description="small-? large-? columns Foundation" toReformat="true" toShortenFQNames="true">
         <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT3" expression="" defaultValue="" alwaysStopAt="true" />
@@ -117,7 +129,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-stsmlc" value="&lt;div class=&quot;small-$OPT1$ medium-$OPT2$ large-$OPT3$ columns&quot;&gt;$OPT4$&lt;/div&gt;" description="small-? medium-? large-? columns Foundation" toReformat="true" toShortenFQNames="true">
+    <template name="zf-ltsmlc" value="&lt;div class=&quot;small-$OPT1$ medium-$OPT2$ large-$OPT3$ columns&quot;&gt;$OPT4$&lt;/div&gt;" description="small-? medium-? large-? columns Foundation" toReformat="true" toShortenFQNames="true">
         <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT3" expression="" defaultValue="" alwaysStopAt="true" />
@@ -130,7 +142,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-stsc" value="&lt;div class=&quot;small-$OPT1$ columns&quot;&gt;$OPT2$&lt;/div&gt;" description="small-? columns Foundation" toReformat="true" toShortenFQNames="true">
+    <template name="zf-ltsc" value="&lt;div class=&quot;small-$OPT1$ columns&quot;&gt;$OPT2$&lt;/div&gt;" description="small-? columns Foundation" toReformat="true" toShortenFQNames="true">
         <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="" defaultValue="" alwaysStopAt="true" />
         <context>
@@ -141,7 +153,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-stmc" value="&lt;div class=&quot;medium-$OPT1$ columns&quot;&gt;$OPT2$&lt;/div&gt;" description="medium-? columns Foundation" toReformat="true" toShortenFQNames="true">
+    <template name="zf-ltmc" value="&lt;div class=&quot;medium-$OPT1$ columns&quot;&gt;$OPT2$&lt;/div&gt;" description="medium-? columns Foundation" toReformat="true" toShortenFQNames="true">
         <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="" defaultValue="" alwaysStopAt="true" />
         <context>
@@ -152,7 +164,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-stlc" value="&lt;div class=&quot;large-$OPT1$ columns&quot;&gt;$OPT2$&lt;/div&gt;" description="large-? columns Foundation" toReformat="true" toShortenFQNames="true">
+    <template name="zf-ltlc" value="&lt;div class=&quot;large-$OPT1$ columns&quot;&gt;$OPT2$&lt;/div&gt;" description="large-? columns Foundation" toReformat="true" toShortenFQNames="true">
         <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="" defaultValue="" alwaysStopAt="true" />
         <context>
@@ -163,7 +175,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-stl" value="&lt;p class=&quot;$OPT$&quot;&gt;$EDIT$&lt;/p&gt;" description="text align left Foundation" toReformat="false" toShortenFQNames="true">
+    <template name="zf-tal" value="&lt;p class=&quot;$OPT$&quot;&gt;$EDIT$&lt;/p&gt;" description="text align left Foundation" toReformat="false" toShortenFQNames="true">
         <variable name="OPT" expression="enum(&quot;text-left&quot;, &quot;small-text-left&quot;, &quot;small-only-text-left&quot;, &quot;medium-text-left&quot;, &quot;medium-only-text-left&quot;, &quot;large-text-left&quot;, &quot;large-only-text-left&quot;, &quot;xlarge-text-left&quot;, &quot;xlarge-only-text-left&quot;, &quot;xxlarge-text-left&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="EDIT" expression="&quot;&lt;!-- text goes here --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
@@ -174,7 +186,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-str" value="&lt;p class=&quot;$OPT$&quot;&gt;$EDIT$&lt;/p&gt;" description="text align right Foundation" toReformat="false" toShortenFQNames="true">
+    <template name="zf-tar" value="&lt;p class=&quot;$OPT$&quot;&gt;$EDIT$&lt;/p&gt;" description="text align right Foundation" toReformat="false" toShortenFQNames="true">
         <variable name="OPT" expression="enum(&quot;text-right&quot;, &quot;small-text-right&quot;, &quot;small-only-text-right&quot;, &quot;medium-text-right&quot;, &quot;medium-only-text-right&quot;, &quot;large-text-right&quot;, &quot;large-only-text-right&quot;, &quot;xlarge-text-right&quot;, &quot;xlarge-only-text-right&quot;, &quot;xxlarge-text-right&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="EDIT" expression="&quot;&lt;!-- text goes here --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
@@ -185,7 +197,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-stc" value="&lt;p class=&quot;$OPT$&quot;&gt;$EDIT$&lt;/p&gt;" description="text align center Foundation" toReformat="false" toShortenFQNames="true">
+    <template name="zf-tac" value="&lt;p class=&quot;$OPT$&quot;&gt;$EDIT$&lt;/p&gt;" description="text align center Foundation" toReformat="false" toShortenFQNames="true">
         <variable name="OPT" expression="enum(&quot;text-center&quot;, &quot;small-text-center&quot;, &quot;small-only-text-center&quot;, &quot;medium-text-center&quot;, &quot;medium-only-text-center&quot;, &quot;large-text-center&quot;, &quot;large-only-text-center&quot;, &quot;xlarge-text-center&quot;, &quot;xlarge-only-text-center&quot;, &quot;xxlarge-text-center&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="EDIT" expression="&quot;&lt;!-- text goes here --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
@@ -196,7 +208,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-stj" value="&lt;p class=&quot;$OPT$&quot;&gt;$EDIT$&lt;/p&gt;" description="text align justify Foundation" toReformat="false" toShortenFQNames="true">
+    <template name="zf-taj" value="&lt;p class=&quot;$OPT$&quot;&gt;$EDIT$&lt;/p&gt;" description="text align justify Foundation" toReformat="false" toShortenFQNames="true">
         <variable name="OPT" expression="enum(&quot;text-justify&quot;, &quot;small-text-justify&quot;, &quot;small-only-text-justify&quot;, &quot;medium-text-justify&quot;, &quot;medium-only-text-justify&quot;, &quot;large-text-justify&quot;, &quot;large-only-text-justify&quot;, &quot;xlarge-text-justify&quot;, &quot;xlarge-only-text-justify&quot;, &quot;xxlarge-text-justify&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="EDIT" expression="&quot;&lt;!-- text goes here --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
@@ -207,7 +219,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-stsh" value="&lt;$TAG1$ class=&quot;$OPT2$-$OPT3$&quot;&gt;$CONTENT$&lt;/$TAG1$&gt;" description="class show-hide Foundation" toReformat="false" toShortenFQNames="true">
+    <template name="zf-ltsh" value="&lt;$TAG1$ class=&quot;$OPT2$-$OPT3$&quot;&gt;$CONTENT$&lt;/$TAG1$&gt;" description="class show-hide Foundation" toReformat="false" toShortenFQNames="true">
         <variable name="TAG1" expression="&quot;TagName&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="enum(&quot;show-for&quot;, &quot;hide-for&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT3" expression="enum(&quot;small-only&quot;, &quot;medium-up&quot;, &quot;medium-only&quot;, &quot;large-up&quot;, &quot;large-only&quot;, &quot;xlarge-only&quot;, &quot;xxlarge-up&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -220,7 +232,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-stvh" value="&lt;$TAG1$ class=&quot;$OPT2$-$OPT3$&quot;&gt;$CONTENT$&lt;/$TAG1$&gt;" description="class visible-hidden Foundation" toReformat="false" toShortenFQNames="true">
+    <template name="zf-ltvh" value="&lt;$TAG1$ class=&quot;$OPT2$-$OPT3$&quot;&gt;$CONTENT$&lt;/$TAG1$&gt;" description="class visible-hidden Foundation" toReformat="false" toShortenFQNames="true">
         <variable name="TAG1" expression="&quot;TagName&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="enum(&quot;visible-for&quot;, &quot;hidden-for&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT3" expression="enum(&quot;small-only&quot;, &quot;medium-up&quot;, &quot;medium-only&quot;, &quot;large-up&quot;, &quot;large-only&quot;, &quot;xlarge-only&quot;, &quot;xxlarge-up&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -233,7 +245,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-stbb" value="&lt;ul class=&quot;small-block-grid-$OPT$&quot;&gt;&#10;  &lt;li&gt;&lt;!-- Your content goes here --&gt;&lt;/li&gt;&#10;  &lt;li&gt;&lt;!-- Your content goes here --&gt;&lt;/li&gt;&#10;  &lt;li&gt;&lt;!-- Your content goes here --&gt;&lt;/li&gt;&#10;&lt;/ul&gt;" description="block grid basic Foundation" toReformat="false" toShortenFQNames="true">
+    <template name="zf-ltbb" value="&lt;ul class=&quot;small-block-grid-$OPT$&quot;&gt;&#10;  &lt;li&gt;&lt;!-- Your content goes here --&gt;&lt;/li&gt;&#10;  &lt;li&gt;&lt;!-- Your content goes here --&gt;&lt;/li&gt;&#10;  &lt;li&gt;&lt;!-- Your content goes here --&gt;&lt;/li&gt;&#10;&lt;/ul&gt;" description="block grid basic Foundation" toReformat="false" toShortenFQNames="true">
         <variable name="OPT" expression="" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
@@ -243,7 +255,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-stba" value="&lt;ul class=&quot;small-block-grid-$OPT1$ medium-block-grid-$OPT2$ large-block-grid-$OPT3$ &quot;&gt;&#10;  &lt;li&gt;&lt;!-- Your content goes here --&gt;&lt;/li&gt;&#10;  &lt;li&gt;&lt;!-- Your content goes here --&gt;&lt;/li&gt;&#10;  &lt;li&gt;&lt;!-- Your content goes here --&gt;&lt;/li&gt;&#10;  &lt;li&gt;&lt;!-- Your content goes here --&gt;&lt;/li&gt;&#10;  &lt;li&gt;&lt;!-- Your content goes here --&gt;&lt;/li&gt;&#10;  &lt;li&gt;&lt;!-- Your content goes here --&gt;&lt;/li&gt;&#10;&lt;/ul&gt;" description="block grid advanced Foundation" toReformat="false" toShortenFQNames="true">
+    <template name="zf-ltba" value="&lt;ul class=&quot;small-block-grid-$OPT1$ medium-block-grid-$OPT2$ large-block-grid-$OPT3$ &quot;&gt;&#10;  &lt;li&gt;&lt;!-- Your content goes here --&gt;&lt;/li&gt;&#10;  &lt;li&gt;&lt;!-- Your content goes here --&gt;&lt;/li&gt;&#10;  &lt;li&gt;&lt;!-- Your content goes here --&gt;&lt;/li&gt;&#10;  &lt;li&gt;&lt;!-- Your content goes here --&gt;&lt;/li&gt;&#10;  &lt;li&gt;&lt;!-- Your content goes here --&gt;&lt;/li&gt;&#10;  &lt;li&gt;&lt;!-- Your content goes here --&gt;&lt;/li&gt;&#10;&lt;/ul&gt;" description="block grid advanced Foundation" toReformat="false" toShortenFQNames="true">
         <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT3" expression="" defaultValue="" alwaysStopAt="true" />
@@ -255,7 +267,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <!-- END STRUCTURE GROUP -->
+    <!-- END LAYOUT GROUP -->
     
     <!-- NAVIGATION GROUP -->
     <template name="zf-nvtb" value="&lt;div class=&quot;$OPT1$&quot;&gt;&#10;  &lt;nav class=&quot;top-bar&quot; data-topbar role=&quot;navigation&quot;&gt;&#10;    &lt;ul class=&quot;title-area&quot;&gt;&#10;        &lt;li class=&quot;name&quot;&gt;&#10;            &lt;h1&gt;&lt;a href=&quot;#&quot;&gt;$EDIT1$&lt;/a&gt;&lt;/h1&gt;&#10;        &lt;/li&gt;&#10;        &lt;!-- Remove the class &quot;menu-icon&quot; to get rid of menu icon. Take out &quot;Menu&quot; to just have icon alone --&gt;&#10;        &lt;li class=&quot;toggle-topbar menu-icon&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;$EDIT2$&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&#10;    &lt;/ul&gt;&#10;&#10;    &lt;section class=&quot;top-bar-section&quot;&gt;&#10;        &lt;!-- Right Nav Section --&gt;&#10;        &lt;ul class=&quot;right&quot;&gt;&#10;            &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;$EDIT3$&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li class=&quot;has-dropdown&quot;&gt;&#10;                &lt;a href=&quot;#&quot;&gt;$EDIT4$&lt;/a&gt;&#10;                &lt;ul class=&quot;dropdown&quot;&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$EDIT5$&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;$EDIT6$&lt;/a&gt;&lt;/li&gt;&#10;                &lt;/ul&gt;&#10;            &lt;/li&gt;&#10;        &lt;/ul&gt;&#10;&#10;        &lt;!-- Left Nav Section --&gt;&#10;        &lt;ul class=&quot;left&quot;&gt;&#10;            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$EDIT7$&lt;/a&gt;&lt;/li&gt;&#10;        &lt;/ul&gt;&#10;    &lt;/section&gt;&#10;  &lt;/nav&gt;&#10;&lt;/div&gt;" description="navigation top bar Foundation" toReformat="false" toShortenFQNames="true">

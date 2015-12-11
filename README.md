@@ -15,14 +15,22 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 - PhpStorm 8,9,10
 
 
-**CDN** zf-cdn
+**CDN** zf-cdn done*
+
 **LAYOUT** zf-lt
+
 **TYPOGRAPHY** zf-ty
+
 **CONTROLS** zf-cr
+
 **LIBRARIES** zf-lb
+
 **NAVIGATION** zf-nv
+
 **CONTAINERS** zf-ct
+
 **MEDIA** zf-md
+
 **PLUGIN** zf-pl
 
 ## contents

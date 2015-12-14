@@ -58,10 +58,36 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
+    <template name="zf-ltso" value="&lt;div class=&quot;row&quot;&gt;&#10;  &lt;div class=&quot;$TYPE$-$NB1$ $TYPE$-push-$NB2$ columns&quot;&gt;$CONTENT1$&lt;/div&gt;&#10;  &lt;div class=&quot;$TYPE$-$NB2$ $TYPE$-pull-$NB1$ columns&quot;&gt;$CONTENT2$&lt;/div&gt;&#10;&lt;/div&gt;&#10;" description="Row Source Ordering Foundation6" toReformat="false" toShortenFQNames="true">
+        <variable name="TYPE" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="NB1" expression="castToLeftSideType()" defaultValue="" alwaysStopAt="true" />
+        <variable name="NB2" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="CONTENT1" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="CONTENT2" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
     <template name="zf-ltbg" value="&lt;div class=&quot;row small-up-$OPT1$ medium-up-$OPT2$ large-up-$OPT3$&quot;&gt;&#10;    div.column*$OPT3$$END$&#10;&lt;/div&gt;" description="Row Block Grids Foundation6" toReformat="false" toShortenFQNames="true">
         <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT3" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="zf-ltcu" value="&lt;div class=&quot;row small-$CU1$ medium-$CU2$ large-$CU3$&quot;&gt;&#10;  $END$&#10;&lt;/div&gt;" description="Row Collapse/Uncollapse Foundation6" toReformat="false" toShortenFQNames="true">
+        <variable name="CU1" expression="enum(&quot;collapse&quot;, &quot;uncollapse&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="CU2" expression="enum(&quot;collapse&quot;, &quot;uncollapse&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="CU3" expression="enum(&quot;collapse&quot;, &quot;uncollapse&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>

@@ -17,7 +17,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
 **CDN** zf-cdn done*
 
-**LAYOUT** zf-lt
+**LAYOUT** zf-lt done*
 
 **TYPOGRAPHY** zf-ty
 
@@ -61,11 +61,11 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
 | Component:group zf-lt `Ctrl + Space`| Snippet code                |
 |----------------------------------| :-----------------------------:|
-| row basic                        | zf-ltrow                       |
+| row basics                       | zf-ltrow                       |
 | row Source Ordering              | zf-ltso                        |
 | row Collapse/Uncollapse          | zf-ltcu                        |
 | row Block Grids `use emmet`      | zf-ltbg                        |
-| Quick additionals: hit 'TAB'     |                                |
+| Quick additionals:               |                                |
 | small columns                    | sc                             |
 | medium columns                   | mc                             |
 | large columns                    | lc                             |

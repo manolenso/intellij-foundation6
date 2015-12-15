@@ -46,7 +46,7 @@
     <!-- END CDN GROUP -->
 
     <!-- LAYOUT GROUP -->
-    <template name="zf-ltrow" value="&lt;div class=&quot;row&quot;&gt;&#10;    $ADD$$BACK$&#10;&lt;/div&gt;$COMMENTS$" description="class row  Foundation" toReformat="false" toShortenFQNames="true">
+    <template name="zf-ltrow" value="&lt;div class=&quot;row&quot;&gt;&#10;    $ADD$$BACK$&#10;&lt;/div&gt;$COMMENTS$" description="class basics row  Foundation6" toReformat="false" toShortenFQNames="true">
         <variable name="ADD" expression="enum(&quot;ADDsmall-column-item&quot;, &quot;ADDmedium-column-item&quot;, &quot;ADDlarge-column-item&quot;, &quot;ADDsmall-medium-large-column-item&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="BACK" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="COMMENTS" expression="&quot;&lt;!-- ADDsmall-column-item ** ADDmedium-column-item ** ADDlarge-column-item ** ADDsmall-medium-large-column-item ** End Row  --&gt;&quot;" defaultValue="" alwaysStopAt="false" />

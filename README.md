@@ -75,12 +75,21 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
 | Component:group zf-ty `Ctrl + Space` | Snippet code               |
 |----------------------------------| :-----------------------------:|
+| Text Alignment                   | txta                           |
 
 
 ### CONTROLS
 
 | Component:group zf-cr `Ctrl + Space` | Snippet code               |
 |----------------------------------| :-----------------------------:|
+| Button class button (actions)    | zf-crbt                        |
+| Button class button dropdown     | zf-crbtd                       |
+| Button Accessibility (actions)   | zf-crbtc                       |
+| Button Anchors (links)           | zf-crbta                       |
+| Button group (all options)       | zf-crbtg                       |
+
+
+
 
 ### LIBRARIES
 

@@ -2,8 +2,8 @@
 
 <templateSet group="Foundation6">
     <!-- CDN GROUP -->
-    <template name="zf-cdn-css" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/$VALUE$.css&quot;/&gt;" description="CDN css Foundation 6.0.1" toReformat="true" toShortenFQNames="true">
-        <variable name="VALUE" expression="enum(&quot;foundation&quot;, &quot;foundation.min&quot;)" defaultValue="" alwaysStopAt="true" />
+    <template name="zf-cdn-css" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/foundation/6.0.6/$VALUE$.css&quot;/&gt;&#10;" description="CDN css Foundation 6.0.6" toReformat="true" toShortenFQNames="true">
+        <variable name="VALUE" expression="enum(&quot;foundation.min&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>
@@ -12,8 +12,8 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cdn-icon" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-$VALUE$.css&quot;/&gt;" description="CDN icon Foundation 6.0.1" toReformat="true" toShortenFQNames="true">
-        <variable name="VALUE" expression="enum(&quot;icons&quot;, &quot;icons.min&quot;)" defaultValue="" alwaysStopAt="true" />
+    <template name="zf-cdn-lib" value="&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.0.6/js/foundation.$VALUE$.js&quot;&gt;&lt;/script&gt;&#10;" description="CDN js lib Foundation 6.0.6" toReformat="true" toShortenFQNames="true">
+        <variable name="VALUE" expression="enum(&quot;abide&quot;, &quot;accordion&quot;, &quot;accordionMenu&quot;, &quot;core&quot;, &quot;drilldown&quot;, &quot;dropdown&quot;, &quot;dropdownMenu&quot;, &quot;equalizer&quot;, &quot;interchange&quot;, &quot;magellan&quot;, &quot;offcanvas&quot;, &quot;orbit&quot;, &quot;responsiveMenu&quot;, &quot;responsiveToggle&quot;, &quot;reveal&quot;, &quot;slider&quot;, &quot;sticky&quot;, &quot;tabs&quot;, &quot;toggler&quot;, &quot;tooltip&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>
@@ -22,8 +22,8 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cdn-js" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/$VALUE$.js&quot;&gt;&lt;/script&gt;" description="CDN js Foundation 6.0.1" toReformat="true" toShortenFQNames="true">
-        <variable name="VALUE" expression="enum(&quot;foundation&quot;, &quot;foundation.min&quot;)" defaultValue="" alwaysStopAt="true" />
+    <template name="zf-cdn-lib-util" value="&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.0.6/js/foundation.$VALUE$.js&quot;&gt;&lt;/script&gt;&#10;" description="CDN js.lib.util Foundation 6.0.6" toReformat="true" toShortenFQNames="true">
+        <variable name="VALUE" expression="enum(&quot;util.box&quot;, &quot;util.keyboard&quot;, &quot;util.mediaQuery&quot;, &quot;util.motion&quot;, &quot;util.nest&quot;, &quot;util.timerAndImageLoader&quot;, &quot;util.touch&quot;, &quot;util.triggers&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>
@@ -32,8 +32,8 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cdn-vendor" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/$VALUE$.js&quot;&gt;&lt;/script&gt;" description="CDN vendor Foundation 6.0.1" toReformat="true" toShortenFQNames="true">
-        <variable name="VALUE" expression="enum(&quot;jquery.min&quot;, &quot;what-input.min&quot;)" defaultValue="" alwaysStopAt="true" />
+    <template name="zf-cdn-icons" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/foundation-icons/3.0/foundation-$VALUE$&quot;/&gt;" description="CDN icons Foundation 3.0" toReformat="true" toShortenFQNames="true">
+        <variable name="VALUE" expression="enum(&quot;icons.min.css&quot;, &quot;icons.css&quot;, &quot;icons.eot&quot;, &quot;icons.svg&quot;, &quot;icons.ttf&quot;, &quot;icons.woff&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>
@@ -42,7 +42,45 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <!-- END CDN GROUP -->
+    <template name="zf-cdn-js" value="&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.0.6/foundation.$VALUE$.js&quot;&gt;&lt;/script&gt;&#10;" description="CDN js Foundation 6.0.6" toReformat="true" toShortenFQNames="true">
+        <variable name="VALUE" expression="enum(&quot;min&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="zf-cdn-jquery" value="&lt;script src=&quot;https://cdn.jsdelivr.net/jquery/3.0.0-alpha1/$VALUE$&quot;&gt;&lt;/script&gt;&#10;" description="CDN jquery 3.0.0-alpha1 Foundation" toReformat="true" toShortenFQNames="true">
+        <variable name="VALUE" expression="enum(&quot;jquery.min.js&quot;, &quot;jquery.js&quot;, &quot;jquery.min.map&quot;)" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="zf-cdn-jssor-slider" value="&lt;script src=&quot;https://cdn.jsdelivr.net/jssor.slider/19.0.1/jssor.slider.mini.js&quot;&gt;&lt;/script&gt;&#10;" description="CDN jssor slider 19.0.1 Foundation" toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="zf-cdn-datepicker" value="&lt;script src=&quot;https://cdn.jsdelivr.net/foundation.datepicker/0.1/js/foundation-datepicker.js&quot;&gt;&lt;/script&gt;&#10;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/foundation.datepicker/0.1/stylesheets/foundation-datepicker.css&quot;/&gt;&#10;$END$" description="CDN datepicker Foundation" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+<!-- END CDN GROUP -->
 
     <!-- LAYOUT GROUP -->
     <template name="zf-ltrow" value="&lt;div class=&quot;row&quot;&gt;&#10;    $ADD$$BACK$&#10;&lt;/div&gt;$COMMENTS$" description="class basics row  Foundation6" toReformat="false" toShortenFQNames="true">
@@ -237,6 +275,16 @@
         <variable name="VAR1" expression="&quot;Title_Button&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="VAR2" expression="&quot;Title_Button&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="VAR3" expression="&quot;Title_Button&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="zf-crcbt" value="&lt;div class=&quot;callout&quot;&gt;&#10;  &lt;button class=&quot;close-button&quot; aria-label=&quot;Close alert&quot; type=&quot;button&quot;&gt;&#10;    &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&#10;  &lt;/button&gt;&#10;  &lt;p&gt;$TEXT$&lt;/p&gt;&#10;&lt;/div&gt;&#10;$END$" description="Close Button Foundation6" toReformat="true" toShortenFQNames="true">
+        <variable name="TEXT" expression="&quot;&lt;!-- Text to close! --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>

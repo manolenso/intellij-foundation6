@@ -15,7 +15,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 - PhpStorm 8,9,10
 
 
-**CDN** zf-cdn done*
+**CDN** zf-cdn done*update to 6.0.6 [jsdelivr](https://www.jsdelivr.com/?query=foundation)
 
 **LAYOUT** zf-lt done*
 
@@ -52,11 +52,15 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
 | Component:group zf-cdn `Ctrl + Space`| Snippet code               |
 |--------------------------------- | :-----------------------------:|
-| CDN link (CSS or CSS.MIN)      |  zf-cdn-css                   |
-| CDN link (ICON or ICON.MIN)    |   zf-cdn-icn                   |
-| CDN link (JS  or JS.MIN)       |   zf-cdn-js                    |
-| CDN link (JS vendor)           |   zf-cdn-vendor                |
-
+| CDN  CSS.MIN               |   zf-cdn-css                         |
+| CDN  JS                    |   zf-cdn-js                         |
+| CDN  LIB                   |   zf-cdn-lib                       |
+| CDN  ICONS                 |   zf-cdn-icons                     |
+| CDN  JQUERY   3.0.0-alpha1 |   zf-cdn-jquery                    |
+| CDN  [DATEPICKER](http://foundation-datepicker.peterbeno.com/example.html)|   zf-cdn-datepiker                  |
+| CDN  LIB-UTIL              |   zf-cdn-lib-util                  |
+| CDN  [JSSOR-SLIDER](http://www.jssor.com/development/index.html)|   zf-cdn-jssor-slider                  |
+ 
 ### LAYOUT
 
 | Component:group zf-lt `Ctrl + Space`| Snippet code                |
@@ -87,6 +91,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Button Accessibility (actions)   | zf-crbtc                       |
 | Button Anchors (links)           | zf-crbta                       |
 | Button group (all options)       | zf-crbtg                       |
+| Button close                     | zf-crcbt                       |
 
 
 

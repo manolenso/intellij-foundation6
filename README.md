@@ -4,6 +4,8 @@ Intellij Zurb Foundation 6 plugin
 [![Join the chat at https://gitter.im/manolenso/intellij-foundation6](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/manolenso/intellij-foundation6?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 # Work in progress, not usable yet!
+caution! many of  components come from previous 5 version are still present
+these should being removed during plugin building
 
 
 An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin works for the following JetBrains products:
@@ -17,7 +19,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
 **CDN** zf-cdn done*update to 6.0.6 [jsdelivr](https://www.jsdelivr.com/?query=foundation)
 
-**LAYOUT** zf-lt done*
+**LAYOUT** zf-lt in progress!
 
 **TYPOGRAPHY** zf-ty
 
@@ -92,8 +94,6 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Button Anchors (links)           | zf-crbta                       |
 | Button group (all options)       | zf-crbtg                       |
 | Button close                     | zf-crcbt                       |
-
-
 
 
 ### LIBRARIES

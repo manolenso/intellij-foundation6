@@ -17,7 +17,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 - PhpStorm 8,9,10
 
 
-**CDN** zf-cdn done*update to 6.0.6 [jsdelivr](https://www.jsdelivr.com/?query=foundation)
+**CDN** zf-cdn [jsdelivr](https://www.jsdelivr.com/?query=foundation)
 
 **LAYOUT** zf-lt in progress!
 

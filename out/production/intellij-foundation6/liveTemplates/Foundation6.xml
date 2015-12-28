@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <templateSet group="Foundation6">
     <!-- CDN GROUP -->
     <template name="zf-cdn-css" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/foundation/6.1.1/$VALUE$.css&quot;/&gt;&#10;" description="CDN css Foundation 6.1.1" toReformat="true" toShortenFQNames="true">

@@ -79,7 +79,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-<!-- END CDN GROUP -->
+    <!-- END CDN GROUP -->
 
     <!-- LAYOUT GROUP -->
     <template name="zf-ltrow" value="&lt;div class=&quot;row&quot;&gt;&#10;    $ADD$$BACK$&#10;&lt;/div&gt;$COMMENTS$" description="class basics row  Foundation6" toReformat="false" toShortenFQNames="true">
@@ -295,15 +295,9 @@
     <!-- END CONTROLS GROUP -->
 
     <!-- NAVIGATION GROUP -->
-    <template name="zf-nvtb" value="&lt;div class=&quot;$OPT1$&quot;&gt;&#10;  &lt;nav class=&quot;top-bar&quot; data-topbar role=&quot;navigation&quot;&gt;&#10;    &lt;ul class=&quot;title-area&quot;&gt;&#10;        &lt;li class=&quot;name&quot;&gt;&#10;            &lt;h1&gt;&lt;a href=&quot;#&quot;&gt;$EDIT1$&lt;/a&gt;&lt;/h1&gt;&#10;        &lt;/li&gt;&#10;        &lt;!-- Remove the class &quot;menu-icon&quot; to get rid of menu icon. Take out &quot;Menu&quot; to just have icon alone --&gt;&#10;        &lt;li class=&quot;toggle-topbar menu-icon&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;$EDIT2$&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&#10;    &lt;/ul&gt;&#10;&#10;    &lt;section class=&quot;top-bar-section&quot;&gt;&#10;        &lt;!-- Right Nav Section --&gt;&#10;        &lt;ul class=&quot;right&quot;&gt;&#10;            &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;$EDIT3$&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li class=&quot;has-dropdown&quot;&gt;&#10;                &lt;a href=&quot;#&quot;&gt;$EDIT4$&lt;/a&gt;&#10;                &lt;ul class=&quot;dropdown&quot;&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$EDIT5$&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;$EDIT6$&lt;/a&gt;&lt;/li&gt;&#10;                &lt;/ul&gt;&#10;            &lt;/li&gt;&#10;        &lt;/ul&gt;&#10;&#10;        &lt;!-- Left Nav Section --&gt;&#10;        &lt;ul class=&quot;left&quot;&gt;&#10;            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$EDIT7$&lt;/a&gt;&lt;/li&gt;&#10;        &lt;/ul&gt;&#10;    &lt;/section&gt;&#10;  &lt;/nav&gt;&#10;&lt;/div&gt;" description="navigation top bar Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="OPT1" expression="enum(&quot;fixed&quot;, &quot;contain-to-grid&quot;, &quot;contain-to-grid fixed&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="EDIT1" expression="&quot;My Site&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="EDIT2" expression="&quot;Menu&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="EDIT3" expression="&quot;Right Button Active&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="EDIT4" expression="&quot;Right Button Dropdown&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="EDIT5" expression="&quot;First link in dropdown&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="EDIT6" expression="&quot;Active link in dropdown&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="EDIT7" expression="&quot;Left Nav Button&quot;" defaultValue="" alwaysStopAt="true" />
+    <template name="zf-nvbm" value="&lt;ul class=&quot;menu$OPTIONS$&quot;&gt;&#10;  li*$ITEM$&gt;a[#]$END$&#10;&lt;/ul&gt;&#10;" description="Basics Menu Foundation6" toReformat="true" toShortenFQNames="true">
+        <variable name="OPTIONS" expression="enum(&quot;&quot;, &quot; align-right&quot;, &quot; expanded&quot;, &quot; vertical&quot;, &quot; simple&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="ITEM" expression="&quot;Number Item ?&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>
@@ -312,11 +306,10 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-nvofb" value="&lt;div class=&quot;off-canvas-wrap&quot; data-offcanvas&gt;&#10;    &lt;div class=&quot;inner-wrap&quot;&gt;&#10;&#10;        &lt;a class=&quot;$OPT1$-toggle&quot; href=&quot;#&quot; &gt;$OPT2$&lt;/a&gt;&#10;&#10;        &lt;aside class=&quot;$OPT1$-menu&quot;&gt;&#10;            &lt;ul&gt;&#10;                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$OPT3$&lt;/a&gt;&lt;/li&gt;&#10;                &#10;            &lt;/ul&gt;&#10;        &lt;/aside&gt;&#10;&#10;        &lt;p&gt;$OPT4$&lt;/p&gt;&#10;&#10;        &lt;a class=&quot;exit-off-canvas&quot;&gt;&lt;/a&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;" description="off-canvas basic Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="OPT1" expression="enum(&quot;right-off-canvas&quot;, &quot;left-off-canvas&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT2" expression="&quot;Menu&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT3" expression="&quot;Item 1&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT4" expression="&quot;&lt;!-- main content goes here --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
+    <template name="zf-nvim" value="&lt;ul class=&quot;menu$TOP$$OPTIONS$&quot;&gt;&#10;  li*$ITEM$&gt;a[#]{&lt;\i class=&quot;fi-&quot;&gt;&lt;\/i&gt;}&gt;span$END$&#10;&lt;/ul&gt;&#10;" description="Icons Menu Foundation6" toReformat="true" toShortenFQNames="true">
+        <variable name="TOP" expression="enum(&quot;&quot;, &quot; icon-top&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="OPTIONS" expression="enum(&quot;&quot;, &quot; align-right&quot;, &quot; expanded&quot;, &quot; vertical&quot;, &quot; simple&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="ITEM" expression="&quot;Number Item ?&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>
@@ -325,44 +318,9 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-nvofa" value="&lt;div class=&quot;off-canvas-wrap&quot; data-offcanvas&gt;&#10;  &lt;div class=&quot;inner-wrap&quot;&gt;&#10;    &lt;nav class=&quot;tab-bar&quot;&gt;&#10;      &lt;section class=&quot;left-small&quot;&gt;&#10;        &lt;a class=&quot;left-off-canvas-toggle menu-icon&quot; href=&quot;#&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;&#10;      &lt;/section&gt;&#10;&#10;      &lt;section class=&quot;middle tab-bar-section&quot;&gt;&#10;        &lt;h1 class=&quot;title&quot;&gt;$OPT1$&lt;/h1&gt;&#10;      &lt;/section&gt;&#10;&#10;      &lt;section class=&quot;right-small&quot;&gt;&#10;        &lt;a class=&quot;right-off-canvas-toggle menu-icon&quot; href=&quot;#&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/a&gt;&#10;      &lt;/section&gt;&#10;    &lt;/nav&gt;&#10;&#10;    &lt;aside class=&quot;left-off-canvas-menu&quot;&gt;&#10;      &lt;ul class=&quot;off-canvas-list&quot;&gt;&#10;        &lt;li&gt;&lt;label&gt;$OPT2$&lt;/label&gt;&lt;/li&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Left-link-1&lt;/a&gt;&lt;/li&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Left-link-2&lt;/a&gt;&lt;/li&gt;&#10;      &lt;/ul&gt;&#10;    &lt;/aside&gt;&#10;&#10;    &lt;aside class=&quot;right-off-canvas-menu&quot;&gt;&#10;      &lt;ul class=&quot;off-canvas-list&quot;&gt;&#10;        &lt;li&gt;&lt;label&gt;$OPT3$&lt;/label&gt;&lt;/li&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Right-link-1&lt;/a&gt;&lt;/li&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Right-link-2&lt;/a&gt;&lt;/li&gt;&#10;      &lt;/ul&gt;&#10;    &lt;/aside&gt;&#10;&#10;    &lt;section class=&quot;main-section&quot;&gt;&#10;      $MAIN$&#10;    &lt;/section&gt;&#10;&#10;  &lt;a class=&quot;exit-off-canvas&quot;&gt;&lt;/a&gt;&#10;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;" description="off-canvas advanced Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="OPT1" expression="&quot;Top-Title&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT2" expression="&quot;Left-Label&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT3" expression="&quot;Right-Label&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="MAIN" expression="&quot;&lt;!-- content goes here --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-nvtbs" value="&lt;div class=&quot;$OPT1$ sticky&quot;&gt;&#10;  &lt;nav class=&quot;top-bar&quot; data-topbar role=&quot;navigation&quot; data-options=&quot;sticky_on: $OPT2$&quot;&gt;&#10;    &lt;ul class=&quot;title-area&quot;&gt;&#10;        &lt;li class=&quot;name&quot;&gt;&#10;            &lt;h1&gt;&lt;a href=&quot;#&quot;&gt;$EDIT1$&lt;/a&gt;&lt;/h1&gt;&#10;        &lt;/li&gt;&#10;        &lt;!-- Remove the class &quot;menu-icon&quot; to get rid of menu icon. Take out &quot;Menu&quot; to just have icon alone --&gt;&#10;        &lt;li class=&quot;toggle-topbar menu-icon&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;$EDIT2$&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&#10;    &lt;/ul&gt;&#10;&#10;    &lt;section class=&quot;top-bar-section&quot;&gt;&#10;        &lt;!-- Right Nav Section --&gt;&#10;        &lt;ul class=&quot;right&quot;&gt;&#10;            &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;$EDIT3$&lt;/a&gt;&lt;/li&gt;&#10;            &lt;li class=&quot;has-dropdown&quot;&gt;&#10;                &lt;a href=&quot;#&quot;&gt;$EDIT4$&lt;/a&gt;&#10;                &lt;ul class=&quot;dropdown&quot;&gt;&#10;                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$EDIT5$&lt;/a&gt;&lt;/li&gt;&#10;                    &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;$EDIT6$&lt;/a&gt;&lt;/li&gt;&#10;                &lt;/ul&gt;&#10;            &lt;/li&gt;&#10;        &lt;/ul&gt;&#10;&#10;        &lt;!-- Left Nav Section --&gt;&#10;        &lt;ul class=&quot;left&quot;&gt;&#10;            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$EDIT7$&lt;/a&gt;&lt;/li&gt;&#10;        &lt;/ul&gt;&#10;    &lt;/section&gt;&#10;  &lt;/nav&gt;&#10;&lt;/div&gt;" description="navigation top bar sticky Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="OPT1" expression="enum(&quot;fixed&quot;, &quot;contain-to-grid&quot;, &quot;contain-to-grid fixed&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT2" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="EDIT1" expression="&quot;My Site&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="EDIT2" expression="&quot;Menu&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="EDIT3" expression="&quot;Right Button Active&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="EDIT4" expression="&quot;Right Button Dropdown&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="EDIT5" expression="&quot;First link in dropdown&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="EDIT6" expression="&quot;Active link in dropdown&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="EDIT7" expression="&quot;Left Nav Button&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-nvib" value="&lt;div class=&quot;icon-bar $RIGHT$$TYPE$$NUMBER1$-up&quot;$OPT$&gt;&#10;    $ADD$$BACK$&#10;&lt;/div&gt;" description="icon bar  Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="RIGHT" expression="enum(&quot;&quot;, &quot;label-right &quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="TYPE" expression="enum(&quot;&quot;, &quot;vertical &quot;, &quot;medium-vertical &quot;, &quot;large-vertical &quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="NUMBER1" expression="enum(&quot;one&quot;, &quot;two&quot;, &quot;three&quot;, &quot;four&quot;, &quot;five&quot;, &quot;six&quot;, &quot;seven&quot;, &quot;eight&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT" expression="&quot; role=\&quot;navigation\&quot;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="ADD" expression="enum(&quot;ADDicon-item&quot;, &quot;ADDicon-accessibility&quot;, &quot;ADDicon-accessibility-text&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="BACK" expression="" defaultValue="" alwaysStopAt="true" />
+    <template name="zf-nvdm" value="&lt;ul class=&quot;$OPT$&#10;  li*$ITEM$&gt;a[#]$END$&#10;&lt;/ul&gt;&#10;" description="Dropdown Menus Foundation6" toReformat="true" toShortenFQNames="true">
+        <variable name="OPT" expression="enum(&quot;dropdown menu\&quot; data-dropdown-menu&gt;&quot;, &quot;vertical dropdown menu\&quot; data-dropdown-menu style=\&quot;max-width: 300px;\&quot;&gt;&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="ITEM" expression="&quot;Number Item ?&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>
@@ -419,93 +377,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-nvsn" value="&lt;ul class=&quot;side-nav&quot; role=&quot;navigation&quot; title=&quot;Link List&quot;&gt;&#10;    &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#&quot;&gt;$LI1$&lt;/a&gt;&lt;/li&gt;&#10;    &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#&quot;&gt;$LI2$&lt;/a&gt;&lt;/li&gt;&#10;    &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#&quot;&gt;$LI3$&lt;/a&gt;&lt;/li&gt;&#10;    &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#&quot;&gt;$LI4$&lt;/a&gt;&lt;/li&gt;&#10;&lt;/ul&gt;" description="side nav Accessibility Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="LI1" expression="&quot;Link-1&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="LI2" expression="&quot;Link-2&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="LI3" expression="&quot;Link-3&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="LI4" expression="&quot;Link-4&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-nvmg" value="&lt;div class=&quot;$OPT1$&quot; data-magellan-expedition=&quot;fixed&quot;&gt;&#10;  &lt;ul class=&quot;sub-nav&quot;&gt;&#10;    &lt;li data-magellan-arrival=&quot;$ARR$&quot;&gt;&lt;a href=&quot;#$ARR$&quot;&gt;$TITLE$&lt;/a&gt;&lt;/li&gt;&#10;    ADDmagellan-item$END$&#10;   &#10;  &lt;/ul&gt;&#10;&lt;/div&gt;  &#10;    &lt;p&gt;&lt;a name=&quot;$ARR$&quot;&gt;&lt;/a&gt;&lt;/p&gt;&#10;    &lt;h3 data-magellan-destination=&quot;$ARR$&quot;&gt;$TITLE$&lt;/h3&gt;&#10;" description="magellan Foudation" toReformat="false" toShortenFQNames="true">
-        <variable name="OPT1" expression="enum(&quot;&quot;, &quot;magellan tabs vertical&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="ARR" expression="&quot;Anchor&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="TITLE" expression="&quot;Menu_Title&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="ADDmagellan-item" value="&lt;li data-magellan-arrival=&quot;$ARR$&quot;&gt;&lt;a href=&quot;#$ARR$&quot;&gt;$TITLE$&lt;/a&gt;&lt;/li&gt;&#10;ADDmagellan-item$END$&#10;&lt;p&gt;&lt;a name=&quot;$ARR$&quot;&gt;&lt;/a&gt;&lt;/p&gt;&#10;&lt;h3 data-magellan-destination=&quot;$ARR$&quot;&gt;$TITLE$&lt;/h3&gt;$PLACE1$" description="add magellan item Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="ARR" expression="decapitalize(String)" defaultValue="&quot;Anchor&quot;" alwaysStopAt="true" />
-        <variable name="TITLE" expression="" defaultValue="&quot;Menu_Title&quot;" alwaysStopAt="true" />
-        <variable name="PLACE1" expression="" defaultValue="&quot;&lt;!-- Ctrl+X Ctrl+C in place --&gt;&quot;" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-nvsbn" value="&lt;dl class=&quot;sub-nav&quot; role=&quot;menu&quot; title=&quot;Filter Menu List&quot;&gt;&#10;    &lt;dt&gt;Filter:&lt;/dt&gt;&#10;    &lt;dd class=&quot;active&quot; role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#&quot;&gt;$EDIT1$&lt;/a&gt;&lt;/dd&gt;&#10;    &lt;dd role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#&quot;&gt;$EDIT2$&lt;/a&gt;&lt;/dd&gt;&#10;    &lt;dd role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#&quot;&gt;$EDIT3$&lt;/a&gt;&lt;/dd&gt;&#10;    &lt;dd role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#&quot;&gt;$EDIT4$&lt;/a&gt;&lt;/dd&gt;&#10;&lt;/dl&gt;&#10;$END$" description="sub nav Accessibility Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="EDIT1" expression="" defaultValue="&quot;All&quot;" alwaysStopAt="true" />
-        <variable name="EDIT2" expression="" defaultValue="&quot;Active&quot;" alwaysStopAt="true" />
-        <variable name="EDIT3" expression="" defaultValue="&quot;Pending&quot;" alwaysStopAt="true" />
-        <variable name="EDIT4" expression="" defaultValue="&quot;Suspended&quot;" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-nvbrc" value="&lt;nav class=&quot;breadcrumbs&quot; role=&quot;menubar&quot; aria-label=&quot;breadcrumbs&quot;&gt;&#10;    &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#&quot;&gt;$EDIT1$&lt;/a&gt;&lt;/li&gt;&#10;    &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#&quot;&gt;$EDIT2$&lt;/a&gt;&lt;/li&gt;&#10;    &lt;li role=&quot;menuitem&quot; class=&quot;unavailable&quot; role=&quot;button&quot; aria-disabled=&quot;true&quot;&gt;&lt;a href=&quot;#&quot;&gt;$EDIT$&lt;/a&gt;&lt;/li&gt;&#10;    &lt;li role=&quot;menuitem&quot; class=&quot;current&quot;&gt;&lt;a href=&quot;#&quot;&gt;$EDIT4$&lt;/a&gt;&lt;/li&gt;&#10;&lt;/nav&gt;&#10;$END$" description="breadcrumbs Accessibility Foudation" toReformat="false" toShortenFQNames="true">
-        <variable name="EDIT1" expression="" defaultValue="&quot;Home&quot;" alwaysStopAt="true" />
-        <variable name="EDIT2" expression="" defaultValue="&quot;Features&quot;" alwaysStopAt="true" />
-        <variable name="EDIT" expression="" defaultValue="&quot;Gene Splicing&quot;" alwaysStopAt="true" />
-        <variable name="EDIT4" expression="" defaultValue="&quot;Cloning&quot;" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-nvpg" value="&lt;div class=&quot;pagination$CENT$&quot;&gt;&#10;    &lt;ul class=&quot;pagination&quot; role=&quot;menubar&quot; aria-label=&quot;Pagination&quot;&gt;&#10;        &lt;li class=&quot;arrow unavailable&quot; aria-disabled=&quot;true&quot;&gt;&lt;a href=&quot;&quot;&gt;&amp;laquo; Previous&lt;/a&gt;&lt;/li&gt;&#10;        &lt;li class=&quot;current&quot;&gt;&lt;a href=&quot;&quot;&gt;1&lt;/a&gt;&lt;/li&gt;&#10;        &lt;li&gt;&lt;a href=&quot;&quot;&gt;2&lt;/a&gt;&lt;/li&gt;&#10;        $ADD1$          &lt;!--  Type ADDpage for new --&gt;&#10;        &lt;li class=&quot;unavailable&quot; aria-disabled=&quot;true&quot;&gt;&lt;a href=&quot;&quot;&gt;&amp;hellip;&lt;/a&gt;&lt;/li&gt;&#10;        &lt;li&gt;&lt;a href=&quot;&quot;&gt;$NUM$&lt;/a&gt;&lt;/li&gt;&#10;        $ADD2$          &lt;!--  Type ADDpage for new --&gt;&#10;        &lt;li class=&quot;arrow&quot;&gt;&lt;a href=&quot;&quot;&gt;Next &amp;raquo;&lt;/a&gt;&lt;/li&gt;&#10;    &lt;/ul&gt;&#10;&lt;/div&gt;&#10;$END$" description="pagination Accessibility Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="CENT" expression="enum(&quot;&quot;, &quot;-centered&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="ADD1" expression="" defaultValue="" alwaysStopAt="true" />
-        <variable name="NUM" expression="&quot;No&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="ADD2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="ADDpage" value="&lt;li&gt;&lt;a href=&quot;$LINK$&quot;&gt;$PAGE$&lt;/a&gt;&lt;/li&gt;&#10;" description="add page navigation Foudation" toReformat="false" toShortenFQNames="true">
-        <variable name="LINK" expression="&quot;#page&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="PAGE" expression="&quot;No&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
+
     <!-- END NAVIGATION GROUP -->
 
     <!-- MEDIA GROUP -->

@@ -106,6 +106,10 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
 | Component:group zf-nv `Ctrl + Space`  | Snippet code              |
 |----------------------------------| :-----------------------------:|
+| Basic Menus `use emmet`          | zf-nvbm                        |
+| Icons Menus `use emmet`          | zf-nvim                        |
+| Dropdown Menus `use emmet`       | zf-nvdm                 `JS`   |
+
 
 
 ### CONTAINERS

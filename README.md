@@ -1,7 +1,7 @@
 Intellij Zurb Foundation 6 plugin
 ==================================
 
-![JetBrains Zurb Foundation 6](https://github.com/manolenso/intellij-foundation6/screencast/logo.png?raw=true)
+![JetBrains Zurb Foundation 6](https://github.com/manolenso/intellij-foundation6/blob/master/screencast/logo.png?raw=true)
 
 [![Join the chat at https://gitter.im/manolenso/intellij-foundation6](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/manolenso/intellij-foundation6?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 

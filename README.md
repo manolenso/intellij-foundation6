@@ -1,9 +1,11 @@
 Intellij Zurb Foundation 6 plugin
 ==================================
 
+![JetBrains Zurb Foundation 6](https://github.com/manolenso/intellij-foundation6/screencast/logo.png?raw=true)
+
 [![Join the chat at https://gitter.im/manolenso/intellij-foundation6](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/manolenso/intellij-foundation6?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-# Work in progress, not usable yet!
+# Work in progress, just for testing!
 caution! many of  components come from previous 5 version are still present
 these should being removed during plugin building
 
@@ -62,6 +64,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | CDN  [DATEPICKER](http://foundation-datepicker.peterbeno.com/example.html)|   zf-cdn-datepiker                  |
 | CDN  LIB-UTIL              |   zf-cdn-lib-util                  |
 | CDN  [JSSOR-SLIDER](http://www.jssor.com/development/index.html)|   zf-cdn-jssor-slider                  |
+| CDN  Initialize            |   zf-cdn-initialize                |
  
 ### LAYOUT
 
@@ -108,7 +111,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 |----------------------------------| :-----------------------------:|
 | Basic Menus `use emmet`          | zf-nvbm                        |
 | Icons Menus `use emmet`          | zf-nvim                        |
-| Dropdown Menus `use emmet`       | zf-nvdm                 `JS`   |
+| Dropdown Menus `use emmet`       | zf-nvdm                    `JS`|
 
 
 

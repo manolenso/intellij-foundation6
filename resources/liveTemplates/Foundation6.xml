@@ -79,10 +79,21 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
+    <template name="zf-cdn-initialize" value="&lt;script src=&quot;https://cdn.jsdelivr.net/jquery/3.0.0-alpha1/$VALUE$&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.1.1/foundation.min.js&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.1.1/js/foundation.$VALUE1$.js&quot;&gt;&lt;/script&gt;&#10;&lt;script&gt;$(document).foundation();&lt;/script&gt;$END$" description="CDN Initialize Foundation 6" toReformat="true" toShortenFQNames="true">
+        <variable name="VALUE" expression="enum(&quot;jquery.min.js&quot;, &quot;jquery.js&quot;, &quot;jquery.min.map&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="VALUE1" expression="enum(&quot;abide&quot;, &quot;accordion&quot;, &quot;accordionMenu&quot;, &quot;core&quot;, &quot;drilldown&quot;, &quot;dropdown&quot;, &quot;dropdownMenu&quot;, &quot;equalizer&quot;, &quot;interchange&quot;, &quot;magellan&quot;, &quot;offcanvas&quot;, &quot;orbit&quot;, &quot;responsiveMenu&quot;, &quot;responsiveToggle&quot;, &quot;reveal&quot;, &quot;slider&quot;, &quot;sticky&quot;, &quot;tabs&quot;, &quot;toggler&quot;, &quot;tooltip&quot;)" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
     <!-- END CDN GROUP -->
 
     <!-- LAYOUT GROUP -->
-    <template name="zf-ltrow" value="&lt;div class=&quot;row&quot;&gt;&#10;    $ADD$$BACK$&#10;&lt;/div&gt;$COMMENTS$" description="class basics row  Foundation6" toReformat="false" toShortenFQNames="true">
+    <template name="zf-ltrow" value="&lt;div class=&quot;row&quot;&gt;&#10;    $ADD$$BACK$&#10;&lt;/div&gt;$COMMENTS$" description="class basics row  Foundation 6" toReformat="false" toShortenFQNames="true">
         <variable name="ADD" expression="enum(&quot;ADDsmall-column-item&quot;, &quot;ADDmedium-column-item&quot;, &quot;ADDlarge-column-item&quot;, &quot;ADDsmall-medium-large-column-item&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="BACK" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="COMMENTS" expression="&quot;&lt;!-- ADDsmall-column-item ** ADDmedium-column-item ** ADDlarge-column-item ** ADDsmall-medium-large-column-item ** End Row  --&gt;&quot;" defaultValue="" alwaysStopAt="false" />
@@ -94,7 +105,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-ltso" value="&lt;div class=&quot;row&quot;&gt;&#10;  &lt;div class=&quot;$TYPE$-$NB1$ $TYPE$-push-$NB2$ columns&quot;&gt;$CONTENT1$&lt;/div&gt;&#10;  &lt;div class=&quot;$TYPE$-$NB2$ $TYPE$-pull-$NB1$ columns&quot;&gt;$CONTENT2$&lt;/div&gt;&#10;&lt;/div&gt;&#10;" description="Row Source Ordering Foundation6" toReformat="false" toShortenFQNames="true">
+    <template name="zf-ltso" value="&lt;div class=&quot;row&quot;&gt;&#10;  &lt;div class=&quot;$TYPE$-$NB1$ $TYPE$-push-$NB2$ columns&quot;&gt;$CONTENT1$&lt;/div&gt;&#10;  &lt;div class=&quot;$TYPE$-$NB2$ $TYPE$-pull-$NB1$ columns&quot;&gt;$CONTENT2$&lt;/div&gt;&#10;&lt;/div&gt;&#10;" description="Row Source Ordering Foundation 6" toReformat="false" toShortenFQNames="true">
         <variable name="TYPE" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="NB1" expression="castToLeftSideType()" defaultValue="" alwaysStopAt="true" />
         <variable name="NB2" expression="" defaultValue="" alwaysStopAt="true" />
@@ -108,7 +119,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-ltbg" value="&lt;div class=&quot;row small-up-$OPT1$ medium-up-$OPT2$ large-up-$OPT3$&quot;&gt;&#10;    div.column*$OPT3$$END$&#10;&lt;/div&gt;" description="Row Block Grids Foundation6" toReformat="false" toShortenFQNames="true">
+    <template name="zf-ltbg" value="&lt;div class=&quot;row small-up-$OPT1$ medium-up-$OPT2$ large-up-$OPT3$&quot;&gt;&#10;    div.column*$OPT3$$END$&#10;&lt;/div&gt;" description="Row Block Grids Foundation 6" toReformat="false" toShortenFQNames="true">
         <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT3" expression="" defaultValue="" alwaysStopAt="true" />
@@ -120,7 +131,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-ltcu" value="&lt;div class=&quot;row small-$CU1$ medium-$CU2$ large-$CU3$&quot;&gt;&#10;  $END$&#10;&lt;/div&gt;" description="Row Collapse/Uncollapse Foundation6" toReformat="false" toShortenFQNames="true">
+    <template name="zf-ltcu" value="&lt;div class=&quot;row small-$CU1$ medium-$CU2$ large-$CU3$&quot;&gt;&#10;  $END$&#10;&lt;/div&gt;" description="Row Collapse/Uncollapse Foundation 6" toReformat="false" toShortenFQNames="true">
         <variable name="CU1" expression="enum(&quot;collapse&quot;, &quot;uncollapse&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="CU2" expression="enum(&quot;collapse&quot;, &quot;uncollapse&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="CU3" expression="enum(&quot;collapse&quot;, &quot;uncollapse&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -132,7 +143,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="lc" value="&lt;div class=&quot;large-$OPT1$ columns&quot;&gt;&#10;    $OPT2$&#10;&lt;/div&gt;&#10;$END$" description="add large column Foundation6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <template name="lc" value="&lt;div class=&quot;large-$OPT1$ columns&quot;&gt;&#10;    $OPT2$&#10;&lt;/div&gt;&#10;$END$" description="add large column Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
         <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="&quot;&lt;!-- Content goes Here --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
@@ -143,7 +154,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="mc" value="&lt;div class=&quot;medium-$OPT1$ columns&quot;&gt;&#10;    $OPT2$&#10;&lt;/div&gt;&#10;$END$" description="add medium column Foundation6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <template name="mc" value="&lt;div class=&quot;medium-$OPT1$ columns&quot;&gt;&#10;    $OPT2$&#10;&lt;/div&gt;&#10;$END$" description="add medium column Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
         <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="&quot;&lt;!-- Content goes Here --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
@@ -154,7 +165,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="sc" value="&lt;div class=&quot;small-$OPT1$ columns&quot;&gt;&#10;    $OPT2$&#10;&lt;/div&gt;&#10;$END$" description="add small column Foundation6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <template name="sc" value="&lt;div class=&quot;small-$OPT1$ columns&quot;&gt;&#10;    $OPT2$&#10;&lt;/div&gt;&#10;$END$" description="add small column Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
         <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="&quot;&lt;!-- Content goes Here --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
@@ -165,7 +176,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="ADDsmall-column-item" value="&lt;div class=&quot;small-$OPT1$ columns&quot;&gt;&#10;    $OPT2$&#10;&lt;/div&gt;&#10;$ADD$$END$" description="add small column Foundation6" toReformat="false" toShortenFQNames="true">
+    <template name="ADDsmall-column-item" value="&lt;div class=&quot;small-$OPT1$ columns&quot;&gt;&#10;    $OPT2$&#10;&lt;/div&gt;&#10;$ADD$$END$" description="add small column Foundation 6" toReformat="false" toShortenFQNames="true">
         <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="&quot;&lt;!-- Content goes Here --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="ADD" expression="enum(&quot;ADDsmall-column-item&quot;, &quot;ADDmedium-column-item&quot;, &quot;ADDlarge-column-item&quot;, &quot;ADDsmall-medium-large-column-item&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -177,7 +188,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="ADDmedium-column-item" value="&lt;div class=&quot;medium-$OPT1$ columns&quot;&gt;&#10;    $OPT2$&#10;&lt;/div&gt;&#10;$ADD$$END$" description="add medium column Foundation6" toReformat="false" toShortenFQNames="true">
+    <template name="ADDmedium-column-item" value="&lt;div class=&quot;medium-$OPT1$ columns&quot;&gt;&#10;    $OPT2$&#10;&lt;/div&gt;&#10;$ADD$$END$" description="add medium column Foundation 6" toReformat="false" toShortenFQNames="true">
         <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="&quot;&lt;!-- Content goes Here --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="ADD" expression="enum(&quot;ADDmedium-column-item&quot;, &quot;ADDsmall-column-item&quot;, &quot;ADDlarge-column-item&quot;, &quot;ADDsmall-medium-large-column-item&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -189,7 +200,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="ADDlarge-column-item" value="&lt;div class=&quot;large-$OPT1$ columns&quot;&gt;&#10;    $OPT2$&#10;&lt;/div&gt;&#10;$ADD$$END$" description="add large column Foundation6" toReformat="false" toShortenFQNames="true">
+    <template name="ADDlarge-column-item" value="&lt;div class=&quot;large-$OPT1$ columns&quot;&gt;&#10;    $OPT2$&#10;&lt;/div&gt;&#10;$ADD$$END$" description="add large column Foundation 6" toReformat="false" toShortenFQNames="true">
         <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="&quot;&lt;!-- Content goes Here --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="ADD" expression="enum(&quot;ADDlarge-column-item&quot;, &quot;ADDmedium-column-item&quot;, &quot;ADDsmall-column-item&quot;,  &quot;ADDsmall-medium-large-column-item&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -201,7 +212,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="ADDsmall-medium-large-column-item" value="&lt;div class=&quot;small-$OPT1$ medium-$OPT2$ large-$OPT3$ columns&quot;&gt;&#10;    $OPT5$&#10;&lt;/div&gt;&#10;$ADD$$END$" description="add small medium large column Foundation6" toReformat="false" toShortenFQNames="true">
+    <template name="ADDsmall-medium-large-column-item" value="&lt;div class=&quot;small-$OPT1$ medium-$OPT2$ large-$OPT3$ columns&quot;&gt;&#10;    $OPT5$&#10;&lt;/div&gt;&#10;$ADD$$END$" description="add small medium large column Foundation 6" toReformat="false" toShortenFQNames="true">
         <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT3" expression="" defaultValue="" alwaysStopAt="true" />
@@ -218,7 +229,7 @@
     <!-- END LAYOUT GROUP -->
 
     <!-- CONTROLS GROUP -->
-    <template name="zf-crbta" value="&lt;a href=&quot;#$VAR2$&quot; class=&quot;$OPT1$$OPT2$button&quot;&gt;$VAR1$&lt;/a&gt;&#10;$END$" description="Button Anchors (links) Foundation6" toReformat="true" toShortenFQNames="true">
+    <template name="zf-crbta" value="&lt;a href=&quot;#$VAR2$&quot; class=&quot;$OPT1$$OPT2$button&quot;&gt;$VAR1$&lt;/a&gt;&#10;$END$" description="Button Anchors (links) Foundation 6" toReformat="true" toShortenFQNames="true">
         <variable name="OPT1" expression="enum(&quot;&quot;, &quot;tiny &quot;, &quot;small &quot;, &quot;large &quot;, &quot;expanded &quot;, &quot;small expanded &quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="enum(&quot;&quot;, &quot;success &quot;, &quot;secondary &quot;, &quot;alert &quot;, &quot;warning &quot;, &quot;info &quot;, &quot;disabled &quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="VAR1" expression="&quot;Title_Button&quot;" defaultValue="" alwaysStopAt="true" />
@@ -231,7 +242,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-crbt" value="&lt;button type=&quot;button&quot; class=&quot;$OPT1$$OPT2$button&quot;&gt;$VAR1$&lt;/button&gt;&#10;$END$" description="Button (actions) Foundation6" toReformat="true" toShortenFQNames="true">
+    <template name="zf-crbt" value="&lt;button type=&quot;button&quot; class=&quot;$OPT1$$OPT2$button&quot;&gt;$VAR1$&lt;/button&gt;&#10;$END$" description="Button (actions) Foundation 6" toReformat="true" toShortenFQNames="true">
         <variable name="OPT1" expression="enum(&quot;&quot;, &quot;tiny &quot;, &quot;small &quot;, &quot;large &quot;, &quot;expanded &quot;, &quot;small expanded &quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="enum(&quot;&quot;, &quot;success &quot;, &quot;secondary &quot;, &quot;alert &quot;, &quot;warning &quot;, &quot;info &quot;, &quot;disabled &quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="VAR1" expression="&quot;Title_Button&quot;" defaultValue="" alwaysStopAt="true" />
@@ -243,7 +254,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-crbtd" value="&lt;button type=&quot;button&quot; class=&quot;$OPT1$$OPT2$button&quot;&gt;$VAR1$&lt;/button&gt;&#10;$END$" description="Button dropdown (actions) Foundation6" toReformat="true" toShortenFQNames="true">
+    <template name="zf-crbtd" value="&lt;button type=&quot;button&quot; class=&quot;$OPT1$$OPT2$button&quot;&gt;$VAR1$&lt;/button&gt;&#10;$END$" description="Button dropdown (actions) Foundation 6" toReformat="true" toShortenFQNames="true">
         <variable name="OPT1" expression="enum(&quot;dropdown &quot;, &quot;tiny dropdown &quot;, &quot;small dropdown &quot;, &quot;large dropdown &quot;, &quot;expanded dropdown &quot;, &quot;small expanded dropdown &quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="enum(&quot;&quot;, &quot;success &quot;, &quot;secondary &quot;, &quot;alert &quot;, &quot;warning &quot;, &quot;info &quot;, &quot;disabled &quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="VAR1" expression="&quot;Title_Button&quot;" defaultValue="" alwaysStopAt="true" />
@@ -255,7 +266,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-crbtc" value="&lt;button type=&quot;button&quot; class=&quot;$OPT1$$OPT2$button&quot;&gt;&#10;  &lt;span class=&quot;show-for-sr&quot;&gt;$VAR1$&lt;/span&gt;&#10;  &lt;span aria-hidden=&quot;true&quot;&gt;$VAR2$&lt;/span&gt;&#10;&lt;/button&gt;&#10;$END$" description="Button Accessibility (actions) Foundation6" toReformat="true" toShortenFQNames="true">
+    <template name="zf-crbtc" value="&lt;button type=&quot;button&quot; class=&quot;$OPT1$$OPT2$button&quot;&gt;&#10;  &lt;span class=&quot;show-for-sr&quot;&gt;$VAR1$&lt;/span&gt;&#10;  &lt;span aria-hidden=&quot;true&quot;&gt;$VAR2$&lt;/span&gt;&#10;&lt;/button&gt;&#10;$END$" description="Button Accessibility (actions) Foundation 6" toReformat="true" toShortenFQNames="true">
         <variable name="OPT1" expression="enum(&quot;&quot;, &quot;tiny &quot;, &quot;small &quot;, &quot;large &quot;, &quot;expanded &quot;, &quot;small expanded &quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="enum(&quot;&quot;, &quot;success &quot;, &quot;secondary &quot;, &quot;alert &quot;, &quot;warning &quot;, &quot;info &quot;, &quot;disabled &quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="VAR1" expression="&quot;For Screen Readers!&quot;" defaultValue="" alwaysStopAt="true" />
@@ -268,7 +279,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-crbtg" value="&lt;div class=&quot;$OPT1$$OPT2$button-group&quot;&gt;&#10;  &lt;a class=&quot;button&quot;&gt;$VAR1$&lt;/a&gt;&#10;  &lt;a class=&quot;button&quot;&gt;$VAR2$&lt;/a&gt;&#10;  &lt;a class=&quot;button&quot;&gt;$VAR3$&lt;/a&gt;&#10;&lt;/div&gt;&#10;$END$" description="Button Group Foundation6" toReformat="true" toShortenFQNames="true">
+    <template name="zf-crbtg" value="&lt;div class=&quot;$OPT1$$OPT2$button-group&quot;&gt;&#10;  &lt;a class=&quot;button&quot;&gt;$VAR1$&lt;/a&gt;&#10;  &lt;a class=&quot;button&quot;&gt;$VAR2$&lt;/a&gt;&#10;  &lt;a class=&quot;button&quot;&gt;$VAR3$&lt;/a&gt;&#10;&lt;/div&gt;&#10;$END$" description="Button Group Foundation 6" toReformat="true" toShortenFQNames="true">
         <variable name="OPT1" expression="enum(&quot;&quot;, &quot;tiny &quot;, &quot;small &quot;, &quot;large &quot;, &quot;expanded &quot;, &quot;small expanded &quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="enum(&quot;&quot;, &quot;success &quot;, &quot;secondary &quot;, &quot;alert &quot;, &quot;warning &quot;, &quot;info &quot;, &quot;disabled &quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="VAR1" expression="&quot;Title_Button&quot;" defaultValue="" alwaysStopAt="true" />
@@ -282,7 +293,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-crcbt" value="&lt;div class=&quot;callout&quot;&gt;&#10;  &lt;button class=&quot;close-button&quot; aria-label=&quot;Close alert&quot; type=&quot;button&quot;&gt;&#10;    &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&#10;  &lt;/button&gt;&#10;  &lt;p&gt;$TEXT$&lt;/p&gt;&#10;&lt;/div&gt;&#10;$END$" description="Close Button Foundation6" toReformat="true" toShortenFQNames="true">
+    <template name="zf-crcbt" value="&lt;div class=&quot;callout&quot;&gt;&#10;  &lt;button class=&quot;close-button&quot; aria-label=&quot;Close alert&quot; type=&quot;button&quot;&gt;&#10;    &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&#10;  &lt;/button&gt;&#10;  &lt;p&gt;$TEXT$&lt;/p&gt;&#10;&lt;/div&gt;&#10;$END$" description="Close Button Foundation 6" toReformat="true" toShortenFQNames="true">
         <variable name="TEXT" expression="&quot;&lt;!-- Text to close! --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
@@ -295,7 +306,7 @@
     <!-- END CONTROLS GROUP -->
 
     <!-- NAVIGATION GROUP -->
-    <template name="zf-nvbm" value="&lt;ul class=&quot;menu$OPTIONS$&quot;&gt;&#10;  li*$ITEM$&gt;a[#]$END$&#10;&lt;/ul&gt;&#10;" description="Basics Menu Foundation6" toReformat="true" toShortenFQNames="true">
+    <template name="zf-nvbm" value="&lt;ul class=&quot;menu$OPTIONS$&quot;&gt;&#10;  li*$ITEM$&gt;a[#]$END$&#10;&lt;/ul&gt;&#10;" description="Basics Menu Foundation 6" toReformat="true" toShortenFQNames="true">
         <variable name="OPTIONS" expression="enum(&quot;&quot;, &quot; align-right&quot;, &quot; expanded&quot;, &quot; vertical&quot;, &quot; simple&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="ITEM" expression="&quot;Number Item ?&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
@@ -306,7 +317,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-nvim" value="&lt;ul class=&quot;menu$TOP$$OPTIONS$&quot;&gt;&#10;  li*$ITEM$&gt;a[#]{&lt;\i class=&quot;fi-&quot;&gt;&lt;\/i&gt;}&gt;span$END$&#10;&lt;/ul&gt;&#10;" description="Icons Menu Foundation6" toReformat="true" toShortenFQNames="true">
+    <template name="zf-nvim" value="&lt;ul class=&quot;menu$TOP$$OPTIONS$&quot;&gt;&#10;  li*$ITEM$&gt;a[#]{&lt;\i class=&quot;fi-&quot;&gt;&lt;\/i&gt;}&gt;span$END$&#10;&lt;/ul&gt;&#10;" description="Icons Menu Foundation 6" toReformat="true" toShortenFQNames="true">
         <variable name="TOP" expression="enum(&quot;&quot;, &quot; icon-top&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="OPTIONS" expression="enum(&quot;&quot;, &quot; align-right&quot;, &quot; expanded&quot;, &quot; vertical&quot;, &quot; simple&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="ITEM" expression="&quot;Number Item ?&quot;" defaultValue="" alwaysStopAt="true" />
@@ -318,7 +329,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-nvdm" value="&lt;ul class=&quot;$OPT$&#10;  li*$ITEM$&gt;a[#]$END$&#10;&lt;/ul&gt;&#10;" description="Dropdown Menus Foundation6" toReformat="true" toShortenFQNames="true">
+    <template name="zf-nvdm" value="&lt;ul class=&quot;$OPT$&#10;  li*$ITEM$&gt;a[#]$END$&#10;&lt;/ul&gt;&#10;" description="Dropdown Menus Foundation 6" toReformat="true" toShortenFQNames="true">
         <variable name="OPT" expression="enum(&quot;dropdown menu\&quot; data-dropdown-menu&gt;&quot;, &quot;vertical dropdown menu\&quot; data-dropdown-menu style=\&quot;max-width: 300px;\&quot;&gt;&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="ITEM" expression="&quot;Number Item ?&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
@@ -761,7 +772,7 @@
     <!-- END BUTTONS GROUP -->
 
     <!-- TYPOGRAPHY GROUP -->
-    <template name="txta" value="class=&quot;text-$OPT$&quot;" description="Text Alignment Foundation6" toReformat="false" toShortenFQNames="true">
+    <template name="txta" value="class=&quot;text-$OPT$&quot;" description="Text Alignment Foundation 6" toReformat="false" toShortenFQNames="true">
         <variable name="OPT" expression="enum(&quot;left&quot;, &quot;right&quot;, &quot;center&quot;, &quot;justify&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>

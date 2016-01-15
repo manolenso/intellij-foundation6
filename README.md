@@ -5,13 +5,15 @@ Intellij Zurb Foundation 6 plugin
 
 [![Join the chat at https://gitter.im/manolenso/intellij-foundation6](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/manolenso/intellij-foundation6?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+Install: download intellij-foundation6.jar
+Settings -> Plugins -> Install plugin from disk...
 # Work in progress, just for testing!
+
 caution! many of  components come from previous 5 version are still present
 these should being removed during plugin building
 
 
 An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin works for the following JetBrains products:
-
 - IntelliJ IDEA 14 , PhpStorm 8, RubyMine 7
 - WebStorm 9,10,11
 - PyCharm 4,5
@@ -112,6 +114,11 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Basic Menus `use emmet`          | zf-nvbm                        |
 | Icons Menus `use emmet`          | zf-nvim                        |
 | Dropdown Menus `use emmet`       | zf-nvdm                    `JS`|
+| Drilldown Menus `use emmet`      | zf-nvdl                    `JS`|
+| Sub Drop&drilldown Menus `use emmet` | sub-dropdown-drilldown `JS`|
+| Top Bar `use emmet`              | zf-nvtb                        |
+| Sub Top Bar `use emmet`          | sub-top-bar                    |
+
 
 
 

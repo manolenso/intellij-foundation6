@@ -121,7 +121,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Sub Top Bar `use emmet`          | sub-top-bar                    |
 | Responsive Menus `use emmet`     | zf-nvrm                    `JS`|
 | Sub Responsive Menus `use emmet` | sub-responsive             `JS`|
-| Responsive Tgle Menus `use emmet` | zf-nvrt                 `JS`|
+| Responsive Toggle Menus `use emmet` | zf-nvrt                 `JS`|
 
 
 

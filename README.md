@@ -5,8 +5,9 @@ Intellij Zurb Foundation 6 plugin
 
 [![Join the chat at https://gitter.im/manolenso/intellij-foundation6](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/manolenso/intellij-foundation6?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Install: download intellij-foundation6.jar
-Settings -> Plugins -> Install plugin from disk...
+`INSTALL: download intellij-foundation6.jar
+Settings -> Plugins -> Install plugin from disk...`
+
 # Work in progress, just for testing!
 
 caution! many of  components come from previous 5 version are still present
@@ -118,6 +119,8 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Sub Drop&drilldown Menus `use emmet` | sub-dropdown-drilldown `JS`|
 | Top Bar `use emmet`              | zf-nvtb                        |
 | Sub Top Bar `use emmet`          | sub-top-bar                    |
+| Responsive Menus `use emmet`     | zf-nvrm                    `JS`|
+| Sub Responsive Menus `use emmet` | sub-responsive             `JS`|
 
 
 

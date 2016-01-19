@@ -21,19 +21,6 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 - RubyMine 7,8
 - PhpStorm 8,9,10
 
-
-**CDN** zf-cdn [jsdelivr](https://www.jsdelivr.com/?query=foundation)
-
-**LAYOUT** zf-lt in progress!
-
-**TYPOGRAPHY** zf-ty
-
-**CONTROLS** zf-cr
-
-**LIBRARIES** zf-lb
-
-**NAVIGATION** zf-nv
-
 **CONTAINERS** zf-ct
 
 **MEDIA** zf-md
@@ -43,7 +30,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 ## contents
 
  `HTML`
-- [CDN](#cdn)
+- [CDN](#cdn)[jsdelivr](https://www.jsdelivr.com/?query=foundation)
 - [LAYOUT](#layout)
 - [TYPOGRAPHY](#typography)
 - [CONTROLS](#controls)
@@ -122,6 +109,8 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Responsive Menus `use emmet`     | zf-nvrm                    `JS`|
 | Sub Responsive Menus `use emmet` | sub-responsive             `JS`|
 | Responsive Toggle Menus `use emmet` | zf-nvrt                 `JS`|
+| Breadcrumbs `use emmet`          | zf-nvbr                        |
+| Pagination `use emmet`           | zf-nvpg                        |
 
 
 

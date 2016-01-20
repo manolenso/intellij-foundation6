@@ -119,7 +119,10 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
 | Component:group zf-ct `Ctrl + Space` | Snippet code               |
 |----------------------------------| :-----------------------------:|
-
+| Accordion `use emmet`            | zf-ctac                    `JS`|
+| Adding accordion                 | ADDaccordion               `JS`|
+| Callout                          | zf-ctcl                        |
+| Callout Closable                 | zf-ctcc                        |
 
 ### MEDIA
 

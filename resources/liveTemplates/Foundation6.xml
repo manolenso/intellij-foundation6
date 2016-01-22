@@ -51,7 +51,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cdn-jquery" value="&lt;script src=&quot;https://cdn.jsdelivr.net/jquery/3.0.0-alpha1/$VALUE$&quot;&gt;&lt;/script&gt;&#10;" description="CDN jquery 3.0.0-alpha1 Foundation" toReformat="true" toShortenFQNames="true">
+    <template name="zf-cdn-jquery" value="&lt;script src=&quot;https://cdn.jsdelivr.net/jquery/3.0.0-beta1/$VALUE$&quot;&gt;&lt;/script&gt;&#10;" description="CDN jquery 3.0.0-beta1 Foundation" toReformat="true" toShortenFQNames="true">
         <variable name="VALUE" expression="enum(&quot;jquery.min.js&quot;, &quot;jquery.js&quot;, &quot;jquery.min.map&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
@@ -79,7 +79,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cdn-initialize" value="&lt;script src=&quot;https://cdn.jsdelivr.net/jquery/3.0.0-alpha1/$VALUE$&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.1.1/foundation.min.js&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.1.1/js/foundation.$VALUE1$.js&quot;&gt;&lt;/script&gt;&#10;&lt;script&gt;$(document).foundation();&lt;/script&gt;$END$" description="CDN Initialize Foundation 6" toReformat="true" toShortenFQNames="true">
+    <template name="zf-cdn-initialize" value="&lt;script src=&quot;https://cdn.jsdelivr.net/jquery/3.0.0-beta1/$VALUE$&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.1.1/foundation.min.js&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.1.1/js/foundation.$VALUE1$.js&quot;&gt;&lt;/script&gt;&#10;&lt;script&gt;$(document).foundation();&lt;/script&gt;$END$" description="CDN Initialize Foundation 6" toReformat="true" toShortenFQNames="true">
         <variable name="VALUE" expression="enum(&quot;jquery.min.js&quot;, &quot;jquery.js&quot;, &quot;jquery.min.map&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="VALUE1" expression="enum(&quot;abide&quot;, &quot;accordion&quot;, &quot;accordionMenu&quot;, &quot;core&quot;, &quot;drilldown&quot;, &quot;dropdown&quot;, &quot;dropdownMenu&quot;, &quot;equalizer&quot;, &quot;interchange&quot;, &quot;magellan&quot;, &quot;offcanvas&quot;, &quot;orbit&quot;, &quot;responsiveMenu&quot;, &quot;responsiveToggle&quot;, &quot;reveal&quot;, &quot;slider&quot;, &quot;sticky&quot;, &quot;tabs&quot;, &quot;toggler&quot;, &quot;tooltip&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
@@ -563,6 +563,64 @@
         <variable name="COL" expression="enum(&quot;&quot;, &quot; secondary&quot;, &quot; primary&quot;, &quot; success&quot;, &quot; warning&quot;, &quot; alert&quot;)" defaultValue="" alwaysStopAt="false" />
         <variable name="SIZ" expression="enum(&quot;&quot;, &quot; small&quot;, &quot; large&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="ATR" expression="&quot;data-closable&quot;" defaultValue="" alwaysStopAt="false" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="zf-ctdp" value="&lt;button class=&quot;button$COL$&quot; type=&quot;button&quot; data-toggle=&quot;$ID$&quot;&gt;$BUTT$&lt;/button&gt;&#10;&lt;div class=&quot;dropdown-pane$PLC$&quot; id=&quot;$ID$&quot; data-dropdown data-auto-focus=&quot;true&quot;$HOVR$&gt;&#10;  $CNT$&#10;&lt;/div&gt;&#10;" description="Dropdown Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="BUTT" expression="&quot;Button?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="COL" expression="enum(&quot;&quot;, &quot; secondary&quot;, &quot; primary&quot;, &quot; success&quot;, &quot; warning&quot;, &quot; alert&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="ID" expression="&quot;ID?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="PLC" expression="enum(&quot;&quot;, &quot; top&quot;, &quot; right&quot;, &quot; bottom&quot;, &quot; left&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="HOVR" expression="enum(&quot;&quot;, &quot; data-hover=\&quot;true\&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="CNT" expression="&quot;&lt;!-- Dropdown Content --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="zf-ctmo" value="&lt;div class=&quot;media-object$STK$&quot;&gt;&#10;  &lt;div class=&quot;media-object-section$PLC$&quot;&gt;&#10;    &lt;div class=&quot;thumbnail&quot;&gt;&#10;      &lt;img src=&quot;$SRC$&quot; alt=&quot;$ALT$&quot;&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;  $SUP$$LAST$&#10;&lt;/div&gt;" description="Media Object Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="STK" expression="enum(&quot;&quot;, &quot; stack-for-small&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="PLC" expression="enum(&quot;&quot;, &quot; top&quot;, &quot; middle&quot;, &quot; bottom&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="SRC" expression="&quot;src?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="ALT" expression="&quot;alt,&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="SUP" expression="&quot;sup-media-object-section&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="sup-media-object-section" value="&lt;div class=&quot;media-object-section$PLC$&quot;&gt;&#10;  &lt;div class=&quot;thumbnail&quot;&gt;&#10;    &lt;img src=&quot;$SRC$&quot; alt=&quot;$ALT$&quot;&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;&#10;$SUP$$LAST$&#10;" description="Sup Media Object Section Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="PLC" expression="enum(&quot;&quot;, &quot; top&quot;, &quot; middle&quot;, &quot; bottom&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="SRC" expression="&quot;src?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="ALT" expression="&quot;alt?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="SUP" expression="&quot;sup-media-object-section&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="zf-ctof" value="&lt;div class=&quot;off-canvas-wrapper&quot;&gt;&#10;    &lt;div class=&quot;off-canvas-wrapper-inner&quot; data-off-canvas-wrapper&gt;&#10;        &lt;div class=&quot;off-canvas position-$POS$$CT$&lt;/div&gt;&#10;        &lt;div class=&quot;off-canvas-content&quot; data-off-canvas-content&gt;&#10;           $CNT$&#10;        &lt;/div&gt;&#10;    &lt;/div&gt;&#10;    &lt;button type=&quot;button&quot; class=&quot;button&quot; data-toggle=&quot;offCanvas-$LR$&quot;&gt;$BUTT$&lt;/button&gt;&#10;&lt;/div&gt;&#10;" description="Off-canvas Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="POS" expression="enum(&quot;left\&quot; id=\&quot;offCanvas-left\&quot; data-off-canvas&gt;&quot;, &quot;right\&quot; id=\&quot;offCanvas-right\&quot; data-off-canvas data-position=\&quot;right\&quot;&gt;&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="LR" expression="enum(&quot;left&quot;, &quot;right&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="BUTT" expression="&quot;Button Trigger?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="CT" expression="&quot;Content Menu?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="CNT" expression="&quot;&lt;!-- off-canvas-content --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>

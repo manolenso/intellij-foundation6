@@ -123,6 +123,10 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Adding accordion                 | ADDaccordion               `JS`|
 | Callout                          | zf-ctcl                        |
 | Callout Closable                 | zf-ctcc                        |
+| Dropdown                         | zf-ctdp                    `JS`|
+| Media Object                     | zf-ctmo                        |
+| Supp Media Object Section        | sup-media-object-section       |
+| Off-canvas                       | zf-ctof                    `JS`|
 
 ### MEDIA
 

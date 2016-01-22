@@ -127,6 +127,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Media Object                     | zf-ctmo                        |
 | Supp Media Object Section        | sup-media-object-section       |
 | Off-canvas                       | zf-ctof                    `JS`|
+| Reveal Modal                     | zf-ctmd                    `JS`|
 
 ### MEDIA
 

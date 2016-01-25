@@ -318,6 +318,19 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
+    <template name="zf-cttb" value="table$OPT$&gt;(thead[summary=&quot;&quot;]&gt;tr&gt;th[width=&quot;&quot;]*$NBTH$)+tbody&gt;tr*$NBTR1$&gt;td*$NBTH$$END$" description="Tables Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="OPT" expression="enum(&quot;&quot;, &quot;.hover&quot;, &quot;.stack&quot;, &quot;.scroll&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="NBTH" expression="&quot;Columns-?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="NBTR1" expression="&quot;Raw-?&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+
     <!-- END CONTROLS GROUP -->
 
     <!-- NAVIGATION GROUP -->
@@ -644,11 +657,33 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-
-
-
-
-
+    <template name="zf-cttp" value="&lt;ul class=&quot;tabs&quot; $DATA$ id=&quot;$ID1$&quot;&gt;&#10;    &lt;li class=&quot;tabs-title is-active&quot;&gt;&lt;a href=&quot;#$ID2$&quot; aria-selected=&quot;true&quot;&gt;$TITLE$&lt;/a&gt;&lt;/li&gt;&#10;    $SUP$$lAST$&#10;&lt;/ul&gt;&#10;&lt;div class=&quot;tabs-content&quot; data-tabs-content=&quot;$ID1$&quot;&gt;&#10;    &lt;div class=&quot;tabs-panel is-active&quot; id=&quot;$ID2$&quot;&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;" description="Tabs Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="TITLE" expression="&quot;Title_Panel?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="DATA" expression="&quot;data-tabs&quot;" defaultValue="" alwaysStopAt="false" />
+        <variable name="ID1" expression="&quot;ID tabs-content?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="ID2" expression="&quot;ID tabs-panel&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="SUP" expression="&quot;sup-tabs-panel&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="lAST" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="sup-tabs-panel" value="li.tabs-title&gt;a[#$ID1$]{$TITLE$}^div.tabs-panel[id=&quot;$ID1$&quot;]{&lt;!-- Content $ID1$ --&gt;}$LAST$" description="Sup Tabs Panel Tabs Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="TITLE" expression="&quot;Title_Panel?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="ID1" expression="&quot;ID tabs-panel?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
     <!-- END CONTAINERS GROUP -->
 
     <!-- MEDIA GROUP -->

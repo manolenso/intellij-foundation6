@@ -128,6 +128,9 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Supp Media Object Section        | sup-media-object-section       |
 | Off-canvas                       | zf-ctof                    `JS`|
 | Reveal Modal                     | zf-ctmd                    `JS`|
+| Tables  `use emmet`              | zf-cttb                        |
+| Tabs Panel  `use emmet`          | zf-cttp                        |
+| Sup Panel Tabs   `use emmet`     | sup-panel-tabs                 |
 
 ### MEDIA
 

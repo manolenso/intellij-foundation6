@@ -657,7 +657,24 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cttp" value="&lt;ul class=&quot;tabs&quot; $DATA$ id=&quot;$ID1$&quot;&gt;&#10;    &lt;li class=&quot;tabs-title is-active&quot;&gt;&lt;a href=&quot;#$ID2$&quot; aria-selected=&quot;true&quot;&gt;$TITLE$&lt;/a&gt;&lt;/li&gt;&#10;    $SUP$$lAST$&#10;&lt;/ul&gt;&#10;&lt;div class=&quot;tabs-content&quot; data-tabs-content=&quot;$ID1$&quot;&gt;&#10;    &lt;div class=&quot;tabs-panel is-active&quot; id=&quot;$ID2$&quot;&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;" description="Tabs Foundation 6" toReformat="false" toShortenFQNames="true">
+    <template name="zf-cttp" value="&lt;ul class=&quot;tabs&quot; $DATA$ id=&quot;$ID1$&quot;&gt;&#10;  &lt;li class=&quot;tabs-title is-active&quot;&gt;&lt;a href=&quot;#$ID2$&quot; aria-selected=&quot;true&quot;&gt;$TITLE$&lt;/a&gt;&lt;/li&gt;&#10;  $SUP$$lAST$&#10;&lt;/ul&gt;&#10;&lt;div class=&quot;tabs-content&quot; data-tabs-content=&quot;$ID1$&quot;&gt;&#10;  &lt;div class=&quot;tabs-panel is-active&quot; id=&quot;$ID2$&quot;&gt;&lt;!-- Content $ID2$ --&gt;&lt;/div&gt;&#10;&lt;/div&gt;" description="Tabs Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="TITLE" expression="&quot;Title_Panel?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="DATA" expression="&quot;data-tabs&quot;" defaultValue="" alwaysStopAt="false" />
+        <variable name="ID1" expression="&quot;ID tabs-content?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="ID2" expression="&quot;ID tabs-panel&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="SUP" expression="&quot;sup-tabs-panel&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="lAST" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="zf-cttv" value="&lt;div class=&quot;small-$ROW1$ columns&quot;&gt;&#10;  &lt;ul class=&quot;tabs vertical&quot; $DATA$ id=&quot;$ID1$&quot;&gt;&#10;      &lt;li class=&quot;tabs-title is-active&quot;&gt;&lt;a href=&quot;#$ID2$&quot; aria-selected=&quot;true&quot;&gt;$TITLE$&lt;/a&gt;&lt;/li&gt;&#10;      $SUP$$lAST$&#10;  &lt;/ul&gt;&#10;  &lt;/div&gt;&#10;  &lt;div class=&quot;small-$ROW2$ columns&quot;&gt;&#10;  &lt;div class=&quot;tabs-content vertical&quot; data-tabs-content=&quot;$ID1$&quot;&gt;&#10;      &lt;div class=&quot;tabs-panel is-active&quot; id=&quot;$ID2$&quot;&gt;&lt;!-- Content $ID2$ --&gt;&lt;/div&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;" description="Tabs Vertical Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="ROW1" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="ROW2" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="TITLE" expression="&quot;Title_Panel?&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="DATA" expression="&quot;data-tabs&quot;" defaultValue="" alwaysStopAt="false" />
         <variable name="ID1" expression="&quot;ID tabs-content?&quot;" defaultValue="" alwaysStopAt="true" />

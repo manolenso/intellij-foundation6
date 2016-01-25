@@ -704,15 +704,8 @@
     <!-- END CONTAINERS GROUP -->
 
     <!-- MEDIA GROUP -->
-    <template name="zf-mdos" value="&lt;ul data-orbit data-options=&quot;$DATOPT$&quot;&gt;&#10;    &lt;li&gt;&#10;        &lt;img src=&quot;$IMG1$&quot; alt=&quot;slide 1&quot; /&gt;&#10;        &lt;div class=&quot;orbit-caption&quot;&gt;&#10;            $NAME1$&#10;        &lt;/div&gt;&#10;    &lt;/li&gt;&#10;    &lt;li&gt;&#10;        &lt;img src=&quot;$IMG2$&quot; alt=&quot;slide 1&quot; /&gt;&#10;        &lt;div class=&quot;orbit-caption&quot;&gt;&#10;            $NAME2$&#10;        &lt;/div&gt;&#10;     &lt;/li&gt;&#10;     &lt;li&gt;&#10;        &lt;img src=&quot;$IMG3$&quot; alt=&quot;slide 1&quot; /&gt;&#10;        &lt;div class=&quot;orbit-caption&quot;&gt;&#10;            $NAME3$&#10;        &lt;/div&gt;&#10;    &lt;/li&gt;&#10;    $ADD$$END$&#10;&lt;/ul&gt;" description="orbit slider Foudation" toReformat="false" toShortenFQNames="true">
-        <variable name="DATOPT" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="IMG1" expression="&quot;Path/to/image.jpg&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="NAME1" expression="&quot;Caption&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="IMG2" expression="&quot;Path/to/image.jpg&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="NAME2" expression="&quot;Caption&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="IMG3" expression="&quot;Path/to/image.jpg&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="NAME3" expression="&quot;Caption&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="ADD" expression="&quot;ADDslider-item&quot;" defaultValue="" alwaysStopAt="true" />
+    <template name="ADDicon" value="&lt;i class=&quot;fi-$ICON$&quot;&gt;&lt;/i&gt;" description="ADD Icon Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="ICON" expression="enum(&quot;address-book&quot;, &quot;alert&quot;, &quot;align-center&quot;, &quot;align-justify&quot;, &quot;align-left&quot;, &quot;align-right&quot;, &quot;anchor&quot;, &quot;annotate&quot;, &quot;archive&quot;, &quot;arrow-down&quot;, &quot;arrow-left&quot;, &quot;arrow-right&quot;, &quot;arrow-up&quot;, &quot;arrows-compress&quot;, &quot;arrows-expand&quot;, &quot;arrows-in&quot;, &quot;arrows-out&quot;, &quot;asl&quot;, &quot;asterisk&quot;, &quot;at-sign&quot;, &quot;background-color&quot;, &quot;battery-empty&quot;, &quot;battery-full&quot;, &quot;battery-half&quot;, &quot;bitcoin-circle&quot;, &quot;bitcoin&quot;, &quot;blind&quot;, &quot;bluetooth&quot;, &quot;bold&quot;, &quot;book-bookmark&quot;, &quot;book&quot;, &quot;bookmark&quot;, &quot;braille&quot;, &quot;burst-new&quot;, &quot;burst-sale&quot;, &quot;burst&quot;, &quot;calendar&quot;, &quot;camera&quot;, &quot;check&quot;, &quot;checkbox&quot;, &quot;clipboard-notes&quot;, &quot;clipboard-pencil&quot;, &quot;clipboard&quot;, &quot;clock&quot;, &quot;closed-caption&quot;, &quot;cloud&quot;, &quot;comment-minus&quot;, &quot;comment-quotes&quot;, &quot;comment-video&quot;, &quot;comment&quot;, &quot;comments&quot;, &quot;compass&quot;, &quot;contrast&quot;, &quot;credit-card&quot;, &quot;crop&quot;, &quot;crown&quot;, &quot;css3&quot;, &quot;database&quot;, &quot;die-five&quot;, &quot;die-four&quot;, &quot;die-one&quot;, &quot;die-six&quot;, &quot;die-three&quot;, &quot;die-two&quot;, &quot;dislike&quot;, &quot;dollar-bill&quot;, &quot;dollar&quot;, &quot;download&quot;, &quot;eject&quot;, &quot;elevator&quot;, &quot;euro&quot;, &quot;eye&quot;, &quot;fast-forward&quot;, &quot;female-symbol&quot;, &quot;female&quot;, &quot;filter&quot;, &quot;first-aid&quot;, &quot;flag&quot;, &quot;folder-add&quot;, &quot;folder-lock&quot;, &quot;folder&quot;, &quot;foot&quot;, &quot;foundation&quot;, &quot;graph-bar&quot;, &quot;graph-horizontal&quot;, &quot;graph-pie&quot;, &quot;graph-trend&quot;, &quot;guide-dog&quot;, &quot;hearing-aid&quot;, &quot;heart&quot;, &quot;home&quot;, &quot;html5&quot;, &quot;indent-less&quot;, &quot;indent-more&quot;, &quot;info&quot;, &quot;italic&quot;, &quot;key&quot;, &quot;laptop&quot;, &quot;layout&quot;, &quot;lightbulb&quot;, &quot;like&quot;, &quot;link&quot;, &quot;list-bullet&quot;, &quot;list-number&quot;, &quot;list-thumbnails&quot;, &quot;list&quot;, &quot;lock&quot;, &quot;loop&quot;, &quot;magnifying-glass&quot;, &quot;mail&quot;, &quot;male-female&quot;, &quot;male-symbol&quot;, &quot;male&quot;, &quot;map&quot;, &quot;marker&quot;, &quot;megaphone&quot;, &quot;microphone&quot;, &quot;minus-circle&quot;, &quot;minus&quot;, &quot;mobile-signal&quot;, &quot;mobile&quot;, &quot;monitor&quot;, &quot;mountains&quot;, &quot;music&quot;, &quot;next&quot;, &quot;no-dogs&quot;, &quot;no-smoking&quot;, &quot;page-add&quot;, &quot;page-copy&quot;, &quot;page-csv&quot;, &quot;page-delete&quot;, &quot;page-doc&quot;, &quot;page-edit&quot;, &quot;page-export-csv&quot;, &quot;page-export-doc&quot;, &quot;page-export-pdf&quot;, &quot;page-export&quot;, &quot;page-filled&quot;, &quot;page-multiple&quot;, &quot;page-pdf&quot;, &quot;page-remove&quot;, &quot;page-search&quot;, &quot;page&quot;, &quot;paint-bucket&quot;, &quot;paperclip&quot;, &quot;pause&quot;, &quot;paw&quot;, &quot;paypal&quot;, &quot;pencil&quot;, &quot;photo&quot;, &quot;play-circle&quot;, &quot;play-video&quot;, &quot;play&quot;, &quot;plus&quot;, &quot;pound&quot;, &quot;power&quot;, &quot;previous&quot;, &quot;price-tag&quot;, &quot;pricetag-multiple&quot;, &quot;print&quot;, &quot;prohibited&quot;, &quot;projection-screen&quot;, &quot;puzzle&quot;, &quot;quote&quot;, &quot;record&quot;, &quot;refresh&quot;, &quot;results-demographics&quot;, &quot;results&quot;, &quot;rewind-ten&quot;, &quot;rewind&quot;, &quot;rss&quot;, &quot;safety-cone&quot;, &quot;save&quot;, &quot;share&quot;, &quot;sheriff-badge&quot;, &quot;shield&quot;, &quot;shopping-bag&quot;, &quot;shopping-cart&quot;, &quot;shuffle&quot;, &quot;skull&quot;, &quot;social-500px&quot;, &quot;social-adobe&quot;, &quot;social-amazon&quot;, &quot;social-android&quot;, &quot;social-apple&quot;, &quot;social-behance&quot;, &quot;social-bing&quot;, &quot;social-blogger&quot;, &quot;social-delicious&quot;, &quot;social-designer-news&quot;, &quot;social-deviant-art&quot;, &quot;social-digg&quot;, &quot;social-dribbble&quot;, &quot;social-drive&quot;, &quot;social-dropbox&quot;, &quot;social-evernote&quot;, &quot;social-facebook&quot;, &quot;social-flickr&quot;, &quot;social-forrst&quot;, &quot;social-foursquare&quot;, &quot;social-game-center&quot;, &quot;social-github&quot;, &quot;social-google-plus&quot;, &quot;social-hacker-news&quot;, &quot;social-hi5&quot;, &quot;social-instagram&quot;, &quot;social-joomla&quot;, &quot;social-lastfm&quot;, &quot;social-linkedin&quot;, &quot;social-medium&quot;, &quot;social-myspace&quot;, &quot;social-orkut&quot;, &quot;social-path&quot;, &quot;social-picasa&quot;, &quot;social-pinterest&quot;, &quot;social-rdio&quot;, &quot;social-reddit&quot;, &quot;social-skillshare&quot;, &quot;social-skype&quot;, &quot;social-smashing-mag&quot;, &quot;social-snapchat&quot;, &quot;social-spotify&quot;, &quot;social-squidoo&quot;, &quot;social-stack-overflow&quot;, &quot;social-steam&quot;, &quot;social-stumbleupon&quot;, &quot;social-treehouse&quot;, &quot;social-tumblr&quot;, &quot;social-twitter&quot;, &quot;social-vimeo&quot;, &quot;social-windows&quot;, &quot;social-xbox&quot;, &quot;social-yahoo&quot;, &quot;social-yelp&quot;, &quot;social-youtube&quot;, &quot;social-zerply&quot;, &quot;social-zurb&quot;, &quot;sound&quot;, &quot;star&quot;, &quot;stop&quot;, &quot;strikethrough&quot;, &quot;subscript&quot;, &quot;superscript&quot;, &quot;tablet-landscape&quot;, &quot;tablet-portrait&quot;, &quot;target-two&quot;, &quot;target&quot;, &quot;telephone-accessible&quot;, &quot;telephone&quot;, &quot;text-color&quot;, &quot;thumbnails&quot;, &quot;ticket&quot;, &quot;torso-business&quot;, &quot;torso-female&quot;, &quot;torso&quot;, &quot;torsos-all-female&quot;, &quot;torsos-all&quot;, &quot;torsos-female-male&quot;, &quot;torsos-male-female&quot;, &quot;torsos&quot;, &quot;trash&quot;, &quot;trees&quot;, &quot;trophy&quot;, &quot;underline&quot;, &quot;universal-access&quot;, &quot;unlink&quot;, &quot;unlock&quot;, &quot;upload-cloud&quot;, &quot;upload&quot;, &quot;usb&quot;, &quot;video&quot;, &quot;volume-none&quot;, &quot;volume-strike&quot;, &quot;volume&quot;, &quot;web&quot;, &quot;wheelchair&quot;&quot;, &quot;widget&quot;, &quot;wrench&quot;, &quot;x-circle&quot;, &quot;x&quot;, &quot;yen&quot;, &quot;zoom-in&quot;, &quot;zoom-out&quot;) " defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>
@@ -721,10 +714,12 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="ADDslider-item" value="&lt;li&gt;&#10;    &lt;img src=&quot;$IMG$&quot; alt=&quot;slide 1&quot; /&gt;&#10;    &lt;div class=&quot;orbit-caption&quot;&gt;&#10;        $NAME$&#10;    &lt;/div&gt;&#10;&lt;/li&gt;&#10;$ADD$" description="add item slider Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="IMG" expression="&quot;Path/to/image.jpg&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="NAME" expression="&quot;Caption&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="ADD" expression="&quot;ADDslider-item&quot;" defaultValue="" alwaysStopAt="true" />
+    <template name="zf-mdba" value="&lt;span class=&quot;$COLOR$badge&quot; id=&quot;$ID$&quot;&gt;$LAST$$EDIT$&lt;span class=&quot;show-for-sr&quot;&gt;$SCR$&lt;/span&gt;&lt;/span&gt;&#10;" description="Badge Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="COLOR" expression="enum(&quot;&quot;, &quot;info&quot;, &quot;secondary &quot;, &quot;success &quot;, &quot;alert &quot;, &quot;warning &quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="SCR" expression="&quot;Screen Reader?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="ID" expression="&quot;ID?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="LAST" expression="enum(&quot;&quot;, &quot;ADDicon&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="EDIT" expression="" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>
@@ -733,62 +728,8 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-mdtb" value="&lt;a class=&quot;th&quot; role=&quot;button&quot; aria-label=&quot;Thumbnail&quot; href=&quot;$PATH$&quot;&gt;&#10;    &lt;img aria-hidden=true src=&quot;$PATH$&quot;/&gt;&#10;&lt;/a&gt;&#10;$ADD$" description="thumbnail Accessibility Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="PATH" expression="&quot;path/to/image.jpg&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="ADD" expression="&quot;ADDthumbnail-item&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="ADDthumbnail-item" value="&lt;a class=&quot;th&quot; role=&quot;button&quot; aria-label=&quot;Thumbnail&quot; href=&quot;$PATH$&quot;&gt;&#10;    &lt;img aria-hidden=true src=&quot;$PATH$&quot;/&gt;&#10;&lt;/a&gt;&#10;$ADD$" description="add thumbnail Accessibility Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="PATH" expression="&quot;path/to/image.jpg&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="ADD" expression="&quot;ADDthumbnail-item&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-mdcl" value="&lt;ul class=&quot;clearing-thumbs&quot; data-clearing&gt;&#10;  &lt;li&gt;&lt;a href=&quot;$IMG1$&quot;&gt;&lt;img data-caption=&quot;$CAPT1$&quot; src=&quot;$IMG2$&quot;&gt;&lt;/a&gt;&lt;/li&gt;&#10;  &lt;li&gt;&lt;a href=&quot;$IMG3$&quot;&gt;&lt;img data-caption=&quot;$CAPT2$&quot; src=&quot;$IMG4$&quot;&gt;&lt;/a&gt;&lt;/li&gt;&#10;  &lt;li&gt;&lt;a href=&quot;$IMG5$&quot;&gt;&lt;img data-caption=&quot;$CAPT3$&quot; src=&quot;$IMG6$&quot;&gt;&lt;/a&gt;&lt;/li&gt;&#10;  $ADD$$END$&#10;&lt;/ul&gt;" description="clearing lightbox Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="IMG1" expression="&quot;path/to/image.jpg&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="CAPT1" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="IMG2" expression="&quot;path/to/image-thumbnail.jpg&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="IMG3" expression="&quot;path/to/image.jpg&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="CAPT2" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="IMG4" expression="&quot;path/to/image-thumbnail.jpg&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="IMG5" expression="&quot;path/to/image.jpg&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="CAPT3" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="IMG6" expression="&quot;path/to/image-thumbnail.jpg&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="ADD" expression="&quot;ADDlightbox-item&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="ADDlightbox-item" value="&lt;li&gt;&lt;a href=&quot;$IMG1$&quot;&gt;&lt;img data-caption=&quot;$CAPT1$&quot; src=&quot;$IMG2$&quot;&gt;&lt;/a&gt;&lt;/li&gt;&#10;$ADD$" description="clearing lightbox Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="IMG1" expression="&quot;path/to/image.jpg&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="CAPT1" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="IMG2" expression="&quot;path/to/image-thumbnail.jpg&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="ADD" expression="&quot;ADDlightbox-item&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-mdfv" value="&lt;div class=&quot;flex-video$ADV$&quot;&gt;&#10;  &lt;iframe src=&quot;$PATH$&quot; width=&quot;$WIT$&quot; height=&quot;$HEI$&quot; frameborder=&quot;$FRAM$&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;&#10;&lt;/div&gt;&#10;$END$" description="flex video Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="ADV" expression="enum(&quot;&quot;, &quot; widescreen vimeo&quot;)" defaultValue="" alwaysStopAt="true" />
+    <template name="zf-mdfv" value="&lt;div class=&quot;flex-video$ADV$&quot;&gt;&#10;  &lt;iframe src=&quot;$PATH$&quot; width=&quot;$WIT$&quot; height=&quot;$HEI$&quot; frameborder=&quot;$FRAM$&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;&#10;&lt;/div&gt;$END$&#10;" description="Flex Video Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="ADV" expression="enum(&quot;&quot;, &quot; widescreen&quot;, &quot; widescreen vimeo&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="PATH" expression="&quot;#Path/to/video/file&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="WIT" expression="&quot;400&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="HEI" expression="&quot;225&quot;" defaultValue="" alwaysStopAt="true" />

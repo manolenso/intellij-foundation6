@@ -137,7 +137,9 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
 | Component:group zf-md `Ctrl + Space` | Snippet code               |
 |----------------------------------| :-----------------------------:|
-
+| Badge                            | zf-mdba                        |
+| ADD Icon                         | ADDicon                        |
+| Flex Video                       | zf-mdfv                        |
 
 
 ### PLUGIN

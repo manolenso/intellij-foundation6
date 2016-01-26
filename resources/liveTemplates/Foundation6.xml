@@ -228,6 +228,19 @@
     </template>
     <!-- END LAYOUT GROUP -->
 
+    <!-- TYPOGRAPHY GROUP -->
+    <template name="txta" value="class=&quot;text-$OPT$&quot;" description="Text Alignment Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="OPT" expression="enum(&quot;left&quot;, &quot;right&quot;, &quot;center&quot;, &quot;justify&quot;)" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <!-- END TYPOGRAPHY GROUP -->
+
     <!-- CONTROLS GROUP -->
     <template name="zf-crbta" value="&lt;a href=&quot;#$VAR2$&quot; class=&quot;$OPT1$$OPT2$button&quot;&gt;$VAR1$&lt;/a&gt;&#10;$END$" description="Button Anchors (links) Foundation 6" toReformat="true" toShortenFQNames="true">
         <variable name="OPT1" expression="enum(&quot;&quot;, &quot;tiny &quot;, &quot;small &quot;, &quot;large &quot;, &quot;expanded &quot;, &quot;small expanded &quot;)" defaultValue="" alwaysStopAt="true" />
@@ -755,554 +768,54 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
+    <template name="zf-mdos" value="&lt;div class=&quot;orbit&quot; role=&quot;region&quot; aria-label=&quot;$ARLB$&quot; data-orbit data-use-m-u-i=&quot;false&quot;&gt;&#10;  &lt;ul class=&quot;orbit-container&quot;&gt;&#10;    &lt;button class=&quot;orbit-previous&quot; aria-label=&quot;previous&quot;&gt;&lt;span class=&quot;show-for-sr&quot;&gt;Previous Slide&lt;/span&gt;&amp;#9664;&lt;/button&gt;&#10;    &lt;button class=&quot;orbit-next&quot; aria-label=&quot;next&quot;&gt;&lt;span class=&quot;show-for-sr&quot;&gt;Next Slide&lt;/span&gt;&amp;#9654;&lt;/button&gt;&#10;    &lt;li class=&quot;is-active orbit-slide&quot;&gt;&lt;/li&gt;&#10;    $ADD$$LAST$&#10;  &lt;/ul&gt;&#10;  &lt;nav class=&quot;orbit-bullets&quot;&gt;&#10;   &lt;button class=&quot;is-active&quot; data-slide=&quot;0&quot;&gt;&lt;span class=&quot;show-for-sr&quot;&gt;First slide details.&lt;/span&gt;&lt;span class=&quot;show-for-sr&quot;&gt;Current Slide&lt;/span&gt;&lt;/button&gt;&#10;   &#10; &lt;/nav&gt;&#10;&lt;/div&gt;&#10;" description="Orbit Slider Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="ARLB" expression="&quot;Aria Label?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="ADD" expression="&quot;sup-orbit-slider&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="sup-orbit-slider" value="li.orbit-slide{&lt;!-- Content --&gt;}^button[data-slide]&gt;span.show-for-sr{$SRC$}$EMT$&#10;$SUPORB$$LAST$&#10;" description="Sup Orbit Slider Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="SRC" expression="&quot;Screen Reader Text?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="EMT" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="SUPORB" expression="&quot;sup-orbit-slider&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="zf-mdtp" value="&lt;span data-tooltip aria-haspopup=&quot;true&quot; class=&quot;has-tip$OPT$&quot; data-disable-hover='false' tabindex=$NB$ title=&quot;$TT$&quot;&gt;$CUT$&lt;/span&gt;&#10;" description="Tooltips Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="OPT" expression="enum(&quot;&quot;, &quot; top&quot;, &quot; right&quot;, &quot; left&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="NB" expression="enum(&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot;10&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="TT" expression="&quot;Tooltip Text?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="CUT" expression="clipboard()" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
     <!-- END MEDIA GROUP -->
 
-    <!-- FORM GROUP -->
-    <template name="zf-form" value="&lt;form&gt;&#10;    $CHOICE$$POST$&#10;&lt;/form&gt;&lt;!-- ADDinput ** ADDinput-postfix ** ADDselect-box ** ADDtextarea ** ADDright-input-inline ** ADDfieldset --&gt;" description="forms Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="CHOICE" expression="enum(&quot;ADDinput&quot;, &quot;ADDinput-postfix&quot;, &quot;ADDselect-box&quot;, &quot;ADDtextarea&quot;, &quot;ADDright-input-inline&quot;, &quot;ADDfieldset&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="POST" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="ADDinput" value="&lt;div class=&quot;row&quot;&gt;&#10;    &lt;div class=&quot;large-$NBC$ columns&quot;&gt;&#10;        &lt;label&gt;$INP$&#10;            &lt;input type=&quot;text&quot; placeholder=&quot;$PLACH$&quot; /&gt;&#10;        &lt;/label&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;&#10;$CHOICE$$END$" description="input label  Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="NBC" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="INP" expression="&quot;Input Label&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="PLACH" expression="&quot;Placeholder&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="CHOICE" expression="enum(&quot;ADDinput&quot;, &quot;ADDinput-postfix&quot;, &quot;ADDselect-box&quot;, &quot;ADDtextarea&quot;, &quot;ADDright-input-inline&quot;, &quot;ADDfieldset&quot;)" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="ADDinput-postfix" value="&lt;div class=&quot;large-4 columns&quot;&gt;&#10;    &lt;div class=&quot;row collapse&quot;&gt;&#10;        &lt;label&gt;$INP$&lt;/label&gt;&#10;        &lt;div class=&quot;small-9 columns&quot;&gt;&#10;            &lt;input type=&quot;text&quot; placeholder=&quot;$PLACH$&quot; /&gt;        &#10;        &lt;/div&gt;&#10;        &lt;div class=&quot;small-3 columns&quot;&gt;&#10;            &lt;span class=&quot;postfix&quot;&gt;$POST$&lt;/span&gt;&#10;        &lt;/div&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;&#10;$CHOICE$$END$" description="input label postfix  Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="INP" expression="&quot;Input Label&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="PLACH" expression="&quot;Placeholder&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="POST" expression="&quot;.com&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="CHOICE" expression="enum(&quot;ADDinput&quot;, &quot;ADDinput-postfix&quot;, &quot;ADDselect-box&quot;, &quot;ADDtextarea&quot;, &quot;ADDright-input-inline&quot;, &quot;ADDfieldset&quot;)" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="ADDselect-box" value="&lt;div class=&quot;row&quot;&gt;&#10;    &lt;div class=&quot;large-$NBC$ columns&quot;&gt;&#10;        &lt;label&gt;$LAB$&#10;            &lt;select&gt;&#10;                &lt;option value=&quot;$VAL1$&quot;&gt;$VAL2$&lt;/option&gt;&#10;                &lt;option value=&quot;$VAL3$&quot;&gt;$VAL4$&lt;/option&gt;&#10;                &lt;option value=&quot;$VAL5$&quot;&gt;$VAL6$&lt;/option&gt;&#10;                &lt;option value=&quot;$VAL7$&quot;&gt;$VAL8$&lt;/option&gt;&#10;            &lt;/select&gt;&#10;        &lt;/label&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;&#10;$CHOICE$$END$" description="select box Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="NBC" expression="" defaultValue="" alwaysStopAt="true" />
-        <variable name="LAB" expression="&quot;Select Box&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="VAL1" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="VAL2" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="VAL3" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="VAL4" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="VAL5" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="VAL6" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="VAL7" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="VAL8" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="CHOICE" expression="enum(&quot;ADDinput&quot;, &quot;ADDinput-postfix&quot;, &quot;ADDselect-box&quot;, &quot;ADDtextarea&quot;, &quot;ADDright-input-inline&quot;, &quot;ADDfieldset&quot;)" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="ADDtextarea" value="&lt;div class=&quot;row&quot;&gt;&#10;    &lt;div class=&quot;large-$NBC$ columns&quot;&gt;&#10;        &lt;label&gt;$INP$&#10;            &lt;textarea placeholder=&quot;$PLACH$&quot;&gt;&lt;/textarea&gt;&#10;        &lt;/label&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;&#10;$CHOICE$$END$" description="textarea Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="NBC" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="INP" expression="&quot;Input Label&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="PLACH" expression="&quot;Text here...&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="CHOICE" expression="enum(&quot;ADDinput&quot;, &quot;ADDinput-postfix&quot;, &quot;ADDselect-box&quot;, &quot;ADDtextarea&quot;, &quot;ADDright-input-inline&quot;, &quot;ADDfieldset&quot;)" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="ADDright-input-inline" value="&lt;div class=&quot;row&quot;&gt;&#10;    &lt;div class=&quot;small-$NBC$&quot;&gt;&#10;        &lt;div class=&quot;row&quot;&gt;&#10;            &lt;div class=&quot;small-3 columns&quot;&gt;&#10;                &lt;label for=&quot;right-label&quot; class=&quot;right inline&quot;&gt;$INP$&lt;/label&gt;&#10;            &lt;/div&gt;&#10;            &lt;div class=&quot;small-9 columns&quot;&gt;&#10;                &lt;input type=&quot;text&quot; id=&quot;right-label&quot; placeholder=&quot;$PLACH$&quot;&gt;&#10;            &lt;/div&gt;&#10;        &lt;/div&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;&#10;$CHOICE$$END$&#10;" description="right input label item Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="NBC" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="INP" expression="&quot;Input Label&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="PLACH" expression="&quot;Placeholder&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="CHOICE" expression="enum(&quot;ADDinput&quot;, &quot;ADDinput-postfix&quot;, &quot;ADDselect-box&quot;, &quot;ADDtextarea&quot;, &quot;ADDright-input-inline&quot;, &quot;ADDfieldset&quot;)" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="ADDfieldset" value="&lt;fieldset&gt;&#10;    &lt;legend&gt;$FIELST$&lt;/legend&gt;&#10;        &lt;label&gt;$INP$&#10;            &lt;input type=&quot;text&quot; placeholder=&quot;$PLACH$&quot;&gt;&#10;        &lt;/label&gt;&#10;&lt;/fieldset&gt;&#10;$CHOICE$$END$" description="fieldset Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="FIELST" expression="&quot;Fieldset Legend&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="INP" expression="&quot;Input Label&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="PLACH" expression="&quot;Inputs and other form elements go inside...&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="CHOICE" expression="enum(&quot;ADDinput&quot;, &quot;ADDinput-postfix&quot;, &quot;ADDselect-box&quot;, &quot;ADDtextarea&quot;, &quot;ADDright-input-inline&quot;, &quot;ADDfieldset&quot;)" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-focb" value="&lt;div class=&quot;switch$DEC$$OPT$&quot;&gt;&#10;    &lt;input id=&quot;CheckboxSwitch&quot; type=&quot;checkbox&quot;&gt;&#10;    &lt;label for=&quot;CheckboxSwitch&quot;&gt;&lt;/label&gt;&#10;&lt;/div&gt;" description="checkboxswitch  foundation" toReformat="false" toShortenFQNames="true">
-    <variable name="DEC" expression="enum(&quot;&quot;, &quot; radius&quot;, &quot; round&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT" expression="enum(&quot;&quot;, &quot; tiny&quot;, &quot; small&quot;, &quot; large&quot;)" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-fors" value="&lt;div class=&quot;switch$DEC1$$OPT1$&quot;&gt;&#10;    &lt;input id=&quot;RadioSwitch1&quot; type=&quot;radio&quot; name=&quot;Group&quot;&gt;&#10;    &lt;label for=&quot;RadioSwitch1&quot;&gt;&lt;/label&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;switch$DEC2$$OPT2$&quot;&gt;&#10;    &lt;input id=&quot;RadioSwitch2&quot; type=&quot;radio&quot; name=&quot;Group&quot;&gt;&#10;    &lt;label for=&quot;RadioSwitch2&quot;&gt;&lt;/label&gt;&#10;&lt;/div&gt;" description="radioswitch  foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="DEC1" expression="enum(&quot;&quot;, &quot; radius&quot;, &quot; round&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT1" expression="enum(&quot;&quot;, &quot; tiny&quot;, &quot; small&quot;, &quot; large&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="DEC2" expression="enum(&quot;&quot;, &quot; radius&quot;, &quot; round&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT2" expression="enum(&quot;&quot;, &quot; tiny&quot;, &quot; small&quot;, &quot; large&quot;)" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>>
-    </template>
-    <template name="zf-foab" value="&lt;form data-abide&gt;&#10;    $CHOICE$$POST$&#10;&lt;/form&gt;&lt;!-- ADDemail-field ** ADDname-field ** ADDpassword-field **ADDsubmit-button --&gt;" description="abide form Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="CHOICE" expression="enum(&quot;ADDname-field&quot;, &quot;ADDemail-field&quot;, &quot;ADDpassword-field&quot;, &quot;ADDsubmit-button&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="POST" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="ADDemail-field" value="&lt;div class=&quot;email-field&quot;&gt;&#10;    &lt;label&gt;Email &lt;small&gt;required&lt;/small&gt;&#10;        &lt;input type=&quot;email&quot; required&gt;&#10;    &lt;/label&gt;&#10;        &lt;small class=&quot;error&quot;&gt;An email address is required.&lt;/small&gt;&#10;&lt;/div&gt;&#10;$CHOICE$$END$" description="email-field Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="CHOICE" expression="enum(&quot;ADDname-field&quot;, &quot;ADDemail-field&quot;, &quot;ADDpassword-field&quot;, &quot;ADDsubmit-button&quot;)" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="ADDname-field" value="&lt;div class=&quot;name-field&quot; &gt;&#10;    &lt;label&gt;Your name &lt;small&gt;required&lt;/small&gt;&#10;        &lt;input type=&quot;text&quot; required pattern=&quot;[a-zA-Z]+&quot;&gt;&#10;    &lt;/label&gt;&#10;    &lt;small class=&quot;error&quot;&gt;Name is required and must be a string.&lt;/small&gt;&#10;&lt;/div&gt;&#10;$CHOICE$$END$" description="namel-field Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="CHOICE" expression="enum(&quot;ADDsubmit-button&quot;, &quot;ADDname-field&quot;, &quot;ADDemail-field&quot;, &quot;ADDpassword-field&quot; )" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="ADDpassword-field" value="&lt;div class=&quot;password-field&quot;&gt;&#10;    &lt;label&gt;Password &lt;small&gt;required&lt;/small&gt;&#10;        &lt;input type=&quot;password&quot; id=&quot;password&quot; required pattern=&quot;[a-zA-Z]+&quot;&gt;&#10;    &lt;/label&gt;&#10;    &lt;small class=&quot;error&quot;&gt;Your password must match the requirements&lt;/small&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;password-confirmation-field&quot;&gt;&#10;    &lt;label&gt;Confirm Password &lt;small&gt;required&lt;/small&gt;&#10;        &lt;input type=&quot;password&quot; required pattern=&quot;[a-zA-Z]+&quot; data-equalto=&quot;password&quot;&gt;&#10;    &lt;/label&gt;&#10;        &lt;small class=&quot;error&quot;&gt;The password did not match&lt;/small&gt;&#10;&lt;/div&gt;&#10;$CHOICE$$END$" description="passworfield-field (equal-to) Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="CHOICE" expression="enum(&quot;ADDsubmit-button&quot;, &quot;ADDname-field&quot;, &quot;ADDemail-field&quot;, &quot;ADDpassword-field&quot; )" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="ADDsubmit-button" value="&lt;button class=&quot;button$TYPE$$PLACE$$STYLE$&quot; type=&quot;submit&quot;&gt;$TEXTE$&lt;/button&gt;&#10;$CHOICE$$END$" description="submit button Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="TYPE" expression="enum(&quot;&quot;, &quot; tiny&quot;, &quot; small&quot;, &quot; large&quot;, &quot; expand&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="PLACE" expression="enum(&quot;&quot;, &quot; right&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="STYLE" expression="enum(&quot;&quot;, &quot; round&quot;, &quot; radius&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="TEXTE" expression="&quot;Submit&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="CHOICE" expression="enum(&quot;ADDemail-field&quot;, &quot;ADDname-field&quot;, &quot;ADDpassword-field&quot;, &quot;ADDsubmit-button&quot;)" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-fosl" value="&lt;div class=&quot;range-slider$DEC$&quot; data-slider&gt;&#10;  &lt;span class=&quot;range-slider-handle&quot; role=&quot;slider&quot; tabindex=&quot;0&quot;&gt;&lt;/span&gt;&#10;  &lt;span class=&quot;range-slider-active-segment&quot;&gt;&lt;/span&gt;&#10;  &lt;input type=&quot;hidden&quot;&gt;&#10;&lt;/div&gt;" description="range slider  foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="DEC" expression="enum(&quot;&quot;, &quot; radius&quot;, &quot; round&quot;, &quot; disabled&quot;)" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
 
 
-    <!-- END FORM GROUP -->
-
-    <!-- BUTTONS GROUP -->
-    <template name="zf-btn" value="&lt;a href=&quot;#$VAR2$&quot; class=&quot;button$OPT1$$OPT2$&quot;&gt;$VAR1$&lt;/a&gt;&#10;$END$" description="button all options Foundation" toReformat="true" toShortenFQNames="true">
-        <variable name="OPT1" expression="enum(&quot;&quot;, &quot; success&quot;, &quot; secondary&quot;, &quot; alert&quot;, &quot; info&quot;, &quot; disabled&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT2" expression="enum(&quot;&quot;, &quot; tiny&quot;, &quot; small&quot;, &quot; disabled&quot;, &quot; large&quot;, &quot; expand&quot;, &quot; round&quot;, &quot; radius&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="VAR1" expression="&quot;Title_Button&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-btg" value="    &lt;ul class=&quot;button-group$OPT1$&quot;&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button$OPT2$ $OPT3$&quot;&gt;$OPT4$&lt;/a&gt;&lt;/li&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button$OPT2$ $OPT3$&quot;&gt;$OPT5$&lt;/a&gt;&lt;/li&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button$OPT2$ $OPT3$&quot;&gt;$OPT6$&lt;/a&gt;&lt;/li&gt;&#10;    &lt;/ul&gt;" description="button group Foundation" toReformat="true" toShortenFQNames="true">
-        <variable name="OPT1" expression="enum(&quot;&quot;, &quot; radius&quot;, &quot; round&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT2" expression="enum(&quot;&quot;, &quot; tiny&quot;, &quot; small&quot;, &quot; large&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT3" expression="enum(&quot;&quot;, &quot;secondary&quot;, &quot;alert&quot;,  &quot;success&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT4" expression="&quot;Title_Button-1&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT5" expression="&quot;Title_Button-2&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT6" expression="&quot;Title_Button-3&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-btbg" value="&lt;div class=&quot;button-bar&quot;&gt;&#10;    &lt;ul class=&quot;button-group$OPT1$&quot;&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button$OPT2$ $OPT3$&quot;&gt;$OPT4$&lt;/a&gt;&lt;/li&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button$OPT2$ $OPT3$&quot;&gt;$OPT5$&lt;/a&gt;&lt;/li&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button$OPT2$ $OPT3$&quot;&gt;$OPT6$&lt;/a&gt;&lt;/li&gt;&#10;    &lt;/ul&gt;&#10;&lt;/div&gt;" description="button bar group Foundation" toReformat="true" toShortenFQNames="true">
-        <variable name="OPT1" expression="enum(&quot;&quot;, &quot; radius&quot;, &quot; round&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT2" expression="enum(&quot;&quot;, &quot; tiny&quot;, &quot; small&quot;, &quot; large&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT3" expression="enum(&quot;&quot;, &quot;secondary&quot;, &quot;alert&quot;,  &quot;success&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT4" expression="&quot;Title_Button-1&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT5" expression="&quot;Title_Button-2&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT6" expression="&quot;Title_Button-3&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-btsg" value="    &lt;ul class=&quot;stack button-group$OPT1$&quot;&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button$OPT2$ $OPT3$&quot;&gt;Title_Button-1&lt;/a&gt;&lt;/li&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button$OPT2$ $OPT3$&quot;&gt;Title_Button-2&lt;/a&gt;&lt;/li&gt;&#10;        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;button$OPT2$ $OPT3$&quot;&gt;Title_Button-3&lt;/a&gt;&lt;/li&gt;&#10;    &lt;/ul&gt;" description="button stack group Foundation" toReformat="true" toShortenFQNames="true">
-        <variable name="OPT1" expression="enum(&quot;&quot;, &quot; radius&quot;, &quot; round&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT2" expression="enum(&quot;&quot;, &quot; tiny&quot;, &quot; small&quot;, &quot; large&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT3" expression="enum(&quot;&quot;, &quot;secondary&quot;, &quot;alert&quot;,  &quot;success&quot;)" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-btsp" value="&#10;    &lt;a href=&quot;#&quot; class=&quot;$OPT1$$OPT2$$OPT3$button split&quot;&gt;Split Button &lt;span data-dropdown=&quot;drop&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;br&gt;&#10;&lt;ul id=&quot;drop&quot; class=&quot;f-dropdown&quot; data-dropdown-content&gt;&#10;  li*$NBSUB$&gt;a$EMMET$$TXT$&#10;&lt;/ul&gt;" description="button split (JS) Foundation (using emmet)" toReformat="true" toShortenFQNames="true">
-        <variable name="OPT1" expression="enum(&quot;&quot;, &quot;tiny &quot;, &quot;small &quot;, &quot;medium &quot;, &quot;large &quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT2" expression="enum(&quot;&quot;, &quot;secondary &quot;, &quot;aler t&quot;, &quot;success &quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT3" expression="enum(&quot;&quot;, &quot;radius &quot;, &quot;round &quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="NBSUB" expression="enum(&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="EMMET" expression="" defaultValue="" alwaysStopAt="true" />
-        <variable name="TXT" expression="&quot;&lt;!-- Expand using Emmet! --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-btdp" value="&lt;button data-dropdown=&quot;drop&quot; aria-controls=&quot;drop&quot; aria-expanded=&quot;false&quot; &#10;class=&quot;$OPT1$$OPT2$$OPT3$button dropdown&quot;&gt;$BUTT$&lt;/button&gt;&lt;br&gt;&#10;&lt;ul id=&quot;drop&quot; data-dropdown-content class=&quot;f-dropdown&quot; role=&quot;menu&quot; aria-hidden=&quot;false&quot; tabindex=&quot;-1&quot;&gt;&#10;  li*$NBSUB$&gt;a$EMMET$$TXT$&#10;&lt;/ul&gt;&#10;" description="button dropdown (JS) Foundation (using emet)" toReformat="true" toShortenFQNames="true">
-        <variable name="OPT1" expression="enum(&quot;&quot;, &quot;tiny &quot;, &quot;small &quot;, &quot;medium &quot;, &quot;large &quot;, &quot;expand &quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT2" expression="enum(&quot;&quot;, &quot;secondary &quot;, &quot;alert &quot;, &quot;success &quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT3" expression="enum(&quot;&quot;, &quot;radius &quot;, &quot;round &quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="BUTT" expression="&quot;Text_Button?&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="NBSUB" expression="enum(&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="EMMET" expression="" defaultValue="" alwaysStopAt="true" />
-        <variable name="TXT" expression="&quot;&lt;!-- Expand using Emmet! --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-
-    <!-- END BUTTONS GROUP -->
-
-    <!-- TYPOGRAPHY GROUP -->
-    <template name="txta" value="class=&quot;text-$OPT$&quot;" description="Text Alignment Foundation 6" toReformat="false" toShortenFQNames="true">
-        <variable name="OPT" expression="enum(&quot;left&quot;, &quot;right&quot;, &quot;center&quot;, &quot;justify&quot;)" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <!-- END TYPOGRAPHY GROUP -->
-
-    <!-- CALLOUTS&PROMPTS GROUP -->
-    <template name="zf-cprm" value="&lt;!-- Triggers the $NAME$ modals --&gt;&#10;&lt;a href=&quot;#&quot; data-reveal-id=&quot;$NAME$Modal&quot; class=&quot;$OPT$&quot;&gt;$DECOR$&amp;hellip;&lt;/a&gt;&#10;&lt;!-- Reveal $NAME$ Modals begin --&gt;&#10;&lt;div id=&quot;$NAME$Modal&quot; class=&quot;reveal-modal$OPTIONS$&quot; data-reveal&gt;&#10;    &lt;h2&gt;$TITLE$&lt;/h2&gt;&#10;        $EDIT$&#10;        &lt;a class=&quot;close-reveal-modal&quot;&gt;&amp;#215;&lt;/a&gt;&#10;&lt;/div&gt;&#10;&lt;!-- Reveal $NAME$ Modals end --&gt;&#10;$END$" description="reveal modal Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="NAME" expression="&quot;Modal-Name?&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT" expression="enum(&quot;button&quot;, &quot;button tiny&quot;, &quot;button small&quot;, &quot;button large&quot;, &quot;button expand&quot;, &quot;button round&quot;, &quot;button radius&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="DECOR" expression="&quot;Button Label?&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPTIONS" expression="enum(&quot;&quot;, &quot; tiny&quot;, &quot; small&quot;, &quot; medium&quot;, &quot; large&quot;, &quot; xlarge&quot;, &quot; full&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="TITLE" expression="&quot;Modal Title&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="EDIT" expression="&quot;&lt;!-- Content goes Here! --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-cpal" value="&lt;div id=&quot;mainAlert1&quot; data-alert class=&quot;alert-box$STYLE$$DEC$&quot; tabindex=&quot;0&quot; aria-live=&quot;assertive&quot; role=&quot;dialogalert&quot;&gt;&#10;  $CONTENT$&#10;  &lt;button href=&quot;#&quot; tabindex=&quot;0&quot; class=&quot;close&quot; aria-label=&quot;Close Alert&quot;&gt;&amp;times;&lt;/button&gt;&#10;&lt;/div&gt;&#10;$END$" description="alerts Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="STYLE" expression="enum(&quot;&quot;, &quot; succes&quot;, &quot; warning&quot;, &quot; info&quot;, &quot; alert&quot;, &quot; secondary&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="DEC" expression="enum(&quot;&quot;, &quot; radius&quot;, &quot; round&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="CONTENT" expression="&quot;&lt;!-- Your content goes here --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-cppn" value="&lt;div class=&quot;panel$OPT$&quot;&gt;&#10;        &lt;$TAG1$&gt;$TITLE$&lt;/$TAG1$&gt;&#10;        &lt;p&gt;$CONTENT$&lt;/p&gt;&#10;&lt;/div&gt;&#10;$END$" description="panels Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="OPT" expression="enum(&quot;&quot;, &quot; callout radius&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="TAG1" expression="&quot;Tag_?&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="TITLE" expression="&quot;&lt;!-- Title ?--&gt;" defaultValue="" alwaysStopAt="true" />
-        <variable name="CONTENT" expression="&quot;&lt;!-- Main content --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-cptt" value="&lt;span data-tooltip aria-haspopup=&quot;true&quot; class=&quot;has-tip$OPTION$$DEC$&quot; $DATAOPT$title=&quot;$TEXTE$&quot;&gt;$CLIPBOARD$&lt;/span&gt;&#10;$END$" description="tooltips (with clipboard content!) Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="CLIPBOARD" expression="clipboard()" defaultValue="" alwaysStopAt="false" />
-        <variable name="OPTION" expression="enum(&quot;&quot;, &quot; tip-top&quot;, &quot; tip-bottom&quot;, &quot; tip-left&quot;, &quot; tip-right&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="DEC" expression="enum(&quot;&quot;, &quot; radius&quot;, &quot; round&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="DATAOPT" expression="enum(&quot;&quot;, &quot;data-options=\&quot;show_on:large\&quot; &quot;, &quot;data-options=\&quot;show_on:medium &quot;, &quot;data-options=\&quot;show_on:small\&quot; &quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="TEXTE" expression="&quot;&lt;!-- Tooltips Text Here --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-cpjr" value="&lt;!-- At the bottom of your page but inside of the body tag --&gt;&#10;&lt;ol class=&quot;joyride-list&quot; data-joyride&gt;&#10;    &lt;li data-id=&quot;$STOPID$&quot; data-text=&quot;Next&quot; data-options=&quot;tip_location:top; prev_button:false&quot;&gt;&#10;        &lt;h3&gt;$TITLE$&lt;/h3&gt;&lt;!-- Joyride id=&quot;$STOPID$&quot; --&gt;&#10;        &lt;p&gt;$EDIT$&lt;/p&gt;&#10;    &lt;/li&gt;&#10;    $ADD$$BACK$&#10;&lt;/ol&gt;&#10;$END$" description="joyride Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="STOPID" expression="&quot;Stop_ID?&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="TITLE" expression="&quot;&lt;!-- Edit Title Joyride --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="EDIT" expression="&quot;&lt;!-- Edit Joyride Tex --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="ADD" expression="&quot;ADDjoyride-item&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="BACK" expression="" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="ADDjoyride-item" value="&lt;li data-id=&quot;$STOPID$&quot; data-button=&quot;Next&quot; data-prev-text=&quot;Prev&quot; data-options=&quot;tip_location:$POS$;tip_animation:$ANIM$&quot;&gt;&#10;&lt;h3&gt;$TITLE$&lt;/h3&gt;&lt;!-- Joyride id=&quot;$STOPID$&quot; --&gt;&#10;&lt;p&gt;$EDIT$&lt;/p&gt;&#10;&lt;/li&gt;&#10;$ADD$$END$" description="ADD joyride item Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="STOPID" expression="&quot;Stop_ID?&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="POS" expression="enum(&quot; top&quot;, &quot; bottom&quot;, &quot; left&quot;, &quot; right&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="ANIM" expression="enum(&quot; fade&quot;, &quot; pop&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="TITLE" expression="&quot;&lt;!-- Edit Title Joyride --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="EDIT" expression="&quot;&lt;!-- Edit Joyride Tex --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="ADD" expression="&quot;ADDjoyride-item&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="ADDjoyride-itemend" value="&lt;li data-button=&quot;$STOPID$&quot; data-prev-text=&quot;Prev&quot;&gt;&#10;    &lt;h4&gt;$TITLE$&lt;/h4&gt;&lt;!-- End Joyride id=&quot;$STOPID$&quot; --&gt;&#10;    &lt;p&gt;$EDIT$&lt;/p&gt;&#10;&lt;/li&gt;" description="ADD end  joyride item Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="STOPID" expression="&quot;End_ID?&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="TITLE" expression="&quot;&lt;!-- Edit Title Joyride --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="EDIT" expression="&quot;&lt;!-- Edit Joyride Tex --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <!-- END CALLOUTS&PROMPTS GROUP -->
-
-    <!-- CONTENT GROUP -->
-    <template name="zf-ctdl" value="&lt;a href=&quot;#&quot; data-options=&quot;$DIRECT$&quot; data-dropdown=&quot;$TYPE$&quot; class=&quot;button&quot;&gt;$TEXT$ &amp;raquo;&lt;/a&gt;&#10;&lt;ul id=&quot;$TYPE$&quot; class=&quot;$SIZE$ f-dropdown&quot; data-dropdown-content$AUTOCLOSE$&gt;&#10;    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$LINK1$&lt;/a&gt;&lt;/li&gt;&#10;    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$LINK2$&lt;/a&gt;&lt;/li&gt;&#10;    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;$LINK3$&lt;/a&gt;&lt;/li&gt;&#10;&lt;/ul&gt;&#10;$END$" description="dropdown link button Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="DIRECT" expression="enum(&quot;&quot;, &quot;align:top&quot;, &quot;align:left&quot;, &quot;align:right&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="TYPE" expression="enum(&quot;drop&quot;, &quot;autoclose&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="TEXT" expression="&quot;Button-Title&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="SIZE" expression="enum(&quot;tiny&quot;, &quot;small&quot;, &quot;medium&quot;, &quot;large&quot;, &quot;mega&quot;, &quot;content&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="AUTOCLOSE" expression="enum(&quot;&quot;, &quot; tabindex=\&quot;-1\&quot; aria-hidden=\&quot;true\&quot; aria-autoclose=\&quot;false\&quot; tabindex=\&quot;-1\&quot;&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="LINK1" expression="&quot;Link-1&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="LINK2" expression="&quot;Link-2&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="LINK3" expression="&quot;Link-3&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-ctpt" value="&lt;ul class=&quot;pricing-table&quot;&gt;&#10;  &lt;li class=&quot;title&quot;&gt;$TITLE$&lt;/li&gt;&#10;  &lt;li class=&quot;price&quot;&gt;$PRICE$&lt;/li&gt;&#10;  &lt;li class=&quot;description&quot;&gt;$DESC$&lt;/li&gt;&#10;  &lt;li class=&quot;bullet-item&quot;&gt;$ITEM1$&lt;/li&gt;&#10;  &lt;li class=&quot;bullet-item&quot;&gt;$ITEM2$&lt;/li&gt;&#10;  &lt;li class=&quot;bullet-item&quot;&gt;$ITEM3$&lt;/li&gt;&#10;  &lt;li class=&quot;cta-button&quot;&gt;&lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;$BUTTON$&lt;/a&gt;&lt;/li&gt;&#10;&lt;/ul&gt;&#10;$END$" description="pricing table Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="TITLE" expression="&quot;Title&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="PRICE" expression="&quot;Price&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="DESC" expression="&quot;An awesome description&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="ITEM1" expression="&quot;bullet-item-1&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="ITEM2" expression="&quot;bullet-item-2&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="ITEM3" expression="&quot;bullet-item-3&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="BUTTON" expression="&quot;Buy Now&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-ctpb" value="&lt;div class=&quot;progress$SIZE$$COLOR$$TYPE$&quot;&gt;&#10;    &lt;span class=&quot;meter&quot; style=&quot;width: [1 - 100]%&quot;&gt;&lt;/span&gt;&#10;&lt;/div&gt;&#10;$END$" description="progress bar Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="SIZE" expression="enum(&quot;&quot;, &quot; small&quot;, &quot; large&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="COLOR" expression="enum(&quot;&quot;, &quot; secondary&quot;,  &quot; alert&quot;, &quot; success&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="TYPE" expression="enum(&quot;&quot;, &quot; radius&quot;, &quot; round&quot;)" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-cttb" value="table&gt;(thead[summary=&quot;&quot;]&gt;tr&gt;th[width=&quot;&quot;]*$NBTH$)+tbody&gt;tr*$NBTR1$&gt;td*$NBTH$$END$&#10;&#10;&#10;" description="tables Foundation (using emmet)" toReformat="false" toShortenFQNames="true">
-        <variable name="NBTR1" expression="&quot;Nb-Lines-?&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="NBTH" expression="&quot;Nb-Columns-?&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-ctac" value="&lt;ul class=&quot;accordion&quot; data-accordion&gt;&#10;    &lt;li class=&quot;accordion-navigation&quot;&gt;&#10;        &lt;a href=&quot;#$PANEL$&quot;&gt;$ACCORDION$&lt;/a&gt;&#10;        &lt;div id=&quot;$PANEL$&quot; class=&quot;content active&quot;&gt;&#10;            $CONTENT$&#10;        &lt;/div&gt;&#10;    &lt;/li&gt;&#10;    $ADD$$END$&#10;&lt;/ul&gt;" description="accordion Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="PANEL" expression="" defaultValue="" alwaysStopAt="true" />
-        <variable name="ACCORDION" expression="&quot;Accordion Label&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="CONTENT" expression="&quot;Content_Active&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="ADD" expression="&quot;ADDaccordion-item&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="ADDaccordion-item" value="&lt;li class=&quot;accordion-navigation&quot;&gt;&#10;    &lt;a href=&quot;#$PANEL$&quot;&gt;$ACCORDION$&lt;/a&gt;&#10;    &lt;div id=&quot;$PANEL$&quot; class=&quot;content&quot;&gt;&#10;        $CONTENT$&#10;    &lt;/div&gt;&#10;&lt;/li&gt;&#10;$ADD$" description="ADD accordion Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="PANEL" expression="" defaultValue="" alwaysStopAt="true" />
-        <variable name="ACCORDION" expression="&quot;Accordion Label&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="CONTENT" expression="&quot;Content_Active&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="ADD" expression="&quot;ADDaccordion-item&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-ctbs" value="(ul.tabs[data-tab]&gt;li.tab-title*$TAB$&gt;a{$TITLE$ $})+div.tabs-content&gt;.content[id=&quot;panel$&quot;]*$TAB$&gt;p{Panel content $ Goes Here!}$END$" description="tabs Foundation (using emmet)" toReformat="false" toShortenFQNames="true">
-        <variable name="TAB" expression="&quot;Nb Tabs?&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="TITLE" expression="&quot;Titles Tabs?&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="zf-cteq" value="&lt;div class=&quot;row&quot; data-equalizer&gt;&#10;    &lt;div class=&quot;large-$LARGE$ columns $TYPE$&quot; data-equalizer-watch&gt;&#10;        $CONT$&#10;    &lt;/div&gt;&#10;    $ADD$$END$&#10;&lt;/div&gt;&#10;" description="equalizer Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="LARGE" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="TYPE" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="CONT" expression="&quot;&lt;!-- content goes here --&gt;&quot;" defaultValue="" alwaysStopAt="false" />
-        <variable name="ADD" expression="&quot;ADDequalizer-item&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="ADDequalizer-item" value="&lt;div class=&quot;large-$LARGE$ columns $TYPE$&quot; data-equalizer-watch&gt;&#10;    $CONT$&#10;&lt;/div&gt;&#10;$ADD$" description="ADD equalizer Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="LARGE" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="TYPE" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="CONT" expression="&quot;&lt;!-- content goes here --&gt;&quot;" defaultValue="" alwaysStopAt="false" />
-        <variable name="ADD" expression="&quot;ADDequalizer-item&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <!-- END CONTENT GROUP -->
 
     <!-- UTILITY GROUP -->
-    <template name="txtl" value="class=&quot;$OPT$&quot;&#10;" description="quick text align left Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="OPT" expression="enum(&quot;text-left&quot;, &quot;small-text-left&quot;, &quot;small-only-text-left&quot;, &quot;medium-text-left&quot;, &quot;medium-only-text-left&quot;, &quot;large-text-left&quot;, &quot;large-only-text-left&quot;, &quot;xlarge-text-left&quot;, &quot;xlarge-only-text-left&quot;, &quot;xxlarge-text-left&quot;)" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="txtc" value="class=&quot;$OPT$&quot;" description="quick text align center Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="OPT" expression="enum(&quot;text-center&quot;, &quot;small-text-center&quot;, &quot;small-only-text-center&quot;, &quot;medium-text-center&quot;, &quot;medium-only-text-center&quot;, &quot;large-text-center&quot;, &quot;large-only-text-center&quot;, &quot;xlarge-text-center&quot;, &quot;xlarge-only-text-center&quot;, &quot;xxlarge-text-center&quot;)" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="txtj" value="class=&quot;$OPT$&quot;" description="quick text align justify Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="OPT" expression="enum(&quot;text-justify&quot;, &quot;small-text-justify&quot;, &quot;small-only-text-justify&quot;, &quot;medium-text-justify&quot;, &quot;medium-only-text-justify&quot;, &quot;large-text-justify&quot;, &quot;large-only-text-justify&quot;, &quot;xlarge-text-justify&quot;, &quot;xlarge-only-text-justify&quot;, &quot;xxlarge-text-justify&quot;)" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="txtr" value="class=&quot;$OPT$&quot;" description="quck text align right Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="OPT" expression="enum(&quot;text-right&quot;, &quot;small-text-right&quot;, &quot;small-only-text-right&quot;, &quot;medium-text-right&quot;, &quot;medium-only-text-right&quot;, &quot;large-text-right&quot;, &quot;large-only-text-right&quot;, &quot;xlarge-text-right&quot;, &quot;xlarge-only-text-right&quot;, &quot;xxlarge-text-right&quot;)" defaultValue="" alwaysStopAt="true" />
+    <template name="imgpl" value="&lt;img src=&quot;http://www.lorempixel.com/$WIDTH$/$HEIGHT$/$CAT$&quot; alt=&quot;$CAT$&quot; /&gt;$END$" description="Image Placeholder LOREMPIXEL" toReformat="false" toShortenFQNames="true">
+        <variable name="WIDTH" expression="&quot;Width-?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="HEIGHT" expression="&quot;Eight-?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="CAT" expression="enum(&quot;abstract&quot;, &quot;animals&quot;, &quot;business&quot;, &quot;cats&quot;, &quot;city&quot;, &quot;food&quot;, &quot;nightlife&quot;, &quot;fashion&quot;, &quot;people&quot;, &quot;nature&quot;, &quot;sports&quot;, &quot;technics&quot;, &quot;transport&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>
@@ -1314,18 +827,6 @@
     <template name="imgpk" value="&lt;img src='http://placekitten.com/g/$WIDTH$/$HEIGHT$' /&gt;$END$&#10;" description="image placeholder  PLACEKITTEN" toReformat="false" toShortenFQNames="true">
         <variable name="WIDTH" expression="&quot;width-?&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="HEIGHT" expression="&quot;height-?&quot;" defaultValue="" alwaysStopAt="true" />
-        <context>
-            <option name="HTML_TEXT" value="true"/>
-            <option name="HTML" value="true"/>
-            <option name="PHP" value="true"/>
-            <option name="GSP" value="true"/>
-            <option name="JSP" value="true"/>
-        </context>
-    </template>
-    <template name="imgpl" value="&lt;img src=&quot;http://www.lorempixel.com/$WIDTH$/$HEIGHT$/$CAT$&quot; alt=&quot;$CAT$&quot; /&gt;&#10;$END$" description="image placeholder LOREMPIXEL" toReformat="false" toShortenFQNames="true">
-        <variable name="WIDTH" expression="&quot;Width-?&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="HEIGHT" expression="&quot;Eight-?&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="CAT" expression="enum(&quot;abstract&quot;, &quot;animals&quot;, &quot;business&quot;, &quot;cats&quot;, &quot;city&quot;, &quot;food&quot;, &quot;nightlife&quot;, &quot;fashion&quot;, &quot;people&quot;, &quot;nature&quot;, &quot;sports&quot;, &quot;technics&quot;, &quot;transport&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>

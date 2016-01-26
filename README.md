@@ -141,6 +141,9 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | ADD Icon                         | ADDicon                        |
 | Flex Video                       | zf-mdfv                        |
 | Label                            | zf-mdla                        |
+| Orbit Slider         `use emmet` | zf-mdos                    `JS`|
+| Sup Orbit Slider     `use emmet` | sup-orbit-slider           `JS`|
+| Tooltips     `use emmet`         | zf-mdtp                    `JS`|
 
 
 ### PLUGIN
@@ -154,14 +157,11 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
 | Utility                          | Trigger                        |
 |----------------------------------| :-----------------------------:|
-| text align left & options        |  txtl                          |
-| text align center & options      |  txtc                          |
-| text align justify & options     |  txtj                          |
-| text align right & options       |  txtr                          |
+| Image Placeholder LOREMPIXEL     |  imgpl                         |
+| Gallery Placeholder LOREMPIXEL [Emmet plugin](http://bit.ly/1DzHjaT)|  imgpg  | 
 | image placeholder  PLACEHOLD.IT  |  imgpi                         |
 | image placeholder PLACEKITTEN    |  imgpk                         |
-| image placeholder LOREMPIXEL     |  imgpl                         |
-| gallery placeholder LOREMPIXEL [Emmet plugin](http://bit.ly/1DzHjaT)|  imgpg  |                         |
+                        |
 
 
 ### TEMPLATE

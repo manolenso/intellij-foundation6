@@ -30,7 +30,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 ## contents
 
  `HTML`
-- [CDN](#cdn)[jsdelivr](https://www.jsdelivr.com/?query=foundation)
+- [CDN](#cdn)from[jsdelivr](https://www.jsdelivr.com/?query=foundation)
 - [LAYOUT](#layout)
 - [TYPOGRAPHY](#typography)
 - [CONTROLS](#controls)
@@ -140,6 +140,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Badge                            | zf-mdba                        |
 | ADD Icon                         | ADDicon                        |
 | Flex Video                       | zf-mdfv                        |
+| Label                            | zf-mdla                        |
 
 
 ### PLUGIN

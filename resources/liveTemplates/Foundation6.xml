@@ -742,6 +742,19 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
+    <template name="zf-mdla" value="&lt;span class=&quot;$COLOR$label&quot;&gt;$LAST$$EDIT$&lt;span class=&quot;show-for-sr&quot;&gt;$SCR$&lt;/span&gt;&lt;/span&gt;&#10;" description="Label Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="COLOR" expression="enum(&quot;&quot;, &quot;info &quot;, &quot;secondary &quot;, &quot;success &quot;, &quot;alert &quot;, &quot;warning &quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="LAST" expression="enum(&quot;&quot;, &quot;ADDicon&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="SCR" expression="&quot;Screen Reader?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="EDIT" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
     <!-- END MEDIA GROUP -->
 
     <!-- FORM GROUP -->

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Foundation6">
     <!-- CDN GROUP -->
-    <template name="zf-cdn-css" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/foundation/6.1.1/$VALUE$.css&quot;/&gt;&#10;" description="CDN css Foundation 6.1.1" toReformat="true" toShortenFQNames="true">
+    <template name="zf-cdn-css" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/foundation/6.1.2/$VALUE$.css&quot;/&gt;&#10;" description="CDN css Foundation 6.1.2" toReformat="true" toShortenFQNames="true">
         <variable name="VALUE" expression="enum(&quot;foundation.min&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
@@ -11,7 +11,25 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cdn-lib" value="&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.1.1/js/foundation.$VALUE$.js&quot;&gt;&lt;/script&gt;&#10;" description="CDN js lib Foundation 6.1.1" toReformat="true" toShortenFQNames="true">
+    <template name="zf-cdn-js-motion-ui" value="&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.js&quot;&gt;&lt;/script&gt;" description="CDN js motion ui Foundation" toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="zf-cdn-css-motion-ui" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css&quot; /&gt;" description="CDN css motion ui Foundation" toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="zf-cdn-lib" value="&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.1.2/js/foundation.$VALUE$.js&quot;&gt;&lt;/script&gt;&#10;" description="CDN js lib Foundation 6.1.2" toReformat="true" toShortenFQNames="true">
         <variable name="VALUE" expression="enum(&quot;abide&quot;, &quot;accordion&quot;, &quot;accordionMenu&quot;, &quot;core&quot;, &quot;drilldown&quot;, &quot;dropdown&quot;, &quot;dropdownMenu&quot;, &quot;equalizer&quot;, &quot;interchange&quot;, &quot;magellan&quot;, &quot;offcanvas&quot;, &quot;orbit&quot;, &quot;responsiveMenu&quot;, &quot;responsiveToggle&quot;, &quot;reveal&quot;, &quot;slider&quot;, &quot;sticky&quot;, &quot;tabs&quot;, &quot;toggler&quot;, &quot;tooltip&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
@@ -21,7 +39,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cdn-lib-util" value="&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.1.1/js/foundation.$VALUE$.js&quot;&gt;&lt;/script&gt;&#10;" description="CDN js.lib.util Foundation 6.1.1" toReformat="true" toShortenFQNames="true">
+    <template name="zf-cdn-lib-util" value="&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.1.2/js/foundation.$VALUE$.js&quot;&gt;&lt;/script&gt;&#10;" description="CDN js.lib.util Foundation 6.1.2" toReformat="true" toShortenFQNames="true">
         <variable name="VALUE" expression="enum(&quot;util.box&quot;, &quot;util.keyboard&quot;, &quot;util.mediaQuery&quot;, &quot;util.motion&quot;, &quot;util.nest&quot;, &quot;util.timerAndImageLoader&quot;, &quot;util.touch&quot;, &quot;util.triggers&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
@@ -41,7 +59,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cdn-js" value="&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.1.1/foundation.$VALUE$.js&quot;&gt;&lt;/script&gt;&#10;" description="CDN js Foundation 6.1.1" toReformat="true" toShortenFQNames="true">
+    <template name="zf-cdn-js" value="&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.1.2/foundation.$VALUE$.js&quot;&gt;&lt;/script&gt;&#10;" description="CDN js Foundation 6.1.2" toReformat="true" toShortenFQNames="true">
         <variable name="VALUE" expression="enum(&quot;min&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
@@ -79,7 +97,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cdn-initialize" value="&lt;script src=&quot;https://cdn.jsdelivr.net/jquery/3.0.0-beta1/$VALUE$&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.1.1/foundation.min.js&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.1.1/js/foundation.$VALUE1$.js&quot;&gt;&lt;/script&gt;&#10;&lt;script&gt;$(document).foundation();&lt;/script&gt;$END$" description="CDN Initialize Foundation 6" toReformat="true" toShortenFQNames="true">
+    <template name="zf-cdn-initialize" value="&lt;script src=&quot;https://cdn.jsdelivr.net/jquery/3.0.0-beta1/$VALUE$&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.js&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.1.2/js/foundation.$VALUE1$.js&quot;&gt;&lt;/script&gt;&#10;&lt;script&gt;$(document).foundation();&lt;/script&gt;$END$" description="CDN Initialize Foundation 6" toReformat="true" toShortenFQNames="true">
         <variable name="VALUE" expression="enum(&quot;jquery.min.js&quot;, &quot;jquery.js&quot;, &quot;jquery.min.map&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="VALUE1" expression="enum(&quot;abide&quot;, &quot;accordion&quot;, &quot;accordionMenu&quot;, &quot;core&quot;, &quot;drilldown&quot;, &quot;dropdown&quot;, &quot;dropdownMenu&quot;, &quot;equalizer&quot;, &quot;interchange&quot;, &quot;magellan&quot;, &quot;offcanvas&quot;, &quot;orbit&quot;, &quot;responsiveMenu&quot;, &quot;responsiveToggle&quot;, &quot;reveal&quot;, &quot;slider&quot;, &quot;sticky&quot;, &quot;tabs&quot;, &quot;toggler&quot;, &quot;tooltip&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>

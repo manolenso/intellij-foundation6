@@ -47,7 +47,9 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Component:group zf-cdn `Ctrl + Space`| Snippet code               |
 |--------------------------------- | :-----------------------------:|
 | CDN  CSS.MIN               |   zf-cdn-css                         |
+| CDN  CSS Motion-ui         |   zf-cdn-css-motion-ui               |
 | CDN  JS                    |   zf-cdn-js                         |
+| CDN  JS Motion-ui          |   zf-cdn-js-motion-ui              |
 | CDN  LIB                   |   zf-cdn-lib                       |
 | CDN  ICONS                 |   zf-cdn-icons                     |
 | CDN  JQUERY   3.0.0-alpha1 |   zf-cdn-jquery                    |

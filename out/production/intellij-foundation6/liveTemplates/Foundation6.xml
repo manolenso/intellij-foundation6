@@ -364,6 +364,82 @@
 
     <!-- END CONTROLS GROUP -->
 
+    <!-- LIBRARIES GROUP-->
+
+    <template name="zf-lbmu" value="&lt;button type=&quot;button&quot; class=&quot;button$OPT1$$COL$&quot; data-toggle=&quot;$ID$&quot; aria-controls=&quot;$ID$&quot;&gt;$TITLE$&lt;/button&gt;&#10;&lt;div data-toggler id=&quot;$ID$&quot; data-animate=&quot;$IN$$OUT$&quot; class=&quot;callout$OPT2$&quot;&gt;&#10;  &lt;!-- Animated Content --&gt;$LAST$&#10;&lt;/div&gt;" description="Motion-ui Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="OPT1" expression="enum(&quot;&quot;, &quot; tiny&quot;, &quot; small&quot;, &quot; large&quot;, &quot; expanded&quot;, &quot; small expanded&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="COL" expression="enum(&quot;&quot;, &quot; success &quot;, &quot; secondary &quot;, &quot; alert &quot;, &quot; warning &quot;, &quot; info &quot;, &quot; disabled &quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="ID" expression="&quot;id?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="TITLE" expression="&quot;Title_Button?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="IN" expression="enum(&quot;slide-in-down&quot;, &quot;slide-in-right&quot;, &quot;slide-in-up&quot;, &quot;slide-in-left&quot;, &quot;fade-in&quot;, &quot;hinge-in-from-top&quot;, &quot;hinge-in-from-right&quot;, &quot;hinge-in-from-bottom&quot;, &quot;hinge-in-from-left&quot;, &quot;hinge-in-from-middle-x&quot;, &quot;hinge-in-from-middle-y&quot;, &quot;scale-in-up&quot;, &quot;scale-in-down&quot;, &quot;spin-in&quot;, &quot;spin-in-ccw&quot;) " defaultValue="" alwaysStopAt="true" />
+        <variable name="OUT" expression="enum(&quot; slide-out-down&quot;, &quot; slide-out-right&quot;, &quot; slide-out-up&quot;, &quot; slide-out-left&quot;, &quot; fade-out&quot;, &quot; hinge-out-from-top&quot;, &quot; hinge-out-from-right&quot;, &quot; hinge-out-from-bottom&quot;, &quot; hinge-out-from-left&quot;, &quot; hinge-out-from-middle-x&quot;, &quot; hinge-out-from-middle-y&quot;, &quot; scale-out-up&quot;, &quot; scale-out-down&quot;, &quot; spin-out&quot;, &quot; spin-out-ccw&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="OPT2" expression="enum(&quot;&quot;, &quot; secondary&quot;, &quot; primary&quot;, &quot; success&quot;, &quot; warning&quot;, &quot; alert&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="---::" value="---&#10;$ONE$: $ONE1$&#10;$TWO$: $TWO1$&#10;---&#10;$END$" description="Front Matter Block Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="ONE" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="ONE1" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="TWO" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="TWO1" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="---:" value="---&#10;$ONE$: $ONE1$&#10;---&#10;$END$" description="Front Matter Block Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="ONE" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="ONE1" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="mo-in" value="$IN$" description="IN Motion-ui" toReformat="false" toShortenFQNames="true">
+        <variable name="IN" expression="enum(&quot;slide-in-down&quot;, &quot;slide-in-right&quot;, &quot;slide-in-up&quot;, &quot;slide-in-left&quot;, &quot;fade-in&quot;, &quot;hinge-in-from-top&quot;, &quot;hinge-in-from-right&quot;, &quot;hinge-in-from-bottom&quot;, &quot;hinge-in-from-left&quot;, &quot;hinge-in-from-middle-x&quot;, &quot;hinge-in-from-middle-y&quot;, &quot;scale-in-up&quot;, &quot;scale-in-down&quot;, &quot;spin-in&quot;, &quot;spin-in-ccw&quot;) " defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="mo-out" value="$OUT$" description="OUT Motion-ui" toReformat="false" toShortenFQNames="true">
+        <variable name="OUT" expression="enum(&quot;slide-out-down&quot;, &quot;slide-out-right&quot;, &quot;slide-out-up&quot;, &quot;slide-out-left&quot;, &quot;fade-out&quot;, &quot;hinge-out-from-top&quot;, &quot;hinge-out-from-right&quot;, &quot;hinge-out-from-bottom&quot;, &quot;hinge-out-from-left&quot;, &quot;hinge-out-from-middle-x&quot;, &quot;hinge-out-from-middle-y&quot;, &quot;scale-out-up&quot;, &quot;scale-out-down&quot;, &quot;spin-out&quot;, &quot;spin-out-ccw&quot;)" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="mo-in-out" value="$IN$$OUT$" description="IN OUT Motion UI" toReformat="false" toShortenFQNames="true">
+        <variable name="IN" expression="enum(&quot;slide-in-down&quot;, &quot;slide-in-right&quot;, &quot;slide-in-up&quot;, &quot;slide-in-left&quot;, &quot;fade-in&quot;, &quot;hinge-in-from-top&quot;, &quot;hinge-in-from-right&quot;, &quot;hinge-in-from-bottom&quot;, &quot;hinge-in-from-left&quot;, &quot;hinge-in-from-middle-x&quot;, &quot;hinge-in-from-middle-y&quot;, &quot;scale-in-up&quot;, &quot;scale-in-down&quot;, &quot;spin-in&quot;, &quot;spin-in-ccw&quot;) " defaultValue="" alwaysStopAt="true" />
+        <variable name="OUT" expression="enum(&quot; slide-out-down&quot;, &quot; slide-out-right&quot;, &quot; slide-out-up&quot;, &quot; slide-out-left&quot;, &quot; fade-out&quot;, &quot; hinge-out-from-top&quot;, &quot; hinge-out-from-right&quot;, &quot; hinge-out-from-bottom&quot;, &quot; hinge-out-from-left&quot;, &quot; hinge-out-from-middle-x&quot;, &quot; hinge-out-from-middle-y&quot;, &quot; scale-out-up&quot;, &quot; scale-out-down&quot;, &quot; spin-out&quot;, &quot; spin-out-ccw&quot;)" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <!-- END-LIBRARIES-GROUP -->
+
     <!-- NAVIGATION GROUP -->
 
     <template name="zf-nvbm" value="&lt;ul class=&quot;menu$OPTIONS$&quot;&gt;&#10;  li*$ITEM$&gt;a[#]$END$&#10;&lt;/ul&gt;&#10;" description="Basics Menu Foundation 6" toReformat="true" toShortenFQNames="true">
@@ -811,6 +887,37 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
+    <template name="sup-orbit-slider-caption" value="li.orbit-slide&gt;div&gt;img&gt;figcaption.orbit-caption^button[data-slide=$ORDR$]&gt;span.show-for-sr{$SRC$}$EMT$&#10;$SUPORB$$LAST$&#10;" description="Sup Orbit Slider Caption Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="ORDR" expression="enum(&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot;10&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="SRC" expression="&quot;Screen Reader Text?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="EMT" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="SUPORB" expression="&quot;sup-orbit-slider-caption&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>>
+    </template>
+    <template name="zf-mdosm" value="&lt;div class=&quot;orbit&quot; role=&quot;region&quot; aria-label=&quot;$ARLB$&quot; $DTOR$&#10;  data-options=&quot;animInFromLeft:$INLEFT$; animInFromRight:$INRIGHT$; animOutToLeft:$OUTLEFT$; animOutToRight:$OUTRIGHT$;&quot;&gt;&#10;  &lt;ul class=&quot;orbit-container&quot;&gt;&#10;    &lt;button class=&quot;orbit-previous&quot; aria-label=&quot;previous&quot;&gt;&lt;span class=&quot;show-for-sr&quot;&gt;Previous Slide&lt;/span&gt;&amp;#9664;&lt;/button&gt;&#10;    &lt;button class=&quot;orbit-next&quot; aria-label=&quot;next&quot;&gt;&lt;span class=&quot;show-for-sr&quot;&gt;Next Slide&lt;/span&gt;&amp;#9654;&lt;/button&gt;&#10;    &lt;li class=&quot;is-active orbit-slide&quot;&gt;&#10;      &lt;!--div&gt;img&gt;figcaption.orbit-caption--&gt;&#10;    &lt;/li&gt;&#10;    $ADD$$LAST$&#10;  &lt;/ul&gt;&#10;  &lt;nav class=&quot;orbit-bullets&quot;&gt;&#10;   &lt;button class=&quot;is-active&quot; data-slide=&quot;0&quot;&gt;&lt;span class=&quot;show-for-sr&quot;&gt;First slide details.&lt;/span&gt;&lt;span class=&quot;show-for-sr&quot;&gt;Current Slide&lt;/span&gt;&lt;/button&gt;&#10;   &#10; &lt;/nav&gt;&#10;&lt;/div&gt;&#10;" description="Orbit Slider Motion UI Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="ARLB" expression="&quot;Aria Label?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="DTOR" expression="&quot;data-orbit&quot;" defaultValue="" alwaysStopAt="false" />
+        <variable name="INLEFT" expression="enum(&quot;slide-in-down&quot;, &quot;slide-in-right&quot;, &quot;slide-in-up&quot;, &quot;slide-in-left&quot;, &quot;fade-in&quot;, &quot;hinge-in-from-top&quot;, &quot;hinge-in-from-right&quot;, &quot;hinge-in-from-bottom&quot;, &quot;hinge-in-from-left&quot;, &quot;hinge-in-from-middle-x&quot;, &quot;hinge-in-from-middle-y&quot;, &quot;scale-in-up&quot;, &quot;scale-in-down&quot;, &quot;spin-in&quot;, &quot;spin-in-ccw&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="INRIGHT" expression="enum(&quot;slide-in-down&quot;, &quot;slide-in-right&quot;, &quot;slide-in-up&quot;, &quot;slide-in-left&quot;, &quot;fade-in&quot;, &quot;hinge-in-from-top&quot;, &quot;hinge-in-from-right&quot;, &quot;hinge-in-from-bottom&quot;, &quot;hinge-in-from-left&quot;, &quot;hinge-in-from-middle-x&quot;, &quot;hinge-in-from-middle-y&quot;, &quot;scale-in-up&quot;, &quot;scale-in-down&quot;, &quot;spin-in&quot;, &quot;spin-in-ccw&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="OUTLEFT" expression="enum(&quot;slide-out-down&quot;, &quot;slide-out-right&quot;, &quot;slide-out-up&quot;, &quot;slide-out-left&quot;, &quot;fade-out&quot;, &quot;hinge-out-from-top&quot;, &quot;hinge-out-from-right&quot;, &quot;hinge-out-from-bottom&quot;, &quot;hinge-out-from-left&quot;, &quot;hinge-out-from-middle-x&quot;, &quot;hinge-out-from-middle-y&quot;, &quot;scale-out-up&quot;, &quot;scale-out-down&quot;, &quot;spin-out&quot;, &quot;spin-out-ccw&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="OUTRIGHT" expression="enum(&quot;slide-out-down&quot;, &quot;slide-out-right&quot;, &quot;slide-out-up&quot;, &quot;slide-out-left&quot;, &quot;fade-out&quot;, &quot;hinge-out-from-top&quot;, &quot;hinge-out-from-right&quot;, &quot;hinge-out-from-bottom&quot;, &quot;hinge-out-from-left&quot;, &quot;hinge-out-from-middle-x&quot;, &quot;hinge-out-from-middle-y&quot;, &quot;scale-out-up&quot;, &quot;scale-out-down&quot;, &quot;spin-out&quot;, &quot;spin-out-ccw&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="ADD" expression="&quot;sup-orbit-slider-caption&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
     <template name="zf-mdtp" value="&lt;span data-tooltip aria-haspopup=&quot;true&quot; class=&quot;has-tip$OPT$&quot; data-disable-hover='false' tabindex=$NB$ title=&quot;$TT$&quot;&gt;$CUT$&lt;/span&gt;&#10;" description="Tooltips Foundation 6" toReformat="false" toShortenFQNames="true">
         <variable name="OPT" expression="enum(&quot;&quot;, &quot; top&quot;, &quot; right&quot;, &quot; left&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="NB" expression="enum(&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot;10&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -825,8 +932,6 @@
         </context>
     </template>
     <!-- END MEDIA GROUP -->
-
-
 
 
     <!-- UTILITY GROUP -->

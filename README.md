@@ -14,6 +14,9 @@ caution! many of  components come from previous 5 version are still present
 these should being removed during plugin building
 
 
+For use this plugin you should install before [Emmet Everywhere plugin](http://bit.ly/1DzHjaT)
+
+
 An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin works for the following JetBrains products:
 - IntelliJ IDEA 14 , PhpStorm 8, RubyMine 7
 - WebStorm 9,10,11
@@ -95,6 +98,14 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
 | Component:group zf-lb `Ctrl + Space` | Snippet code               |
 |----------------------------------| :-----------------------------:|
+| Motion UI                        |  zf-lbmu                       |
+
+| Libraries Utility                |  triggers                       |
+|----------------------------------| :-----------------------------:|
+| Motion UI In & out               | mo-in-out                      |
+| Motion UI In                     | mo-in                          |
+| Motion UI Out                    | mo-out                         |
+| Front Matter Block               | ---: and ---::                 |
 
 
 ### NAVIGATION
@@ -129,7 +140,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Media Object                     | zf-ctmo                        |
 | Supp Media Object Section        | sup-media-object-section       |
 | Off-canvas                       | zf-ctof                    `JS`|
-| Reveal Modal                     | zf-ctmd                    `JS`|
+| Reveal Modal                     | zf-ctmd  `Motion UI`       `JS`|
 | Tables  `use emmet`              | zf-cttb                        |
 | Tabs Panel  `use emmet`          | zf-cttp                        |
 | Tabs Vertical Panel `use emmet`  | zf-cttv                        |
@@ -143,8 +154,10 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | ADD Icon                         | ADDicon                        |
 | Flex Video                       | zf-mdfv                        |
 | Label                            | zf-mdla                        |
-| Orbit Slider         `use emmet` | zf-mdos                    `JS`|
+| Orbit Slider         `use emmet` | zf-mdos         `JS`           |
 | Sup Orbit Slider     `use emmet` | sup-orbit-slider           `JS`|
+| Orbit Slider Motion UI `use emmet`| zf-mdosm  `Motion UI`     `JS`|
+| Sup Orbit Slider Motion `use emmet`| sup-orbit-slider-caption  `JS`|
 | Tooltips     `use emmet`         | zf-mdtp                    `JS`|
 
 
@@ -160,9 +173,9 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Utility                          | Trigger                        |
 |----------------------------------| :-----------------------------:|
 | Image Placeholder LOREMPIXEL     |  imgpl                         |
-| Gallery Placeholder LOREMPIXEL [Emmet plugin](http://bit.ly/1DzHjaT)|  imgpg  | 
-| image placeholder  PLACEHOLD.IT  |  imgpi                         |
-| image placeholder PLACEKITTEN    |  imgpk                         |
+| Gallery Placeholder LOREMPIXEL   |  imgpg                         | 
+| Image Placeholder  PLACEHOLD.IT  |  imgpi                         |
+| Image Placeholder PLACEKITTEN    |  imgpk                         |
                         |
 
 
@@ -170,6 +183,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
 | Component                        | Snippet code                   |
 |----------------------------------| :-----------------------------:|
+
 
 
 
@@ -197,9 +211,9 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | add equalizer                    |  ADDequalizer-item             |
 | add joyride                      |  ADDjoyride-item               |
 | add joyride End                  |  ADDjoyride-itemend            |
-| add small column                 |  ADDsmall-column-item             |
-| add large column                 |  ADDlarge-column-item             |
-| add medium column                |  ADDmedium-column-item               |
+| add small column                 |  ADDsmall-column-item          |
+| add large column                 |  ADDlarge-column-item          |
+| add medium column                |  ADDmedium-column-item         |
 | add small medium large column    |  ADDsmall-medium-large-column-item  |
 | add Vcard                        |  ADDvcard-item                 |
 

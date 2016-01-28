@@ -933,6 +933,21 @@
     </template>
     <!-- END MEDIA GROUP -->
 
+    <!-- PLUGINS GROUP -->
+
+    <template name="zf-plab" value="&lt;form data-abide novalidate&gt;&#10;  &lt;div data-abide-error class=&quot;alert callout&quot; style=&quot;display: none;&quot;&gt;&#10;    &lt;p&gt;&lt;i class=&quot;fi-alert&quot;&gt;&lt;/i&gt; There are some errors in your form.&lt;/p&gt;&#10;  &lt;/div&gt;&#10;  $LAST$&#10;&lt;/form&gt;" description="Abide Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="LAST" expression="&quot;&lt;!-- Content --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+
+    <!-- END PLUGINS GROUP -->
+
 
     <!-- UTILITY GROUP -->
     <template name="imgpl" value="&lt;img src=&quot;http://www.lorempixel.com/$WIDTH$/$HEIGHT$/$CAT$&quot; alt=&quot;$CAT$&quot; /&gt;$END$" description="Image Placeholder LOREMPIXEL" toReformat="false" toShortenFQNames="true">

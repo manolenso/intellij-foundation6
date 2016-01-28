@@ -33,7 +33,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 ## contents
 
  `HTML`
-- [CDN](#cdn)from[jsdelivr](https://www.jsdelivr.com/?query=foundation)
+- [CDN](#cdn) from [jsdelivr](https://www.jsdelivr.com/?query=foundation)
 - [LAYOUT](#layout)
 - [TYPOGRAPHY](#typography)
 - [CONTROLS](#controls)
@@ -165,6 +165,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
 | Component:group zf-pl `Ctrl + Space` | Snippet code               |
 |----------------------------------| :-----------------------------:|
+| Abide                            | zf-plab                        |
 
 
 
@@ -176,7 +177,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Gallery Placeholder LOREMPIXEL   |  imgpg                         | 
 | Image Placeholder  PLACEHOLD.IT  |  imgpi                         |
 | Image Placeholder PLACEKITTEN    |  imgpk                         |
-                        |
+                        
 
 
 ### TEMPLATE

@@ -65,10 +65,10 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
 | Component:group zf-lt `Ctrl + Space`| Snippet code                |
 |----------------------------------| :-----------------------------:|
-| row basics                       | zf-ltrow                       |
+| row basics                       | zf-ltro                        |
 | row Source Ordering              | zf-ltso                        |
 | row Collapse/Uncollapse          | zf-ltcu                        |
-| row Block Grids `use emmet`      | zf-ltbg                        |
+| row Block Grids    `use emmet`   | zf-ltbg                        |
 | Quick additionals:               |                                |
 | small columns                    | sc                             |
 | medium columns                   | mc                             |
@@ -102,10 +102,10 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
 | Libraries Utility                |  triggers                       |
 |----------------------------------| :-----------------------------:|
-| Motion UI In & out               | mo-in-out                      |
+| Motion UI In & Out               | mo-in-out                      |
 | Motion UI In                     | mo-in                          |
 | Motion UI Out                    | mo-out                         |
-| Front Matter Block               | ---: and ---::                 |
+| Front Matter Block               | ---: `and` ---::                |
 
 
 ### NAVIGATION
@@ -190,33 +190,11 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
 | Inception in (live template)     | Trigger                        |
 |----------------------------------| :-----------------------------:|
-| add icon bar                     |  ADDicon-item                  |
-| add icon bar accessibility       |  ADDicon-accessibility         |
-| add icon bar accessibility text  |  ADDicon-accessibility-text    |
-| add magellan item                |  ADDmagellan-item              |
-| add page navigation              |  ADDpage                       |
-| add orbit slider item            |  ADDslider-item                |
-| add lightbox item                |  ADDlightbox-item              |
-| add thumbnail item               |  ADDthumbnail-item             |
-| add email field                  |  ADDemail-field                |
-| add name field                   |  ADDname-field                 |
-| add password field   (equal to)  |  ADDpassword-field             |
-| add submit button                |  ADDsubmit-button              |
-| add fieldset                     |  ADDfieldset                   |
-| add input                        |  ADDinput                      |
-| add input postfix                |  ADDinput-postfix              |
-| add right input inline           |  ADDright-input-label          |
-| add select box                   |  ADDselect-box                 |
-| add textarea                     |  ADDtextarea                   |
-| add accordion                    |  ADDaccordion-item             |
-| add equalizer                    |  ADDequalizer-item             |
-| add joyride                      |  ADDjoyride-item               |
-| add joyride End                  |  ADDjoyride-itemend            |
 | add small column                 |  ADDsmall-column-item          |
 | add large column                 |  ADDlarge-column-item          |
 | add medium column                |  ADDmedium-column-item         |
 | add small medium large column    |  ADDsmall-medium-large-column-item  |
-| add Vcard                        |  ADDvcard-item                 |
+
 
 
 Foundation 6 - Intellij Plugin is open-sourced software licenced under the [MIT:Licence](http://opensource.org/licenses/MIT)

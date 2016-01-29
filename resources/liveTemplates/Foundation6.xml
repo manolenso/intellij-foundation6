@@ -160,7 +160,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="lc" value="&lt;div class=&quot;large-$OPT1$ columns&quot;&gt;&#10;    $OPT2$&#10;&lt;/div&gt;&#10;$END$" description="add large column Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <template name="lc" value="&lt;div class=&quot;large-$OPT1$ columns&quot;&gt;&#10;    $OPT2$&#10;&lt;/div&gt;&#10;$END$" description="add large column Foundation 6" toReformat="false" toShortenFQNames="true">
         <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="&quot;&lt;!-- Content goes Here --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
@@ -171,7 +171,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="mc" value="&lt;div class=&quot;medium-$OPT1$ columns&quot;&gt;&#10;    $OPT2$&#10;&lt;/div&gt;&#10;$END$" description="add medium column Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <template name="mc" value="&lt;div class=&quot;medium-$OPT1$ columns&quot;&gt;&#10;    $OPT2$&#10;&lt;/div&gt;&#10;$END$" description="add medium column Foundation 6" toReformat="false" toShortenFQNames="true">
         <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="&quot;&lt;!-- Content goes Here --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
@@ -182,7 +182,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="sc" value="&lt;div class=&quot;small-$OPT1$ columns&quot;&gt;&#10;    $OPT2$&#10;&lt;/div&gt;&#10;$END$" description="add small column Foundation 6" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <template name="sc" value="&lt;div class=&quot;small-$OPT1$ columns&quot;&gt;&#10;    $OPT2$&#10;&lt;/div&gt;&#10;$END$" description="add small column Foundation 6" toReformat="false" toShortenFQNames="true">
         <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="&quot;&lt;!-- Content goes Here --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
         <context>

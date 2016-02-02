@@ -906,6 +906,155 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
+    <template name="abd-number" value="&lt;div class=&quot;row&quot;&gt;&#10;  &lt;div class=&quot;$SIZ$-$NB$ columns&quot;&gt;&#10;    &lt;label&gt;$LBL$&#10;      &lt;input type=&quot;text&quot; placeholder=&quot;$PLHR$&quot; aria-describedby=&quot;$ARIA$&quot; required pattern=&quot;number&quot;&gt;&#10;      &lt;span class=&quot;form-error&quot;&gt;$ERTXT$&lt;/span&gt;&#10;      &lt;p class=&quot;help-text&quot; id=&quot;$ARIA$&quot;&gt;$TXTHELP$&lt;/p&gt;&#10;    &lt;/label&gt;     &#10;  &lt;/div&gt;&#10;&lt;/div&gt;" description="Number Abide Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="NB" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="LBL" expression="&quot;Label?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="PLHR" expression="&quot;Placeholder?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="ARIA" expression="&quot;aria-describedby?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="ERTXT" expression="&quot;Error Text?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="TXTHELP" expression="&quot;Help Text?&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="abd-password-match" value="&lt;div class=&quot;$SIZ$-$NB$ columns&quot;&gt;&#10;  &lt;label&gt;Password Required&#10;    &lt;input type=&quot;password&quot; id=&quot;password&quot; placeholder=&quot;$PLHR$&quot; aria-describedby=&quot;$ARIA$&quot; required &gt;&#10;    &lt;span class=&quot;form-error&quot;&gt;I'm required!&lt;/span&gt;&#10;  &lt;/label&gt;&#10;  &lt;p class=&quot;help-text&quot; id=&quot;$ARIA$&quot;&gt;Enter a password please.&lt;/p&gt;&#10;&lt;/div&gt;&#10;&lt;div class=&quot;$SIZ$-$NB$ columns&quot;&gt;&#10;  &lt;label&gt;Re-enter Password&#10;    &lt;input type=&quot;password&quot; placeholder=&quot;$VPLHR$&quot; aria-describedby=&quot;$ARIA1$&quot; required pattern=&quot;alpha_numeric&quot; data-equalto=&quot;password&quot;&gt;&#10;    &lt;span class=&quot;form-error&quot;&gt;Hey, passwords are supposed to match!&lt;/span&gt;&#10;  &lt;/label&gt;&#10;  &lt;p class=&quot;help-text&quot; id=&quot;$ARIA1$&quot;&gt;&lt;/p&gt;&#10;&lt;/div&gt;" description="Password Matching Abide Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="NB" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="PLHR" expression="&quot;Placeholder?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="ARIA" expression="&quot;aria-describedby?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="VPLHR" expression="&quot;Verif Placeholder?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="ARIA1" expression="&quot;aria-describedby?&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="ADDabide" value="$CONTAINER$$LAST$" description="Abide Components Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="CONTAINER" expression="enum(&quot;abd-number&quot;, &quot;abd-text&quot;, &quot;abd-password-match&quot;, &quot;abd-url&quot;, &quot;abd-email&quot;, &quot;abd-select&quot;, &quot;abd-radio&quot;, &quot;abd-checkbox&quot;,  &quot;abd-button&quot; )" defaultValue="" alwaysStopAt="true" />
+        <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="abd-text" value="&lt;div class=&quot;row&quot;&gt;&#10;  &lt;div class=&quot;$SIZ$-$NB$ columns&quot;&gt;&#10;    &lt;label&gt;$LBL$&#10;      &lt;input type=&quot;text&quot; placeholder=&quot;$PLHR$&quot; aria-describedby=&quot;$ARIA$&quot; required pattern=&quot;alpha&quot;&gt;&#10;      &lt;span class=&quot;form-error&quot;&gt;$ERTXT$&lt;/span&gt;&#10;      &lt;p class=&quot;help-text&quot; id=&quot;$ARIA$&quot;&gt;$TXTHELP$&lt;/p&gt;&#10;    &lt;/label&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;" description="Text Abide Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="LBL" expression="&quot;Label?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="NB" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="PLHR" expression="&quot;Placeholder?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="ARIA" expression="&quot;aria-describedby?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="ERTXT" expression="&quot;Error Text?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="TXTHELP" expression="&quot;Help Text?&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="abd-url" value="&lt;div class=&quot;row&quot;&gt;&#10;  &lt;div class=&quot;$SIZ$-$NB$ columns&quot;&gt;&#10;    &lt;label&gt;$LBL$&#10;      &lt;input type=&quot;text&quot; placeholder=&quot;$PLHR$&quot; aria-describedby=&quot;$ARIA$&quot; required pattern=&quot;url&quot;&gt;&#10;      &lt;span class=&quot;form-error&quot;&gt;$ERTXT$&lt;/span&gt;&#10;      &lt;p class=&quot;help-text&quot; id=&quot;$ARIA$&quot;&gt;$TXTHELP$&lt;/p&gt;&#10;    &lt;/label&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;" description="Url Abide Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="NB" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="LBL" expression="&quot;Label?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="PLHR" expression="&quot;Placeholder?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="ARIA" expression="&quot;aria-describedby?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="ERTXT" expression="&quot;Error Text?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="TXTHELP" expression="&quot;Help Text?&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="abd-email" value="&lt;div class=&quot;row&quot;&gt;&#10;  &lt;div class=&quot;$SIZ$-$NB$ columns&quot;&gt;&#10;    &lt;label&gt;$LBL$&#10;      &lt;input type=&quot;text&quot; placeholder=&quot;$PLHR$&quot; aria-describedby=&quot;$ARIA$&quot; required pattern=&quot;email&quot;&gt;&#10;      &lt;span class=&quot;form-error&quot;&gt;$ERTXT$&lt;/span&gt;&#10;      &lt;p class=&quot;help-text&quot; id=&quot;$ARIA$&quot;&gt;$TXTHELP$&lt;/p&gt;&#10;    &lt;/label&gt;        &#10;  &lt;/div&gt;&#10;&lt;/div&gt;" description="Email Abide Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="NB" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="LBL" expression="&quot;Label?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="PLHR" expression="&quot;Placeholder?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="ARIA" expression="&quot;aria-describedby?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="ERTXT" expression="&quot;Error Text?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="TXTHELP" expression="&quot;Help Text?&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="abd-select" value="&lt;div class=&quot;row&quot;&gt;&#10;  &lt;div class=&quot;$SIZ$-$NBC$ columns&quot;&gt;&#10;    &lt;label&gt;$LBL$&#10;      &lt;select id=&quot;select&quot; required&gt;&#10;        option*$NB$$LAST$&#10;      &lt;/select&gt;&#10;    &lt;/label&gt;&#10;  &lt;/div&gt;&#10;&lt;/div&gt;  " description="Select Abide Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="NBC" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="LBL" expression="&quot;Label?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="NB" expression="&quot;Nb Options?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="abd-button" value="&lt;div class=&quot;row&quot;&gt;&#10;  &lt;fieldset class=&quot;$SIZ$-$NB$ columns&quot;&gt;&#10;    &lt;button class=&quot;button$TYP$&quot; type=&quot;$TYPE$&quot;&gt;$TEXT$&lt;/button&gt;&#10;  &lt;/fieldset&gt;&#10;&lt;/div&gt;" description="Button Abide Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="NB" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="TYP" expression="enum(&quot;&quot;, &quot; tiny&quot;, &quot; small&quot;, &quot; large&quot;, &quot; expanded&quot;, &quot; small expanded&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="TYPE" expression="enum(&quot;submit\&quot; value=\&quot;Submit&quot;, &quot;reset\&quot; value=\&quot;Reset&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="TEXT" expression="&quot;Text_Button?&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="abd-radio" value="&lt;div class=&quot;row&quot;&gt;&#10;  &lt;fieldset class=&quot;$SIZ$-$NB$ columns&quot;&gt;&#10;    &lt;legend&gt;$LEG$&lt;/legend&gt;&#10;    &lt;input type=&quot;radio&quot; name=&quot;$NAM$&quot; value=&quot;$VAlUE1$&quot; id=&quot;$NAM$$VAlUE1$&quot;&gt;&lt;label for=&quot;$NAM$$VAlUE1$&quot;&gt;$VAlUE1$&lt;/label&gt;&#10;    &lt;input type=&quot;radio&quot; name=&quot;$NAM$&quot; value=&quot;$VAlUE2$&quot; id=&quot;$NAM$$VAlUE2$&quot;&gt;&lt;label for=&quot;$NAM$$VAlUE2$&quot;&gt;$VAlUE2$&lt;/label&gt;&#10;    &lt;input type=&quot;radio&quot; name=&quot;$NAM$&quot; value=&quot;$VAlUE3$&quot; id=&quot;$NAM$$VAlUE3$&quot;&gt;&lt;label for=&quot;$NAM$$VAlUE1$&quot;&gt;$VAlUE3$&lt;/label&gt;&#10;    &lt;!--input[type=radio name= value= id=]&gt;label[for=]--&gt;&#10;  &lt;/fieldset&gt;&#10;&lt;/di&gt;" description="Radio Abide Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="NB" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="LEG" expression="&quot;Legend?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="NAM" expression="&quot;Name-?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="VAlUE1" expression="&quot;Label-?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="VAlUE2" expression="&quot;Label-?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="VAlUE3" expression="&quot;Label-?&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="abd-checkbox" value="&lt;div class=&quot;row&quot;&gt;&#10;  &lt;fieldset class=&quot;$SIZ$-$NB$ columns&quot;&gt;&#10;    &lt;legend&gt;$LEG$&lt;/legend&gt;&#10;    &lt;input id=&quot;checkbox1&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox1&quot;&gt;$LABL1$&lt;/label&gt;&#10;    &lt;input id=&quot;checkbox2&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox2&quot;&gt;$LABL2$&lt;/label&gt;&#10;    &lt;input id=&quot;checkbox3&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;checkbox3&quot;&gt;$LABL3$&lt;/label&gt;&#10;    &lt;!--input[id= type=checkbox]&gt;label[for=]--&gt;&#10;  &lt;/fieldset&gt;&#10;&lt;/di&gt;" description="Checkbox Abide Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="NB" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="LEG" expression="&quot;Legend?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="LABL1" expression="&quot;Label-?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="LABL2" expression="&quot;Label-?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="LABL3" expression="&quot;Label-?&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
 
     <!-- END PLUGINS GROUP -->
 

@@ -166,6 +166,17 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Component:group zf-pl `Ctrl + Space` | Snippet code               |
 |----------------------------------| :-----------------------------:|
 | Abide                            | zf-plab                        |
+| Adding Abide                     | ADDabide                       |
+|----------------------------------| :-----------------------------:|
+| Number abide                     | abd-number                     |
+| Text abide                       | abd-text                       |
+| Password-match abide             | abd-password-match             |
+| Url abide                        | abd-url                        |
+| Email abide                      | abd-email                      |
+| Select abide                     | abd-select                     |
+| Radio abide                      | abd-radio                      |
+| Checkbox abide                   | abd-checkbox                   |
+| Button abide                     | abd-button                     |
 
 
 

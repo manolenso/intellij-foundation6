@@ -166,19 +166,20 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Component:group zf-pl `Ctrl + Space` | Snippet code               |
 |----------------------------------| :-----------------------------:|
 | Abide                            | zf-plab                        |
-| Equalizer Basics                 | zf-pleq                        |
+| Equalizer Basics     `emmet`     | zf-pleq                        |
+| Equalizer Responsive `emmet`     | zf-pleqr                       |
 
-| Adding Abide `9 snippets`        | ADDabide                       |
-|----------------------------------| :-----------------------------:|
-| `1` Number abide                     | abd-number                     |
-| `2` Text abide                       | abd-text                       |
-| `3` Password-match abide             | abd-password-match             |
-| `4` Url abide                        | abd-url                        |
-| `5` Email abide                      | abd-email                      |
-| `6` Select abide    `emmet`          | abd-select                     |
-| `7` Radio abide                      | abd-radio                      |
-| `8` Checkbox abide                   | abd-checkbox                   |
-| `9` Button abide (Submit or Reset)   | abd-button                     |
+| Adding Abide `9 snippets in one`     | ADDabide                   |
+|--------------------------------------| :-------------------------:|
+| `1` Number abide                     | abd-number                 |
+| `2` Text abide                       | abd-text                   |
+| `3` Password-match abide             | abd-password-match         |
+| `4` Url abide                        | abd-url                    |
+| `5` Email abide                      | abd-email                  |
+| `6` Select abide    `emmet`          | abd-select                 |
+| `7` Radio abide                      | abd-radio                  |
+| `8` Checkbox abide                   | abd-checkbox               |
+| `9` Button abide (Submit or Reset)   | abd-button                 |
 
 
 

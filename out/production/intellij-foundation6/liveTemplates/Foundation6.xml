@@ -1055,6 +1055,23 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
+    <template name="zf-pleq" value="&lt;div class=&quot;row&quot; $DTEQ$ data-equalize-on=&quot;$SIZ$&quot; id=&quot;$ID$&quot;&gt;&#10;    {&lt;\div class=\&quot;small-$NBS$ medium-$NBM$ large-$NBL$ columns\&quot;&gt;&lt;\div class=\&quot;callout\&quot; data-equalizer-watch &gt;&lt;!--content--&gt;&lt;\/div&gt;&lt;\/div&gt;}*$NBR$$LAST$&#10;&lt;/div&gt;  " description="Equalizer Abide Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="DTEQ" expression="&quot;data-equalizer&quot;" defaultValue="" alwaysStopAt="false" />
+        <variable name="ID" expression="&quot;Id?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="NBS" expression="&quot;Col for Small?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="NBM" expression="&quot;Col for Medium?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="NBL" expression="&quot;Nb for Large?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="NBR" expression="&quot;Nb Item Equalized?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
 
     <!-- END PLUGINS GROUP -->
 

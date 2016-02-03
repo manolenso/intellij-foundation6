@@ -68,7 +68,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | row basics                       | zf-ltro                        |
 | row Source Ordering              | zf-ltso                        |
 | row Collapse/Uncollapse          | zf-ltcu                        |
-| row Block Grids    `use emmet`   | zf-ltbg                        |
+| row Block Grids    `emmet`       | zf-ltbg                        |
 | Quick additionals:               |                                |
 | small columns                    | sc                             |
 | medium columns                   | mc                             |
@@ -112,27 +112,27 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
 | Component:group zf-nv `Ctrl + Space`  | Snippet code              |
 |----------------------------------| :-----------------------------:|
-| Basic Menus `use emmet`          | zf-nvbm                        |
-| Icons Menus `use emmet`          | zf-nvim                        |
-| Dropdown Menus `use emmet`       | zf-nvdm                    `JS`|
-| Drilldown Menus `use emmet`      | zf-nvdl                    `JS`|
-| Sub Drop&drilldown Menus `use emmet` | sub-dropdown-drilldown `JS`|
-| Top Bar `use emmet`              | zf-nvtb                        |
-| Sub Top Bar `use emmet`          | sub-top-bar                    |
-| Responsive Menus `use emmet`     | zf-nvrm                    `JS`|
-| Sub Responsive Menus `use emmet` | sub-responsive             `JS`|
-| Responsive Toggle Menus `use emmet` | zf-nvrt                 `JS`|
-| Breadcrumbs `use emmet`          | zf-nvbr                        |
-| Pagination `use emmet`           | zf-nvpg                        |
+| Basic Menus `emmet`           | zf-nvbm                            |
+| Icons Menus `emmet`           | zf-nvim                            |
+| Dropdown Menus `emmet`        | zf-nvdm                    `JS`    |
+| Drilldown Menus `emmet`       | zf-nvdl                    `JS`    |
+| Sub Drop&drilldown Menus `emmet`  | sub-dropdown-drilldown `JS`    |
+| Top Bar `emmet`               | zf-nvtb                            |
+| Sub Top Bar `emmet`           | sub-top-bar                        |
+| Responsive Menus `emmet`      | zf-nvrm                    `JS`    |
+| Sub Responsive Menus `emmet`  | sub-responsive             `JS`    |
+| Responsive Toggle Menus `emmet`  | zf-nvrt                 `JS`    |
+| Breadcrumbs `emmet`           | zf-nvbr                            |
+| Pagination `emmet`            | zf-nvpg                            |
 
 
 
 
 ### CONTAINERS
-
+    
 | Component:group zf-ct `Ctrl + Space` | Snippet code               |
 |----------------------------------| :-----------------------------:|
-| Accordion `use emmet`            | zf-ctac                    `JS`|
+| Accordion `emmet`                | zf-ctac                    `JS`|
 | Adding accordion                 | ADDaccordion               `JS`|
 | Callout                          | zf-ctcl                        |
 | Callout Closable                 | zf-ctcc                        |
@@ -141,10 +141,10 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Supp Media Object Section        | sup-media-object-section       |
 | Off-canvas                       | zf-ctof                    `JS`|
 | Reveal Modal                     | zf-ctmd  `Motion UI`       `JS`|
-| Tables  `use emmet`              | zf-cttb                        |
-| Tabs Panel  `use emmet`          | zf-cttp                        |
-| Tabs Vertical Panel `use emmet`  | zf-cttv                        |
-| Sup Panel Tabs   `use emmet`     | sup-panel-tabs                 |
+| Tables  `emmet`                  | zf-cttb                        |
+| Tabs Panel  `emmet`              | zf-cttp                        |
+| Tabs Vertical Panel `emmet`      | zf-cttv                        |
+| Sup Panel Tabs   `emmet`         | sup-panel-tabs                 |
 
 ### MEDIA
 
@@ -154,11 +154,11 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | ADD Icon                         | ADDicon                        |
 | Flex Video                       | zf-mdfv                        |
 | Label                            | zf-mdla                        |
-| Orbit Slider         `use emmet` | zf-mdos         `JS`           |
-| Sup Orbit Slider     `use emmet` | sup-orbit-slider           `JS`|
-| Orbit Slider Motion UI `use emmet`| zf-mdosm  `Motion UI`     `JS`|
-| Sup Orbit Slider Motion `use emmet`| sup-orbit-slider-caption  `JS`|
-| Tooltips     `use emmet`         | zf-mdtp                    `JS`|
+| Orbit Slider         `emmet`     | zf-mdos         `JS`           |
+| Sup Orbit Slider     `emmet`     | sup-orbit-slider           `JS`|
+| Orbit Slider Motion UI `emmet`   | zf-mdosm  `Motion UI`     `JS` |
+| Sup Orbit Slider Motion `emmet`  | sup-orbit-slider-caption  `JS` |
+| Tooltips     `emmet`             | zf-mdtp                    `JS`|
 
 
 ### PLUGIN
@@ -166,17 +166,19 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Component:group zf-pl `Ctrl + Space` | Snippet code               |
 |----------------------------------| :-----------------------------:|
 | Abide                            | zf-plab                        |
-| Adding Abide                     | ADDabide                       |
+| Equalizer Basics                 | zf-pleq                        |
+
+| Adding Abide `9 snippets`        | ADDabide                       |
 |----------------------------------| :-----------------------------:|
-| Number abide                     | abd-number                     |
-| Text abide                       | abd-text                       |
-| Password-match abide             | abd-password-match             |
-| Url abide                        | abd-url                        |
-| Email abide                      | abd-email                      |
-| Select abide                     | abd-select                     |
-| Radio abide                      | abd-radio                      |
-| Checkbox abide                   | abd-checkbox                   |
-| Button abide                     | abd-button                     |
+| `1` Number abide                     | abd-number                     |
+| `2` Text abide                       | abd-text                       |
+| `3` Password-match abide             | abd-password-match             |
+| `4` Url abide                        | abd-url                        |
+| `5` Email abide                      | abd-email                      |
+| `6` Select abide    `emmet`          | abd-select                     |
+| `7` Radio abide                      | abd-radio                      |
+| `8` Checkbox abide                   | abd-checkbox                   |
+| `9` Button abide (Submit or Reset)   | abd-button                     |
 
 
 

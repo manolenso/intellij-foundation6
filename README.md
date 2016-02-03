@@ -168,6 +168,9 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Abide                            | zf-plab                        |
 | Equalizer Basics     `emmet`     | zf-pleq                        |
 | Equalizer Responsive `emmet`     | zf-pleqr                       |
+| Interchange Img      `emmet`     | zf-plit-img                    |
+| Interchange Div      `emmet`     | zf-plit-div                    |
+| Interchange Html     `emmet`     | zf-plit-html                   |
 
 | Adding Abide `9 snippets in one`     | ADDabide                   |
 |--------------------------------------| :-------------------------:|

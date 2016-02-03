@@ -165,12 +165,14 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
 | Component:group zf-pl `Ctrl + Space` | Snippet code               |
 |----------------------------------| :-----------------------------:|
-| Abide                            | zf-plab                        |
-| Equalizer Basics     `emmet`     | zf-pleq                        |
-| Equalizer Responsive `emmet`     | zf-pleqr                       |
-| Interchange Img      `emmet`     | zf-plit-img                    |
-| Interchange Div      `emmet`     | zf-plit-div                    |
-| Interchange Html     `emmet`     | zf-plit-html                   |
+| Abide                            | zf-plab                `JS`    |
+| Equalizer Basics     `emmet`     | zf-pleq                `JS`    |
+| Equalizer Responsive `emmet`     | zf-pleqr               `JS`    |
+| Interchange Img      `emmet`     | zf-plit-img            `JS`    |
+| Interchange Div      `emmet`     | zf-plit-div            `JS`    |
+| Interchange Html     `emmet`     | zf-plit-html           `JS`    |
+| Toggler Animate      `Motion UI` | zf-pltga                `JS`   |
+| Toggler Closable Animate `Motion UI` | zf-pltgc            `JS`   |
 
 | Adding Abide `9 snippets in one`     | ADDabide                   |
 |--------------------------------------| :-------------------------:|

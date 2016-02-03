@@ -1120,6 +1120,32 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
+    <template name="zf-pltga" value="&lt;p&gt;&lt;a data-toggle=&quot;$ID$&quot;&gt;$TRIG$&lt;/a&gt;&lt;/p&gt;     &#10;&lt;div class=&quot;callout&quot; id=&quot;$ID$&quot; $DTTG$ data-animate=&quot;$IN$$OUT$&quot;&gt;&#10;$LAST$&#10;&lt;/div&gt;" description="Toggler Animate Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="ID" expression="&quot;Id?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="TRIG" expression="&quot;Toggle_Panel?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="DTTG" expression="&quot;data-toggler&quot;" defaultValue="" alwaysStopAt="false" />
+        <variable name="IN" expression="enum(&quot;slide-in-down&quot;, &quot;slide-in-right&quot;, &quot;slide-in-up&quot;, &quot;slide-in-left&quot;, &quot;fade-in&quot;, &quot;hinge-in-from-top&quot;, &quot;hinge-in-from-right&quot;, &quot;hinge-in-from-bottom&quot;, &quot;hinge-in-from-left&quot;, &quot;hinge-in-from-middle-x&quot;, &quot;hinge-in-from-middle-y&quot;, &quot;scale-in-up&quot;, &quot;scale-in-down&quot;, &quot;spin-in&quot;, &quot;spin-in-ccw&quot;) " defaultValue="" alwaysStopAt="true" />
+        <variable name="OUT" expression="enum(&quot; slide-out-down&quot;, &quot; slide-out-right&quot;, &quot; slide-out-up&quot;, &quot; slide-out-left&quot;, &quot; fade-out&quot;, &quot; hinge-out-from-top&quot;, &quot; hinge-out-from-right&quot;, &quot; hinge-out-from-bottom&quot;, &quot; hinge-out-from-left&quot;, &quot; hinge-out-from-middle-x&quot;, &quot; hinge-out-from-middle-y&quot;, &quot; scale-out-up&quot;, &quot; scale-out-down&quot;, &quot; spin-out&quot;, &quot; spin-out-ccw&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="LAST" expression="&quot;&lt;!--content--&gt;&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="zf-pltgc" value="&lt;div class=&quot;callout&quot; data-closable=&quot;$OUT$&quot;&gt;&#10;  &lt;button class=&quot;close-button&quot; data-close&gt;&amp;times;&lt;/button&gt;&#10;  $LAST$&#10;&lt;/div&gt;" description="Toggler Closable Animate Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="OUT" expression="enum(&quot;slide-out-down&quot;, &quot;slide-out-right&quot;, &quot;slide-out-up&quot;, &quot;slide-out-left&quot;, &quot;fade-out&quot;, &quot;hinge-out-from-top&quot;, &quot;hinge-out-from-right&quot;, &quot;hinge-out-from-bottom&quot;, &quot;hinge-out-from-left&quot;, &quot;hinge-out-from-middle-x&quot;, &quot;hinge-out-from-middle-y&quot;, &quot;scale-out-up&quot;, &quot;scale-out-down&quot;, &quot;spin-out&quot;, &quot;spin-out-ccw&quot;) " defaultValue="" alwaysStopAt="true" />
+        <variable name="LAST" expression="&quot;&lt;!--Content--&gt;&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
 
     <!-- END PLUGINS GROUP -->
 

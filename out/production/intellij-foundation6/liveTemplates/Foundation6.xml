@@ -1146,6 +1146,20 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
+    <template name="zf-plst" value="&lt;div class=&quot;$SIZ1$-$NB1$ columns&quot; id=&quot;$ANCH$&quot;&gt;&#10;  $CT$&#10;&lt;/div&gt;&#10;&lt;div class=&quot;$SIZ$-$NB$ columns&quot; data-sticky-container&gt;&#10;  &lt;div class=&quot;sticky&quot; $DTSK$ data-anchor=&quot;$ANCH$&quot;&gt;&#10;    $LAST$&#10;  &lt;/div&gt;&#10;&lt;/div&gt;" description="Sticky Anchor Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="SIZ1" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="NB1" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="ANCH" expression="&quot;Id Anchor?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="NB" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="DTSK" expression="&quot;data-sticky&quot;" defaultValue="" alwaysStopAt="false" />
+        <variable name="LAST" expression="&quot;&lt;!--sticky content--&gt;&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="CT" expression="&quot;&lt;!--content--&gt;&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true" />
+            <option name="HTML" value="true" />
+        </context>
+    </template>
 
     <!-- END PLUGINS GROUP -->
 
@@ -1186,7 +1200,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="imgpg" value="img[src=http://www.lorempixel.com/$WIDTH$/$EIGHT$/$CAT$/$/ alt=$CAT$$]*10$EMMET$$END$&#10;" description="image gallery placeholder LOREMPIXEL  (using emmet)" toReformat="false" toShortenFQNames="true">
+    <template name="imgpg" value="img[src=http://www.lorempixel.com/$WIDTH$/$EIGHT$/$CAT$/$/ alt=$CAT$$]*10$EMMET$$END$&#10;" description="gallery placeholder LOREMPIXEL" toReformat="false" toShortenFQNames="true">
         <variable name="WIDTH" expression="&quot;Width-?&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="EIGHT" expression="&quot;Eight-?&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="CAT" expression="enum(&quot;abstract&quot;, &quot;animals&quot;, &quot;business&quot;, &quot;cats&quot;, &quot;city&quot;, &quot;food&quot;, &quot;nightlife&quot;, &quot;fashion&quot;, &quot;people&quot;, &quot;nature&quot;, &quot;sports&quot;, &quot;technics&quot;, &quot;transport&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -1200,8 +1214,17 @@
         </context>
     </template>
     <!-- END UTILITY GROUP -->
+
     <!-- MISCELLANEOUS GROUP -->
-    <template name="zf-bower" value="&lt;!doctype html&gt;&#10;&lt;html class=&quot;no-js&quot; lang=&quot;en&quot;&gt;&#10;&#10;&lt;head&gt;&#10;    &lt;meta charset=&quot;utf-8&quot; /&gt;&#10;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;&#10;    &lt;script src=&quot;bower_components/modernizr/modernizr.js&quot;&gt;&lt;/script&gt;&#10;    &lt;link rel=&quot;stylesheet&quot; href=&quot;bower_components/foundation/css/foundation.css&quot;/&gt;&#10;    &lt;title&gt;&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;    $END$&#10;&#10;&lt;script src=&quot;bower_components/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;bower_components/foundation/js/foundation.min.js&quot;&gt;&lt;/script&gt;&#10;&lt;/body&gt;&#10;&#10;&lt;/html&gt;" description="Template html bower_components" toReformat="true" toShortenFQNames="true">
+    <template name="sticky-magellan" value="&lt;div class=&quot;row&quot;&gt;&#10;    &lt;div class=&quot;$SIZ$-$NB1$ columns&quot; id=&quot;$ANCH$&quot;&gt;&#10;      section[id=$TRG$$ data-magellan-target=$TRG$$]*$NBIT$$LAST$&#10;      &lt;div class=&quot;empty-block&quot;&gt;&lt;/div&gt;&#10;    &lt;/div&gt;&#10;    &lt;div class=&quot;$SIZ$-$NB2$ columns&quot; data-sticky-container&gt;&#10;      &lt;div class=&quot;sticky&quot; $DTSK$ data-anchor=&quot;$ANCH$&quot;&gt;&#10;        &lt;aside&gt;&#10;          &lt;ul class=&quot;menu vertical&quot; data-magellan&gt;&#10;            {&lt;\li&gt;&lt;\a href=&quot;#$TRG$$&quot;&gt;&lt;\/a&gt;&lt;\/li&gt;}*$NBIT$&#10;          &lt;/ul&gt;&#10;        &lt;/aside&gt;&#10;      &lt;/div&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;!--&quot;Custom.css&quot; .active { background: #333; color: #FE49FF !important; } .empty-block { width: 100%; height: 4000px; background: transparent; }--&gt;&#10;" description="Sticky Magellan Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="NB1" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="NB2" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="ANCH" expression="&quot;Id Anchor?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="DTSK" expression="&quot;data-sticky&quot;" defaultValue="" alwaysStopAt="false" />
+        <variable name="TRG" expression="&quot;Id_Section?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="NBIT" expression="&quot;Nb Elements?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>
@@ -1210,8 +1233,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-jinit" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.js&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation/foundation.min.js&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation/foundation.$CALL$.js&quot;&gt;&lt;/script&gt;&#10;&#10;&lt;script&gt;&#10;    $(document).foundation();&#10;&lt;/script&gt;" description="CDN js.min + js.min lib + initialize Foundation" toReformat="false" toShortenFQNames="true">
-        <variable name="CALL" expression="enum(&quot;abide.min&quot;, &quot;accordion.min&quot;, &quot;alert.min&quot;, &quot;clearing.min&quot;, &quot;dropdown.min&quot;, &quot;equalizer.min&quot;, &quot;interchange.min&quot;, &quot;joyride.min&quot;, &quot;magellan.min&quot;, &quot;offcanvas.min&quot;, &quot;orbit.min&quot;, &quot;reveal.min&quot;, &quot;slider.min&quot;, &quot;tab.min&quot;, &quot;tooltip.min&quot;, &quot;topbar.min&quot;)" defaultValue="" alwaysStopAt="true" />
+    <template name="zf-bower" value="&lt;!doctype html&gt;&#10;&lt;html class=&quot;no-js&quot; lang=&quot;en&quot;&gt;&#10;&#10;&lt;head&gt;&#10;    &lt;meta charset=&quot;utf-8&quot; /&gt;&#10;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;&#10;    &lt;script src=&quot;bower_components/modernizr/modernizr.js&quot;&gt;&lt;/script&gt;&#10;    &lt;link rel=&quot;stylesheet&quot; href=&quot;bower_components/foundation/css/foundation.css&quot;/&gt;&#10;    &lt;title&gt;&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;    $END$&#10;&#10;&lt;script src=&quot;bower_components/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;bower_components/foundation/js/foundation.min.js&quot;&gt;&lt;/script&gt;&#10;&lt;/body&gt;&#10;&#10;&lt;/html&gt;" description="Template html bower_components" toReformat="true" toShortenFQNames="true">
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>

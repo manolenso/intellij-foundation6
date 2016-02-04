@@ -5,17 +5,7 @@ Intellij Zurb Foundation 6 plugin
 
 [![Join the chat at https://gitter.im/manolenso/intellij-foundation6](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/manolenso/intellij-foundation6?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-`INSTALL: download intellij-foundation6.jar
-Settings -> Plugins -> Install plugin from disk...`
-
-# Work in progress, just for testing!
-
-caution! many of  components come from previous 5 version are still present
-these should being removed during plugin building
-
-
 For use this plugin you should install before [Emmet Everywhere plugin](http://bit.ly/1DzHjaT)
-
 
 An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin works for the following JetBrains products:
 - IntelliJ IDEA 14 , PhpStorm 8, RubyMine 7
@@ -23,12 +13,6 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 - PyCharm 4,5
 - RubyMine 7,8
 - PhpStorm 8,9,10
-
-**CONTAINERS** zf-ct
-
-**MEDIA** zf-md
-
-**PLUGIN** zf-pl
 
 ## contents
 
@@ -43,7 +27,9 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 - [MEDIA](#media)
 - [PLUGIN](#plugin)
 - [UTILITY](#utility)
+- [MISCELLANEOUS](#miscellaneous)
 - [TEMPLATE](#template)
+
 
 ### CDN
 
@@ -100,12 +86,12 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 |----------------------------------| :-----------------------------:|
 | Motion UI                        |  zf-lbmu                       |
 
-| Libraries Utility                |  triggers                       |
+| Libraries Utility                |  triggers                      |
 |----------------------------------| :-----------------------------:|
 | Motion UI In & Out               | mo-in-out                      |
 | Motion UI In                     | mo-in                          |
 | Motion UI Out                    | mo-out                         |
-| Front Matter Block               | ---: `and` ---::                |
+| Front Matter Block               | ---: `and` ---::               |
 
 
 ### NAVIGATION
@@ -173,6 +159,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Interchange Html     `emmet`     | zf-plit-html           `JS`    |
 | Toggler Animate      `Motion UI` | zf-pltga                `JS`   |
 | Toggler Closable Animate `Motion UI` | zf-pltgc            `JS`   |
+| Sticky                            | zf-plst                `JS`   |
 
 | Adding Abide `9 snippets in one`     | ADDabide                   |
 |--------------------------------------| :-------------------------:|
@@ -196,7 +183,15 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Gallery Placeholder LOREMPIXEL   |  imgpg                         | 
 | Image Placeholder  PLACEHOLD.IT  |  imgpi                         |
 | Image Placeholder PLACEKITTEN    |  imgpk                         |
+
                         
+### MISCELLANEOUS
+
+|(just for fun, but can be useful! | Snippet code                   |
+|----------------------------------| :-----------------------------:|
+| Sticky Menu Magellan `emmet` [Inspired from Rafi Codepen](http://codepen.io/rafibomb/pen/QyVpNo) |  sticky-magellan               |
+
+
 
 
 ### TEMPLATE

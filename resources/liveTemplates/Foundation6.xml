@@ -11,7 +11,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cdn-motion-ui-js" value="&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.js&quot;&gt;&lt;/script&gt;" description="CDN js Motion UI Foundation 6" toReformat="true" toShortenFQNames="true">
+    <template name="zf-cdn-motion-ui-js" value="&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.0/motion-ui.min.js&quot;&gt;&lt;/script&gt;" description="CDN js Motion UI Foundation 6" toReformat="true" toShortenFQNames="true">
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>
@@ -20,7 +20,16 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cdn-motion-ui-css" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css&quot; /&gt;" description="CDN css Motion UI Foundation 6" toReformat="true" toShortenFQNames="true">
+    <template name="zf-cdn-wow-js" value="&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js&quot;&gt;&lt;/script&gt;" description="CDN Wow.js  Foundation 6" toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="zf-cdn-motion-ui-css" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.0/motion-ui.min.css&quot; /&gt;" description="CDN css Motion UI Foundation 6" toReformat="true" toShortenFQNames="true">
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>

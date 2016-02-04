@@ -37,16 +37,17 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 |--------------------------------- | :-----------------------------:|
 | CDN  CSS.MIN               |   zf-cdn-css                         |
 | CDN  CSS Motion UI         |   zf-cdn-motion-ui-css               |
-| CDN  JS                    |   zf-cdn-js                         |
-| CDN  JS Motion UI          |   zf-cdn-motion-ui-js              |
-| CDN  LIB                   |   zf-cdn-lib                       |
-| CDN  ICONS                 |   zf-cdn-icons                     |
-| CDN  JQUERY   3.0.0-alpha1 |   zf-cdn-jquery                    |
+| CDN  JS                    |   zf-cdn-js                          |
+| CDN  JS Motion UI          |   zf-cdn-motion-ui-js                |
+| CDN  JS Wow                |   zf-cdn-wow-js                      |
+| CDN  LIB                   |   zf-cdn-lib                         |
+| CDN  ICONS                 |   zf-cdn-icons                       |
+| CDN  JQUERY   3.0.0-alpha1 |   zf-cdn-jquery                      |
 | CDN  [DATEPICKER](http://foundation-datepicker.peterbeno.com/example.html)|   zf-cdn-datepiker                  |
-| CDN  LIB-UTIL              |   zf-cdn-lib-util                  |
-| CDN  [JSSOR-SLIDER](http://www.jssor.com/development/index.html)|   zf-cdn-jssor-slider                  |
-| CDN  Initialize            |   zf-cdn-initialize                |
- 
+| CDN  LIB-UTIL              |   zf-cdn-lib-util                    |
+| CDN  [JSSOR-SLIDER](http://www.jssor.com/development/index.html)  |   zf-cdn-jssor-slider                  |
+| CDN  Initialize            |   zf-cdn-initialize                  |
+  
 ### LAYOUT
 
 | Component:group zf-lt `Ctrl + Space`| Snippet code                |

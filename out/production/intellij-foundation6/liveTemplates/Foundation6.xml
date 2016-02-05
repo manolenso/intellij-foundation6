@@ -619,7 +619,7 @@
 
     <!-- CONTAINERS GROUP -->
 
-    <template name="zf-ctac" value="&lt;ul class=&quot;accordion&quot; $ATR$ role=&quot;tablist&quot; $OPT1$&gt;&#10;  &lt;li class=&quot;accordion-$ITEM$$OPT2$&quot;&gt;&#10;    &lt;a href=&quot;#$ID$&quot; role=&quot;tab&quot; class=&quot;accordion-title&quot; id=&quot;$ID$-heading&quot; aria-controls=&quot;$ID$&quot;&gt;$TITLE$&lt;/a&gt;&#10;    &lt;div id=&quot;$ID$&quot; class=&quot;accordion-content&quot; role=&quot;tabpanel&quot; $AT1$ aria-labelledby=&quot;$ID$-heading&quot;&gt;&#10;      $EDIT$&#10;    &lt;/div&gt;&#10;  &lt;/li&gt;&#10;  $SUPP$$END$&#10;&lt;/ul&gt;" description="Accordion Foundation 6" toReformat="false" toShortenFQNames="true">
+    <template name="zf-ctac" value="&lt;ul class=&quot;accordion&quot; $ATR$ role=&quot;tablist&quot; $OPT1$&gt;&#10;  &lt;li class=&quot;accordion-$ITEM$$OPT2$&quot;&gt;&#10;    &lt;a href=&quot;#$ID$&quot; role=&quot;tab&quot; class=&quot;accordion-title&quot; id=&quot;$ID$-heading&quot; aria-controls=&quot;$ID$&quot;&gt;$TITLE$&lt;/a&gt;&#10;    &lt;div id=&quot;$ID$&quot; class=&quot;accordion-content&quot; role=&quot;tabpanel&quot; $AT1$ aria-labelledby=&quot;$ID$-heading&quot;&gt;&#10;      $EDIT$&#10;    &lt;/div&gt;&#10;  &lt;/li&gt;&#10;  $SUPP$$LAST$&#10;&lt;/ul&gt;" description="Accordion Foundation 6" toReformat="false" toShortenFQNames="true">
         <variable name="ATR" expression="&quot;data-accordion&quot;" defaultValue="" alwaysStopAt="false" />
         <variable name="OPT1" expression="enum(&quot;&quot;, &quot;data-multi-expand=\&quot;true\&quot;&quot;, &quot;data-allow-all-closed=\&quot;true\&quot;&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="ITEM" expression="&quot;item&quot;" defaultValue="" alwaysStopAt="true" />
@@ -627,8 +627,9 @@
         <variable name="ID" expression="&quot;Panel ID?&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="TITLE" expression="&quot;Title Accordion?&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="AT1" expression="&quot;data-tab-content&quot;" defaultValue="" alwaysStopAt="false" />
-        <variable name="EDIT" expression="&quot;&lt;!-- content pane here! --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="SUPP" expression="enum(&quot;ADDaccordion&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="SUPP" expression="&quot;ADDaccordion&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="EDIT" expression="&quot;&lt;!-- content pane here! --&gt;&quot;" defaultValue="" alwaysStopAt="false" />
+        <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>
@@ -637,14 +638,15 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="ADDaccordion" value="&lt;li class=&quot;accordion-$ITEM$$OPT2$&quot;&gt;&#10;  &lt;a href=&quot;#$ID$&quot; role=&quot;tab&quot; class=&quot;accordion-title&quot; id=&quot;$ID$-heading&quot; aria-controls=&quot;$ID$&quot;&gt;$TITLE$&lt;/a&gt;&#10;  &lt;div id=&quot;$ID$&quot; class=&quot;accordion-content&quot; role=&quot;tabpanel&quot; $AT1$ aria-labelledby=&quot;$ID$-heading&quot;&gt;&#10;    $EDIT$&#10;  &lt;/div&gt;&#10;&lt;/li&gt;&#10;$SUPP$$END$&#10;" description="ADDAccordion Foundation 6" toReformat="false" toShortenFQNames="true">
+    <template name="ADDaccordion" value="&lt;li class=&quot;accordion-$ITEM$$OPT2$&quot;&gt;&#10;  &lt;a href=&quot;#$ID$&quot; role=&quot;tab&quot; class=&quot;accordion-title&quot; id=&quot;$ID$-heading&quot; aria-controls=&quot;$ID$&quot;&gt;$TITLE$&lt;/a&gt;&#10;  &lt;div id=&quot;$ID$&quot; class=&quot;accordion-content&quot; role=&quot;tabpanel&quot; $AT1$ aria-labelledby=&quot;$ID$-heading&quot;&gt;&#10;    $EDIT$&#10;  &lt;/div&gt;&#10;&lt;/li&gt;&#10;$SUPP$$LAST$&#10;" description="ADDAccordion Foundation 6" toReformat="false" toShortenFQNames="true">
         <variable name="ITEM" expression="&quot;item&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="ID" expression="&quot;Panel ID?&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="TITLE" expression="&quot;Title Accordion?&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="AT1" expression="&quot;data-tab-content&quot;" defaultValue="" alwaysStopAt="false" />
-        <variable name="EDIT" expression="&quot;&lt;!-- content pane here! --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="SUPP" expression="enum(&quot;ADDaccordion&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="EDIT" expression="&quot;&lt;!-- content pane here! --&gt;&quot;" defaultValue="" alwaysStopAt="false" />
+        <variable name="SUPP" expression="&quot;ADDaccordion&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>
@@ -1176,7 +1178,7 @@
     <!-- UTILITY GROUP -->
     <template name="imgpl" value="&lt;img src=&quot;http://www.lorempixel.com/$WIDTH$/$HEIGHT$/$CAT$&quot; alt=&quot;$CAT$&quot; /&gt;$END$" description="Image Placeholder LOREMPIXEL" toReformat="false" toShortenFQNames="true">
         <variable name="WIDTH" expression="&quot;Width-?&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="HEIGHT" expression="&quot;Eight-?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="HEIGHT" expression="&quot;HEight-?&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="CAT" expression="enum(&quot;abstract&quot;, &quot;animals&quot;, &quot;business&quot;, &quot;cats&quot;, &quot;city&quot;, &quot;food&quot;, &quot;nightlife&quot;, &quot;fashion&quot;, &quot;people&quot;, &quot;nature&quot;, &quot;sports&quot;, &quot;technics&quot;, &quot;transport&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
@@ -1187,8 +1189,8 @@
         </context>
     </template>
     <template name="imgpk" value="&lt;img src='http://placekitten.com/g/$WIDTH$/$HEIGHT$' /&gt;$END$&#10;" description="image placeholder  PLACEKITTEN" toReformat="false" toShortenFQNames="true">
-        <variable name="WIDTH" expression="&quot;width-?&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="HEIGHT" expression="&quot;height-?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="WIDTH" expression="&quot;Width-?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="HEIGHT" expression="&quot;Height-?&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>
@@ -1198,8 +1200,8 @@
         </context>
     </template>
     <template name="imgpi" value="&lt;img src=&quot;http://placehold.it/$WIDTH$x$HEIGHT$&amp;text=$TEXT$&quot; alt=&quot;&quot;/&gt;$END$&#10;" description="Image placeholder PLACEHOLD.IT" toReformat="false" toShortenFQNames="true">
-        <variable name="WIDTH" expression="&quot;width-?&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="HEIGHT" expression="&quot;height-?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="WIDTH" expression="&quot;Width-?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="HEIGHT" expression="&quot;Height-?&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="TEXT" expression="&quot;&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
@@ -1211,7 +1213,7 @@
     </template>
     <template name="imgpg" value="img[src=http://www.lorempixel.com/$WIDTH$/$EIGHT$/$CAT$/$/ alt=$CAT$$]*10$EMMET$$END$&#10;" description="gallery placeholder LOREMPIXEL" toReformat="false" toShortenFQNames="true">
         <variable name="WIDTH" expression="&quot;Width-?&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="EIGHT" expression="&quot;Eight-?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="EIGHT" expression="&quot;HEight-?&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="CAT" expression="enum(&quot;abstract&quot;, &quot;animals&quot;, &quot;business&quot;, &quot;cats&quot;, &quot;city&quot;, &quot;food&quot;, &quot;nightlife&quot;, &quot;fashion&quot;, &quot;people&quot;, &quot;nature&quot;, &quot;sports&quot;, &quot;technics&quot;, &quot;transport&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="EMMET" expression="" defaultValue="" alwaysStopAt="true" />
         <context>

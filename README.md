@@ -8,7 +8,7 @@ Intellij Zurb Foundation 6 plugin
 For use this plugin you should install before [Emmet Everywhere plugin](http://bit.ly/1DzHjaT)
 
 An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin works for the following JetBrains products:
-- IntelliJ IDEA 14 , PhpStorm 8, RubyMine 7
+- IntelliJ IDEA 14,15 
 - WebStorm 9,10,11
 - PyCharm 4,5
 - RubyMine 7,8

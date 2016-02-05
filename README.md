@@ -17,7 +17,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 ## contents
 
  `HTML`
-- [CDN](#cdn) from [jsdelivr](https://www.jsdelivr.com/?query=foundation)
+- [CDN](#cdn) from [jsDelivr](https://www.jsdelivr.com/?query=foundation) and [CloudFlare](https://cdnjs.com/libraries/foundation)
 - [LAYOUT](#layout)
 - [TYPOGRAPHY](#typography)
 - [CONTROLS](#controls)
@@ -52,11 +52,12 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
 | Component:group zf-lt `Ctrl + Space`| Snippet code                |
 |----------------------------------| :-----------------------------:|
-| row basics                       | zf-ltro                        |
-| row Source Ordering              | zf-ltso                        |
-| row Collapse/Uncollapse          | zf-ltcu                        |
-| row Block Grids    `emmet`       | zf-ltbg                        |
-| Quick additionals:               |                                |
+| Row Basics                       | zf-ltro                        |
+| Row Flex   `emmet`               | zf-ltrof                       |
+| Row Source Ordering              | zf-ltso                        |
+| Row Collapse/Uncollapse          | zf-ltcu                        |
+| Row Block Grids    `emmet`       | zf-ltbg                        |
+| QUICK ADDITIONAL:                |                                |
 | small columns                    | sc                             |
 | medium columns                   | mc                             |
 | large columns                    | lc                             |

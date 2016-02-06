@@ -133,7 +133,7 @@
     </template>
     <template name="zf-ltrof" value="&lt;div class=&quot;row$HPOS$$VPOS$&quot;&gt;&#10;  {&lt;\div class=&quot;column $SIZ$-$NB$&quot;&gt;&lt;\/div&gt;}*$NBD$$LAST$&#10;&lt;/div&gt;" description="Row Flex  Foundation 6" toReformat="false" toShortenFQNames="true">
         <variable name="HPOS" expression="enum(&quot;&quot;, &quot; align-right&quot;, &quot; align-left&quot;, &quot; align-center&quot;, &quot; align-justify&quot;, &quot; align-spaced&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="VPOS" expression="enum(&quot;&quot;, &quot; align-top&quot;, &quot; align-middle&quot;, &quot; align-bottom&quot;, &quot; and align-stretch&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="VPOS" expression="enum(&quot;&quot;, &quot; align-top&quot;, &quot; align-middle&quot;, &quot; align-bottom&quot;, &quot; align-stretch&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="NB" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="NBD" expression="&quot;Nb_Div?&quot;" defaultValue="" alwaysStopAt="true" />

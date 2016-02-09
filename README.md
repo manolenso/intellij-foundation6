@@ -104,11 +104,11 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Icons Menus `emmet`           | zf-nvim                            |
 | Dropdown Menus `emmet`        | zf-nvdm                    `JS`    |
 | Drilldown Menus `emmet`       | zf-nvdl                    `JS`    |
-| -->Sub Drop&drilldown Menus `emmet`  | sub-dropdown-drilldown `JS`    |
+| --Sub Drop&drilldown Menus `emmet`  | sub-dropdown-drilldown `JS`    |
 | Top Bar `emmet`               | zf-nvtb                            |
-| -->Sub Top Bar `emmet`           | sub-top-bar                        |
+| --Sub Top Bar `emmet`           | sub-top-bar                        |
 | Responsive Menus `emmet`      | zf-nvrm                    `JS`    |
-| -->Sub Responsive Menus `emmet`  | sub-responsive             `JS`    |
+| --Sub Responsive Menus `emmet`  | sub-responsive             `JS`    |
 | Responsive Toggle Menus `emmet`  | zf-nvrt                 `JS`    |
 | Breadcrumbs `emmet`           | zf-nvbr                            |
 | Pagination `emmet`            | zf-nvpg                            |
@@ -121,18 +121,18 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Component:group zf-ct `Ctrl + Space` | Snippet code               |
 |----------------------------------| :-----------------------------:|
 | Accordion `emmet`                | zf-ctac                    `JS`|
-| -->Adding accordion                 | ADDaccordion               `JS`|
+| --Adding accordion                 | ADDaccordion               `JS`|
 | Callout                          | zf-ctcl                        |
 | Callout Closable                 | zf-ctcc                        |
 | Dropdown                         | zf-ctdp                    `JS`|
 | Media Object                     | zf-ctmo                        |
-| Supp Media Object Section        | sup-media-object-section       |
+| --Supp Media Object Section        | sup-media-object-section       |
 | Off-canvas                       | zf-ctof                    `JS`|
 | Reveal Modal                     | zf-ctmd  `Motion UI`       `JS`|
 | Tables  `emmet`                  | zf-cttb                        |
 | Tabs Panel  `emmet`              | zf-cttp                        |
 | Tabs Vertical Panel `emmet`      | zf-cttv                        |
-| Sup Panel Tabs   `emmet`         | sup-panel-tabs                 |
+| --Sup Panel Tabs   `emmet`         | sup-panel-tabs                 |
 
 ### MEDIA
 
@@ -143,9 +143,9 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Flex Video                       | zf-mdfv                        |
 | Label                            | zf-mdla                        |
 | Orbit Slider         `emmet`     | zf-mdos         `JS`           |
-| Sup Orbit Slider     `emmet`     | sup-orbit-slider           `JS`|
+| --Sup Orbit Slider     `emmet`     | sup-orbit-slider           `JS`|
 | Orbit Slider Motion UI `emmet`   | zf-mdosm  `Motion UI`     `JS` |
-| Sup Orbit Slider Motion `emmet`  | sup-orbit-slider-caption  `JS` |
+| --Sup Orbit Slider Motion `emmet`  | sup-orbit-slider-caption  `JS` |
 | Tooltips     `emmet`             | zf-mdtp                    `JS`|
 
 

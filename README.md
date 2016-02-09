@@ -67,7 +67,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
 | Component:group zf-ty `Ctrl + Space` | Snippet code               |
 |----------------------------------| :-----------------------------:|
-| Text Alignment                   | txta                           |
+| --> Text Alignment                   | txta                           |
 
 
 ### CONTROLS
@@ -104,11 +104,11 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Icons Menus `emmet`           | zf-nvim                            |
 | Dropdown Menus `emmet`        | zf-nvdm                    `JS`    |
 | Drilldown Menus `emmet`       | zf-nvdl                    `JS`    |
-| Sub Drop&drilldown Menus `emmet`  | sub-dropdown-drilldown `JS`    |
+| -->Sub Drop&drilldown Menus `emmet`  | sub-dropdown-drilldown `JS`    |
 | Top Bar `emmet`               | zf-nvtb                            |
-| Sub Top Bar `emmet`           | sub-top-bar                        |
+| -->Sub Top Bar `emmet`           | sub-top-bar                        |
 | Responsive Menus `emmet`      | zf-nvrm                    `JS`    |
-| Sub Responsive Menus `emmet`  | sub-responsive             `JS`    |
+| -->Sub Responsive Menus `emmet`  | sub-responsive             `JS`    |
 | Responsive Toggle Menus `emmet`  | zf-nvrt                 `JS`    |
 | Breadcrumbs `emmet`           | zf-nvbr                            |
 | Pagination `emmet`            | zf-nvpg                            |
@@ -121,7 +121,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Component:group zf-ct `Ctrl + Space` | Snippet code               |
 |----------------------------------| :-----------------------------:|
 | Accordion `emmet`                | zf-ctac                    `JS`|
-| Adding accordion                 | ADDaccordion               `JS`|
+| -->Adding accordion                 | ADDaccordion               `JS`|
 | Callout                          | zf-ctcl                        |
 | Callout Closable                 | zf-ctcc                        |
 | Dropdown                         | zf-ctdp                    `JS`|

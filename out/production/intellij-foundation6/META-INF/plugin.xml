@@ -1,7 +1,7 @@
 <idea-plugin version="2" url="https://github.com/manolenso/intellij-foundation6">
   <id>com.manolenso.intellij.foundation6</id>
   <name>Zurb Foundation 6</name>
-  <version>1.1</version>
+  <version>1.2</version>
   <vendor url="https://github.com/manolenso/intellij-foundation6">Manolenso</vendor>
 
   <description><![CDATA[
@@ -17,6 +17,7 @@
 
   <change-notes><![CDATA[
       <br>
+      1.2 Add row flex, version cdn lib<br />
       1.1 update cdn Motion UI 1.2.0</br>
       1.0 Initial release<br />
     ]]>

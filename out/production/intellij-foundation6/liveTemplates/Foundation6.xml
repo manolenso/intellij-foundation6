@@ -38,7 +38,8 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cdn-lib" value="&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.1.2/js/foundation.$VALUE$.js&quot;&gt;&lt;/script&gt;&#10;" description="CDN js lib Foundation 6.1.2" toReformat="true" toShortenFQNames="true">
+    <template name="zf-cdn-lib" value="&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/$VER$/js/foundation.$VALUE$.js&quot;&gt;&lt;/script&gt;&#10;" description="CDN js lib Foundation 6.1.2" toReformat="true" toShortenFQNames="true">
+        <variable name="VER" expression="enum(&quot;6.1.2&quot;, &quot;6.1.1&quot;, &quot;6.1.0&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="VALUE" expression="enum(&quot;abide&quot;, &quot;accordion&quot;, &quot;accordionMenu&quot;, &quot;core&quot;, &quot;drilldown&quot;, &quot;dropdown&quot;, &quot;dropdownMenu&quot;, &quot;equalizer&quot;, &quot;interchange&quot;, &quot;magellan&quot;, &quot;offcanvas&quot;, &quot;orbit&quot;, &quot;responsiveMenu&quot;, &quot;responsiveToggle&quot;, &quot;reveal&quot;, &quot;slider&quot;, &quot;sticky&quot;, &quot;tabs&quot;, &quot;toggler&quot;, &quot;tooltip&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>

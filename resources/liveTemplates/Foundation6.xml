@@ -79,7 +79,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cdn-jquery" value="&lt;script src=&quot;https://cdn.jsdelivr.net/jquery/3.0.0-beta1/$VALUE$&quot;&gt;&lt;/script&gt;&#10;" description="CDN jquery 3.0.0-beta1 Foundation" toReformat="true" toShortenFQNames="true">
+    <template name="zf-cdn-jquery" value="&lt;script src=&quot;https://cdn.jsdelivr.net/jquery/2.2.0/$VALUE$&quot;&gt;&lt;/script&gt;&#10;" description="CDN jquery 2.2.0 Foundation" toReformat="true" toShortenFQNames="true">
         <variable name="VALUE" expression="enum(&quot;jquery.min.js&quot;, &quot;jquery.js&quot;, &quot;jquery.min.map&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
@@ -107,7 +107,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cdn-initialize" value="&lt;script src=&quot;https://cdn.jsdelivr.net/jquery/3.0.0-beta1/$VALUE$&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.js&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.1.2/js/foundation.$VALUE1$.js&quot;&gt;&lt;/script&gt;&#10;&lt;script&gt;$(document).foundation();&lt;/script&gt;$END$" description="CDN Initialize Foundation 6" toReformat="true" toShortenFQNames="true">
+    <template name="zf-cdn-initialize" value="&lt;script src=&quot;https://cdn.jsdelivr.net/jquery/2.2.0/$VALUE$&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.1.2/foundation.min.js&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;https://cdn.jsdelivr.net/foundation/6.1.2/js/foundation.$VALUE1$.js&quot;&gt;&lt;/script&gt;&#10;&lt;script&gt;$(document).foundation();&lt;/script&gt;$END$" description="CDN Initialize Foundation 6" toReformat="true" toShortenFQNames="true">
         <variable name="VALUE" expression="enum(&quot;jquery.min.js&quot;, &quot;jquery.js&quot;, &quot;jquery.min.map&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="VALUE1" expression="enum(&quot;abide&quot;, &quot;accordion&quot;, &quot;accordionMenu&quot;, &quot;core&quot;, &quot;drilldown&quot;, &quot;dropdown&quot;, &quot;dropdownMenu&quot;, &quot;equalizer&quot;, &quot;interchange&quot;, &quot;magellan&quot;, &quot;offcanvas&quot;, &quot;orbit&quot;, &quot;responsiveMenu&quot;, &quot;responsiveToggle&quot;, &quot;reveal&quot;, &quot;slider&quot;, &quot;sticky&quot;, &quot;tabs&quot;, &quot;toggler&quot;, &quot;tooltip&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>

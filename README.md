@@ -52,7 +52,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
 | Component:group zf-lt `Ctrl + Space`       | Snippet code                         |
 |--------------------------------------------| :-----------------------------------:|
-| Row Basics                                 | zf-ltro                              |
+| Row        `emmet`                         | zf-ltro                              |
 | Row Flex   `emmet`                         | zf-ltrof                             |
 | Row Source Ordering                        | zf-ltso                              |
 | Row Collapse/Uncollapse                    | zf-ltcu                              |
@@ -173,7 +173,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | `7` Radio abide                      | abd-radio                      |
 | `8` Checkbox abide                   | abd-checkbox                   |
 | `9` Button abide (Submit or Reset)   | abd-button                     |
-    
+| `10` Custom Pattern                  | abd-custom [regexlib](http://regexlib.com)          |    
 
 
 ### UTILITY

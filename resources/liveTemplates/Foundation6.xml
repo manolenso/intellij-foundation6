@@ -124,9 +124,12 @@
     <!-- END CDN GROUP -->
 
     <!-- LAYOUT GROUP -->
-    <template name="zf-ltro" value="&lt;div class=&quot;row&quot;&gt;&#10;    $ADD$$BACK$&#10;&lt;/div&gt;$COMMENTS$" description="Row Basic Foundation 6" toReformat="false" toShortenFQNames="true">
-        <variable name="ADD" expression="enum(&quot;ADDsmall-column-item&quot;, &quot;ADDmedium-column-item&quot;, &quot;ADDlarge-column-item&quot;, &quot;ADDsmall-medium-large-column-item&quot;)" defaultValue="" alwaysStopAt="true" />
-        <variable name="BACK" expression="" defaultValue="" alwaysStopAt="true" />
+    <template name="zf-ltro" value="&lt;div class=&quot;row&quot;&gt;&#10;  {&lt;\div class=&quot;$SIZ$-$NB$ $CUST$columns&quot;&gt;&lt;\/div&gt;}*$NBD$$LAST$&#10;&lt;/div&gt;" description="Row Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="SIZ" expression="enum(&quot;small&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="NB" expression="&quot;Nb?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="CUST" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="NBD" expression="&quot;Nb_Div?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>
@@ -638,16 +641,14 @@
 
     <!-- CONTAINERS GROUP -->
 
-    <template name="zf-ctac" value="&lt;ul class=&quot;accordion&quot; $ATR$ role=&quot;tablist&quot; $OPT1$&gt;&#10;  &lt;li class=&quot;accordion-$ITEM$$OPT2$&quot;&gt;&#10;    &lt;a href=&quot;#$ID$&quot; role=&quot;tab&quot; class=&quot;accordion-title&quot; id=&quot;$ID$-heading&quot; aria-controls=&quot;$ID$&quot;&gt;$TITLE$&lt;/a&gt;&#10;    &lt;div id=&quot;$ID$&quot; class=&quot;accordion-content&quot; role=&quot;tabpanel&quot; $AT1$ aria-labelledby=&quot;$ID$-heading&quot;&gt;&#10;      $EDIT$&#10;    &lt;/div&gt;&#10;  &lt;/li&gt;&#10;  $SUPP$$LAST$&#10;&lt;/ul&gt;" description="Accordion Foundation 6" toReformat="false" toShortenFQNames="true">
+    <template name="zf-ctac" value="&lt;ul class=&quot;accordion&quot; $ATR$ role=&quot;tablist&quot; data-allow-all-closed=&quot;$CHO1$&quot; data-multi-expand=&quot;$CHO2$&quot;&gt;&#10;    {&lt;\li class=&quot;accordion-$ITEM$$OPT2$&quot;&gt;&lt;\a href=&quot;#$PANEL$$&quot; role=&quot;tab&quot; class=&quot;accordion-title&quot; id=&quot;$PANEL$$-heading&quot; aria-controls=&quot;$PANEL$&quot;&gt;Title_accordion_$$&lt;\/a&gt;&lt;\div id=&quot;$PANEL$$&quot; class=&quot;accordion-content&quot; role=&quot;tabpanel&quot; data-tab-content aria-labelledby=&quot;$PANEL$-heading&quot;&gt;&lt;!--content_$--&gt;&lt;\/div&gt;&lt;\/li&gt;}*$NBR$$LAST$&#10;&lt;/ul&gt;" description="Accordion  Foundation 6" toReformat="false" toShortenFQNames="true">
         <variable name="ATR" expression="&quot;data-accordion&quot;" defaultValue="" alwaysStopAt="false" />
-        <variable name="OPT1" expression="enum(&quot;&quot;, &quot;data-multi-expand=\&quot;true\&quot;&quot;, &quot;data-allow-all-closed=\&quot;true\&quot;&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="CHO1" expression="enum(&quot;true&quot;, &quot;false&quot;)" defaultValue="" alwaysStopAt="true" />
+        <variable name="CHO2" expression="enum(&quot;true&quot;, &quot;false&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="ITEM" expression="&quot;item&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="OPT2" expression="" defaultValue="" alwaysStopAt="true" />
-        <variable name="ID" expression="&quot;Panel ID?&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="TITLE" expression="&quot;Title Accordion?&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="AT1" expression="&quot;data-tab-content&quot;" defaultValue="" alwaysStopAt="false" />
-        <variable name="SUPP" expression="&quot;ADDaccordion&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="EDIT" expression="&quot;&lt;!-- content pane here! --&gt;&quot;" defaultValue="" alwaysStopAt="false" />
+        <variable name="PANEL" expression="&quot;Id_Panel?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="NBR" expression="&quot;Nbre_Panels?&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>

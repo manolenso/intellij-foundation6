@@ -11,7 +11,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cdn-motion-ui-js" value="&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.0/motion-ui.min.js&quot;&gt;&lt;/script&gt;" description="CDN js Motion UI Foundation 6" toReformat="true" toShortenFQNames="true">
+    <template name="zf-cdn-motion-ui-js" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.0/motion-ui.min.js&quot;&gt;&lt;/script&gt;" description="CDN js Motion UI Foundation 6" toReformat="true" toShortenFQNames="true">
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>
@@ -20,7 +20,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cdn-wow-js" value="&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js&quot;&gt;&lt;/script&gt;" description="CDN Wow.js  Foundation 6" toReformat="true" toShortenFQNames="true">
+    <template name="zf-cdn-wow-js" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js&quot;&gt;&lt;/script&gt;" description="CDN Wow.js  Foundation 6" toReformat="true" toShortenFQNames="true">
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>
@@ -167,10 +167,11 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-ltbg" value="&lt;div class=&quot;row small-up-$OPT1$ medium-up-$OPT2$ large-up-$OPT3$&quot;&gt;&#10;    div.column*$OPT3$$END$&#10;&lt;/div&gt;" description="Row Block Grids Foundation 6" toReformat="false" toShortenFQNames="true">
-        <variable name="OPT1" expression="" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT2" expression="" defaultValue="" alwaysStopAt="true" />
-        <variable name="OPT3" expression="" defaultValue="" alwaysStopAt="true" />
+    <template name="zf-ltbg" value="&lt;div class=&quot;row small-up-$OPT1$ medium-up-$OPT2$ large-up-$OPT3$&quot;&gt;&#10;    div.column*$OPT4$$END$&#10;&lt;/div&gt;" description="Row Block Grids Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="OPT1" expression="&quot;Nb_Col?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="OPT2" expression="&quot;Nb_Col?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="OPT3" expression="&quot;Nb_Col?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="OPT4" expression="&quot;Nb_Div?&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>
@@ -1198,7 +1199,7 @@
     <!-- UTILITY GROUP -->
     <template name="imgpl" value="&lt;img src=&quot;http://www.lorempixel.com/$WIDTH$/$HEIGHT$/$CAT$&quot; alt=&quot;$CAT$&quot; /&gt;$END$" description="Image Placeholder LOREMPIXEL" toReformat="false" toShortenFQNames="true">
         <variable name="WIDTH" expression="&quot;Width-?&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="HEIGHT" expression="&quot;HEight-?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="HEIGHT" expression="&quot;Height-?&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="CAT" expression="enum(&quot;abstract&quot;, &quot;animals&quot;, &quot;business&quot;, &quot;cats&quot;, &quot;city&quot;, &quot;food&quot;, &quot;nightlife&quot;, &quot;fashion&quot;, &quot;people&quot;, &quot;nature&quot;, &quot;sports&quot;, &quot;technics&quot;, &quot;transport&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
@@ -1233,7 +1234,7 @@
     </template>
     <template name="imgpg" value="img[src=http://www.lorempixel.com/$WIDTH$/$EIGHT$/$CAT$/$/ alt=$CAT$$]*10$EMMET$$END$&#10;" description="gallery placeholder LOREMPIXEL" toReformat="false" toShortenFQNames="true">
         <variable name="WIDTH" expression="&quot;Width-?&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="EIGHT" expression="&quot;HEight-?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="EIGHT" expression="&quot;Height-?&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="CAT" expression="enum(&quot;abstract&quot;, &quot;animals&quot;, &quot;business&quot;, &quot;cats&quot;, &quot;city&quot;, &quot;food&quot;, &quot;nightlife&quot;, &quot;fashion&quot;, &quot;people&quot;, &quot;nature&quot;, &quot;sports&quot;, &quot;technics&quot;, &quot;transport&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="EMMET" expression="" defaultValue="" alwaysStopAt="true" />
         <context>

@@ -172,8 +172,9 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | `6` Select abide    `emmet`          | abd-select                     |
 | `7` Radio abide                      | abd-radio                      |
 | `8` Checkbox abide                   | abd-checkbox                   |
-| `9` Button abide (Submit or Reset)   | abd-button                     |
-| `10` Custom Pattern                  | abd-custom [regexlib](http://regexlib.com)          |    
+| `9` Custom Pattern                   | abd-custom [ressources: regexlib](http://regexlib.com)   | 
+| `10` Button abide (Submit or Reset)  | abd-button                     |
+   
 
 
 ### UTILITY

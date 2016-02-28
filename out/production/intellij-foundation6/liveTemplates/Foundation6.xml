@@ -1042,14 +1042,14 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="abd-custom" value="&lt;input id=&quot;$ID1$&quot; type=&quot;$TYP1$$FREE$&quot; placeholder=&quot;$PL$&quot; pattern=&quot;$PATT$&quot; required &gt;&#10;&#10;&#10;$(document).foundation();&#10;Foundation.Abide.defaults.patterns['$PATT$'] = /$REGEX$/;&#10;};$HELP$" description="Custom Pattern Foundation 6" toReformat="false" toShortenFQNames="true">
-        <variable name="ID1" expression="" defaultValue="" alwaysStopAt="true" />
+    <template name="abd-custom" value="&lt;input id=&quot;$ID1$&quot; type=&quot;$TYP1$$FREE$&quot; placeholder=&quot;$PL$&quot; pattern=&quot;$PATT$&quot; required &gt;&#10;&#10;&#10;$(document).foundation();&#10;Foundation.Abide.defaults.patterns['$PATT$'] = /$REGEX$/;$HELP$&#10;" description="Custom Pattern Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="ID1" expression="&quot;Id?&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="TYP1" expression="enum(&quot;&quot;, &quot;text&quot;, &quot;date&quot;, &quot;datetime&quot;, &quot;datetime-local&quot;, &quot;email&quot;, &quot;month&quot;, &quot;number&quot;, &quot;password&quot;, &quot;search&quot;, &quot;tel&quot;, &quot;time&quot;, &quot;url&quot;, &quot;week&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="FREE" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="PL" expression="&quot;PlaceHolder?&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="PATT" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="REGEX" expression="&quot;regex custom?&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="HELP" expression="&quot;&lt;!-- http://regexlib.com/ --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="HELP" expression="&quot;&lt;!-- http://regexlib.com/Search.aspx --&gt;&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>

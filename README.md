@@ -42,7 +42,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
 | Component:group zf-cdn `Ctrl + Space`      |  Snippet code                        |
 |--------------------------------------------| :-----------------------------------:|
-| CDN  CSS.MIN                               |   zf-cdn-css                         |
+| CDN  css flex, rtl                         |   zf-cdn-css                         |
 | CDN  CSS Motion UI                         |   zf-cdn-motion-ui-css               |
 | CDN  JS                                    |   zf-cdn-js                          |
 | CDN  JS Motion UI                          |   zf-cdn-motion-ui-js                |
@@ -80,11 +80,11 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
 | Component:group zf-cr `Ctrl + Space` | Snippet code               |
 |----------------------------------| :-----------------------------:|
-| Button class button (actions)    | zf-crbt                        |
-| Button class button dropdown     | zf-crbtd                       |
+| Button (All options)             | zf-crbt                        |
+| Button (All options dropdown)    | zf-crbtd                       |
 | Button Accessibility (actions)   | zf-crbtc                       |
 | Button Anchors (links)           | zf-crbta                       |
-| Button group (all options)       | zf-crbtg                       |
+| Button group (All options)       | zf-crbtg                       |
 | Button close                     | zf-crcbt                       |
 
 
@@ -96,10 +96,13 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
 | Libraries Utility                |  triggers                      |
 |----------------------------------| :-----------------------------:|
+| Data-animation In & Out          | mo-data-animation              |
 | Motion UI In & Out               | mo-in-out                      |
 | Motion UI In                     | mo-in                          |
 | Motion UI Out                    | mo-out                         |
 | Front Matter Block               | ---: `and` ---::               |
+| {{# }} Prototype                 | {#                             |
+| {{> }} Prototype                 | {>                             |
 
 
 ### NAVIGATION
@@ -132,7 +135,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Callout Closable                     | zf-ctcc                        |
 | Dropdown                             | zf-ctdp                    `JS`|
 | Media Object                         | zf-ctmo                        |
-| -- Supp Media Object Section         | sup-media-object-section       |
+| -- Sup Media Object Section          | sup-media-object-section       |
 | Off-canvas                           | zf-ctof                    `JS`|
 | Reveal Modal                         | zf-ctmd  `Motion UI`       `JS`|
 | Tables  `emmet`                      | zf-cttb                        |
@@ -145,13 +148,9 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Component:group zf-md `Ctrl + Space` | Snippet code                   |
 |--------------------------------------| :-----------------------------:|
 | Badge                                | zf-mdba                        |
-| ADD Icon                             | ADDicon                        |
 | Flex Video                           | zf-mdfv                        |
 | Label                                | zf-mdla                        |
-| Orbit Slider         `emmet`         | zf-mdos         `JS`           |
-| -- Sup Orbit Slider     `emmet`      | sup-orbit-slider           `JS`|
-| Orbit Slider Motion UI `emmet`       | zf-mdosm  `Motion UI`     `JS` |
-| -- Sup Orbit Slider Motion `emmet`   | sup-orbit-slider-caption  `JS` |
+| Orbit Slider Motion UI `emmet`       | zf-mdos   `Motion UI`     `JS` |
 | Tooltips     `emmet`                 | zf-mdtp                    `JS`|
 
 
@@ -192,6 +191,11 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Gallery Placeholder LOREMPIXEL       |  imgpg                         | 
 | Image Placeholder  PLACEHOLD.IT      |  imgpi                         |
 | Image Placeholder PLACEKITTEN        |  imgpk                         |
+| Icon font (283 Foundation icons in i tag ) | icon-font                |
+| fi-icon-name (283 Foundation icons ) | fi-                            |
+| data-icon (283 Foundation icons data )| data-icon                     |
+| -- CSS snippet for data-icon         | css-data-icon                  |
+
 
                         
 ### MISCELLANEOUS

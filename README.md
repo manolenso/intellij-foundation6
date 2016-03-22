@@ -168,7 +168,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Toggler Closable Animate `Motion UI` | zf-pltgc               `JS`    |
 | Sticky                               | zf-plst                `JS`    |
     
-| Adding Abide `9 snippets in one`     | ADDabide                       |
+| Adding Abide `10 snippets in one`     | ADDabide                       |
 |--------------------------------------| :-----------------------------:|
 | `1` Number abide                     | abd-number                     |
 | `2` Text abide                       | abd-text                       |

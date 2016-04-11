@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Foundation6">
     <!-- CDN GROUP -->
-    <template name="zf-cdn-css" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.0/$VALUE$.css&quot;/&gt;" description="CDN css Foundation 6.2.0" toReformat="true" toShortenFQNames="true">
+    <template name="zf-cdn-css" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/$VALUE$.css&quot;/&gt;" description="CDN css Foundation 6.2.1" toReformat="true" toShortenFQNames="true">
         <variable name="VALUE" expression="enum(&quot;foundation&quot;, &quot;foundation-flex&quot;, &quot;foundation-rtl&quot;, &quot;foundation.min&quot;, &quot;foundation-flex.min&quot;, &quot;foundation-rtl.min&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>

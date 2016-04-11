@@ -1,7 +1,7 @@
 <idea-plugin version="2" url="https://github.com/manolenso/intellij-foundation6">
   <id>com.manolenso.intellij.foundation6</id>
   <name>Zurb Foundation 6</name>
-  <version>1.5</version>
+  <version>1.5.1</version>
   <vendor url="https://github.com/manolenso/intellij-foundation6">Manolenso</vendor>
 
   <description><![CDATA[
@@ -18,12 +18,13 @@
 
   <change-notes><![CDATA[
       <br>
-      1.5 Update Foundation 6.2.0, orbit slider<br />
-      1.4 simplify orbit slider add utility<br />
-      1.3 Update Foundation 6.2.0, simplify and add components<br />
-      1.2 Add row flex, version cdn lib<br />
-      1.1 Update cdn Motion UI 1.2.0</br>
-      1.0 Initial release<br />
+      1.5.1 missing 6.2.1 css<br />
+      1.5.0 Update Foundation 6.2.0, orbit slider<br />
+      1.4.0 simplify orbit slider add utility<br />
+      1.3.0 Update Foundation 6.2.0, simplify and add components<br />
+      1.2.0 Add row flex, version cdn lib<br />
+      1.1.0 Update cdn Motion UI 1.2.0</br>
+      1.0.0 Initial release<br />
     ]]>
   </change-notes>
 

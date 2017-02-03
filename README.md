@@ -49,7 +49,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | CDN  JS Wow                                |   zf-cdn-wow-js                      |
 | CDN  LIB                                   |   zf-cdn-lib                         |
 | CDN  ICONS                                 |   zf-cdn-icons                       |
-| CDN  JQUERY   2.2.0                        |   zf-cdn-jquery                      |
+| CDN  JQUERY                                |   zf-cdn-jquery                      |
 | CDN  [DATEPICKER](http://bit.ly/1PCtdIB)   |   zf-cdn-datepiker                   |
 | CDN  LIB-UTIL                              |   zf-cdn-lib-util                    |
 | CDN  [JSSOR-SLIDER](http://bit.ly/20Vk6Ke) |   zf-cdn-jssor-slider                |
@@ -65,9 +65,11 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Row Collapse/Uncollapse                    | zf-ltcu                              |
 | Row Block Grids    `emmet`                 | zf-ltbg                              |
 | QUICK ADDITIONAL:                          |                                      |
+| -- Flexbox options                         | fx                                   |
 | -- small columns                           | sc                                   |
 | -- medium columns                          | mc                                   |
 | -- large columns                           | lc                                   |
+| Flexbox Alignment                          | fx                                   |
 
 ### TYPOGRAPHY
 
@@ -103,6 +105,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Front Matter Block               | ---: `and` ---::               |
 | {{# }} Prototype                 | {#                             |
 | {{> }} Prototype                 | {>                             |
+
 
 
 ### NAVIGATION

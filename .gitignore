@@ -1,8 +1,5 @@
 .idea
 .DS_Store
-test.js
-test.html
 styles
 /test
-/test/accordion.html
-test.php
+/test/*

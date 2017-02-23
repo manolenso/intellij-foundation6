@@ -8,7 +8,7 @@ Intellij Zurb Foundation 6 plugin
 For use this plugin you should install before [Emmet Everywhere plugin](http://bit.ly/1DzHjaT)
 
 An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin works for the following JetBrains products:
-- IntelliJ IDEA 14,15 
+- IntelliJ IDEA 14,15,16 
 - WebStorm 9,10,11
 - PyCharm 4,5
 - RubyMine 7,8
@@ -24,7 +24,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 ## contents
 
  `HTML`
-- [CDN](#cdn) from [jsDelivr](https://www.jsdelivr.com/?query=foundation) and [CloudFlare](https://cdnjs.com/libraries/foundation)
+- [CDN](#cdn) from [CloudFlare](https://cdnjs.com/libraries/foundation)
 - [LAYOUT](#layout)
 - [TYPOGRAPHY](#typography)
 - [CONTROLS](#controls)
@@ -50,7 +50,8 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | CDN  LIB                                   |   zf-cdn-lib                         |
 | CDN  ICONS                                 |   zf-cdn-icons                       |
 | CDN  JQUERY                                |   zf-cdn-jquery                      |
-| CDN  [DATEPICKER](http://bit.ly/1PCtdIB)   |   zf-cdn-datepiker                   |
+| CDN  [DATEPICKER](http://bit.ly/1PCtdIB) JS|   zf-cdn-datepiker.js                |
+| CDN  [DATEPICKER](http://bit.ly/1PCtdIB) CSS|   zf-cdn-datepiker.css               |
 | CDN  LIB-UTIL                              |   zf-cdn-lib-util                    |
 | CDN  [JSSOR-SLIDER](http://bit.ly/20Vk6Ke) |   zf-cdn-jssor-slider                |
 | CDN  Initialize                            |   zf-cdn-initialize                  |
@@ -134,6 +135,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 |--------------------------------------| :-----------------------------:|
 | Accordion `emmet`                    | zf-ctac                    `JS`|
 | -- Adding accordion                  | ADDaccordion               `JS`|
+| Accordion Responsive`emmet`          | zf-ctar                    `JS`|
 | Callout                              | zf-ctcl                        |
 | Callout Closable                     | zf-ctcc                        |
 | Dropdown                             | zf-ctdp                    `JS`|

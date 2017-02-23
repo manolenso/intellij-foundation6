@@ -50,7 +50,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cdn-lib-util" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/plugins/foundation.$VALUE$.js&quot;&gt;&lt;/script&gt;&#10;" description="CDN js.lib.util Foundation 6.2.3" toReformat="true" toShortenFQNames="true">
+    <template name="zf-cdn-lib-util" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/plugins/foundation.$VALUE$.js&quot;&gt;&lt;/script&gt;&#10;" description="CDN js.lib.util Foundation 6.3.0" toReformat="true" toShortenFQNames="true">
         <variable name="VALUE" expression="enum(&quot;util.box&quot;, &quot;util.box.min&quot;, &quot;util.keyboard&quot;, &quot;util.keyboard.min&quot;, &quot;util.mediaQuery&quot;, &quot;util.mediaQuery.min&quot;, &quot;util.motion&quot;, &quot;util.motion.min&quot;, &quot;util.nest&quot;, &quot;util.nest.min&quot;, &quot;util.timerAndImageLoader&quot;, &quot;util.timerAndImageLoader.min&quot;, &quot;util.touch&quot;, &quot;util.touch.min&quot;, &quot;util.triggers&quot;, &quot;util.triggers.min&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
@@ -60,7 +60,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cdn-icons" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/foundation-icons/3.0/foundation-$VALUE$&quot;/&gt;" description="CDN icons Foundation 3.0" toReformat="true" toShortenFQNames="true">
+    <template name="zf-cdn-icons" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-$VALUE$&quot;/&gt;&#10;" description="CDN icons Foundation 3.0.0" toReformat="true" toShortenFQNames="true">
         <variable name="VALUE" expression="enum(&quot;icons.min.css&quot;, &quot;icons.css&quot;, &quot;icons.eot&quot;, &quot;icons.svg&quot;, &quot;icons.ttf&quot;, &quot;icons.woff&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
@@ -70,7 +70,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cdn-js" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/foundation$VALUE$.js&quot;&gt;&lt;/script&gt;&#10;" description="CDN js Foundation 6.2.3" toReformat="true" toShortenFQNames="true">
+    <template name="zf-cdn-js" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/foundation$VALUE$.js&quot;&gt;&lt;/script&gt;&#10;" description="CDN js Foundation 6.3.0" toReformat="true" toShortenFQNames="true">
         <variable name="VALUE" expression="enum(&quot;&quot;, &quot;.min&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
@@ -93,7 +93,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cdn-jssor-slider" value="&lt;script src=&quot;https://cdn.jsdelivr.net/jssor.slider/19.0.1/jssor.slider.mini.js&quot;&gt;&lt;/script&gt;&#10;" description="CDN jssor slider 19.0.1 Foundation" toReformat="true" toShortenFQNames="true">
+    <template name="zf-cdn-jssor-slider" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jssor-slider/22.1.8/jssor.slider.min.js&quot;&gt;&lt;/script&gt;&#10;" description="CDN jssor slider 22.1.8 Foundation" toReformat="true" toShortenFQNames="true">
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>
@@ -102,7 +102,16 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cdn-datepicker" value="&lt;script src=&quot;https://cdn.jsdelivr.net/foundation.datepicker/0.1/js/foundation-datepicker.js&quot;&gt;&lt;/script&gt;&#10;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/foundation.datepicker/0.1/stylesheets/foundation-datepicker.css&quot;/&gt;&#10;$END$" description="CDN datepicker Foundation" toReformat="false" toShortenFQNames="true">
+    <template name="zf-cdn-datepicker-js" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation-datepicker/1.5.5/js/foundation-datepicker.min.js&quot;&gt;&lt;/script&gt;&#10;$END$" description="CDN JS datepicker Foundation" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="zf-cdn-datepicker-css" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation-datepicker/1.5.5/css/foundation-datepicker.min.css&quot;/&gt;&#10;$END$" description="CDN css datepicker Foundation" toReformat="false" toShortenFQNames="true">
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>
@@ -712,6 +721,17 @@
         <variable name="AT1" expression="&quot;data-tab-content&quot;" defaultValue="" alwaysStopAt="false" />
         <variable name="EDIT" expression="&quot;&lt;!-- content pane here! --&gt;&quot;" defaultValue="" alwaysStopAt="false" />
         <variable name="SUPP" expression="&quot;ADDaccordion&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+            <option name="HTML" value="true"/>
+            <option name="PHP" value="true"/>
+            <option name="GSP" value="true"/>
+            <option name="JSP" value="true"/>
+        </context>
+    </template>
+    <template name="zf-ctar" value="&lt;/ul&gt;&#10;&lt;ul class=&quot;accordion&quot; data-responsive-accordion-tabs=&quot;tabs medium-accordion large-tabs&quot;&gt;&#10;  {&lt;\li class=&quot;accordion-item&quot; data-accordion-item&gt;&lt;\a href=&quot;#&quot; class=&quot;accordion-title&quot;&gt;Title_Accordion_$$&lt;\/a&gt;&lt;\div class=&quot;accordion-content&quot; data-tab-content&gt;&lt;!--content_$--&gt;&lt;\/div&gt;&lt;\/li&gt;}*$NBR$$LAST$&#10;&lt;/ul&gt;" description="Accordion  Responsive Foundation 6" toReformat="false" toShortenFQNames="true">
+        <variable name="NBR" expression="&quot;Nb Tabs?&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>

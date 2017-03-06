@@ -70,7 +70,6 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | -- small columns                           | sc                                   |
 | -- medium columns                          | mc                                   |
 | -- large columns                           | lc                                   |
-| Flexbox Alignment                          | fx                                   |
 
 ### TYPOGRAPHY
 
@@ -103,9 +102,13 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Motion UI In & Out               | mo-in-out                      |
 | Motion UI In                     | mo-in                          |
 | Motion UI Out                    | mo-out                         |
+
+| Panini Utility                   |                                |
+|----------------------------------| :-----------------------------:|
+| Helpers                          | {#h                            |
 | Front Matter Block               | ---: `and` ---::               |
-| {{# }} Prototype                 | {#                             |
-| {{> }} Prototype                 | {>                             |
+| {{# }}                           | {#                             |
+| {{> }}                           | {>                             |
 
 
 
@@ -139,6 +142,7 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Callout                              | zf-ctcl                        |
 | Callout Closable                     | zf-ctcc                        |
 | Dropdown                             | zf-ctdp                    `JS`|
+| Card    `emmet`                      | zf-ctcd                        |
 | Media Object                         | zf-ctmo                        |
 | -- Sup Media Object Section          | sup-media-object-section       |
 | Off-canvas                           | zf-ctof                    `JS`|
@@ -232,7 +236,4 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 
 
 Foundation 6 - Intellij Plugin is open-sourced software licenced under the [MIT:Licence](http://opensource.org/licenses/MIT)
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/manolenso/intellij-foundation6/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 

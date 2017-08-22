@@ -66,6 +66,8 @@ An IntelliJ plugin containing Zurb foundation 6 live templates! This plugin work
 | Row Collapse/Uncollapse                    | zf-ltcu                              |
 | Row Block Grids    `emmet`                 | zf-ltbg                              |
 | QUICK ADDITIONAL:                          |                                      |
+| -- Grid XY options x                       | gx                                   |
+| -- Grid XY options y                       | gy                                   |
 | -- Flexbox options                         | fx                                   |
 | -- small columns                           | sc                                   |
 | -- medium columns                          | mc                                   |

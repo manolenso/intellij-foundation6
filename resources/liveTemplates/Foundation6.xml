@@ -426,7 +426,7 @@
     <template name="zf-cttb" value="table$OPT$&gt;(thead[summary=&quot;&quot;]&gt;tr&gt;th[width=&quot;&quot;]*$NBTH$)+tbody&gt;tr*$NBTR1$&gt;td*$NBTH$$END$" description="Tables Foundation 6" toReformat="false" toShortenFQNames="true">
         <variable name="OPT" expression="enum(&quot;&quot;, &quot;.hover&quot;, &quot;.stack&quot;, &quot;.scroll&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="NBTH" expression="&quot;Columns-?&quot;" defaultValue="" alwaysStopAt="true" />
-        <variable name="NBTR1" expression="&quot;Raw-?&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="NBTR1" expression="&quot;Row-?&quot;" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
             <option name="HTML" value="true"/>

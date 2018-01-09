@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Foundation6">
     <!-- CDN GROUP -->
-    <template name="zf-cdn-css" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/$VALUE$.css&quot;/&gt;" description="CDN css Foundation 6.4.3" toReformat="true" toShortenFQNames="true">
+    <template name="zf-cdn-css" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.4/css/$VALUE$.css&quot;/&gt;" description="CDN css Foundation 6.4.4" toReformat="true" toShortenFQNames="true">
         <variable name="VALUE" expression="enum(&quot;foundation&quot;, &quot;foundation-flex&quot;, &quot;foundation-rtl&quot;, &quot;foundation.min&quot;, &quot;foundation-flex.min&quot;, &quot;foundation-rtl.min&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
@@ -38,7 +38,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cdn-lib" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/plugins/foundation.$VALUE$.js&quot;&gt;&lt;/script&gt;&#10;$SUPLIB$$LAST$&#10;" description="CDN js lib Foundation 6.4.3" toReformat="true" toShortenFQNames="true">
+    <template name="zf-cdn-lib" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.4/js/plugins/foundation.$VALUE$.js&quot;&gt;&lt;/script&gt;&#10;$SUPLIB$$LAST$&#10;" description="CDN js lib Foundation 6.4.4" toReformat="true" toShortenFQNames="true">
         <variable name="VALUE" expression="enum(&quot;abide&quot;, &quot;accordion&quot;, &quot;accordionMenu&quot;, &quot;core&quot;, &quot;drilldown&quot;, &quot;dropdown&quot;, &quot;dropdownMenu&quot;, &quot;equalizer&quot;, &quot;interchange&quot;, &quot;magellan&quot;, &quot;offcanvas&quot;, &quot;orbit&quot;, &quot;responsiveMenu&quot;, &quot;responsiveToggle&quot;, &quot;zf.responsiveAccordionTabs&quot;, &quot;reveal&quot;, &quot;slider&quot;, &quot;sticky&quot;, &quot;tabs&quot;, &quot;toggler&quot;, &quot;tooltip&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="SUPLIB" expression="&quot;zf-cdn-lib&quot;" defaultValue="" alwaysStopAt="true" />
         <variable name="LAST" expression="" defaultValue="" alwaysStopAt="true" />
@@ -50,7 +50,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cdn-lib-util" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/plugins/foundation.$VALUE$.js&quot;&gt;&lt;/script&gt;&#10;" description="CDN js.lib.util Foundation 6.4.3" toReformat="true" toShortenFQNames="true">
+    <template name="zf-cdn-lib-util" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.4/js/plugins/foundation.$VALUE$.js&quot;&gt;&lt;/script&gt;&#10;" description="CDN js.lib.util Foundation 6.4.4" toReformat="true" toShortenFQNames="true">
         <variable name="VALUE" expression="enum(&quot;util.box&quot;, &quot;util.box.min&quot;, &quot;util.keyboard&quot;, &quot;util.keyboard.min&quot;, &quot;util.mediaQuery&quot;, &quot;util.mediaQuery.min&quot;, &quot;util.motion&quot;, &quot;util.motion.min&quot;, &quot;util.nest&quot;, &quot;util.nest.min&quot;, &quot;util.timerAndImageLoader&quot;, &quot;util.timerAndImageLoader.min&quot;, &quot;util.touch&quot;, &quot;util.touch.min&quot;, &quot;util.triggers&quot;, &quot;util.triggers.min&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
@@ -70,7 +70,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cdn-js" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation$VALUE$.js&quot;&gt;&lt;/script&gt;&#10;" description="CDN js Foundation 6.4.3" toReformat="true" toShortenFQNames="true">
+    <template name="zf-cdn-js" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.4/js/foundation$VALUE$.js&quot;&gt;&lt;/script&gt;&#10;" description="CDN js Foundation 6.4.4" toReformat="true" toShortenFQNames="true">
         <variable name="VALUE" expression="enum(&quot;&quot;, &quot;.min&quot;)" defaultValue="" alwaysStopAt="true" />
         <context>
             <option name="HTML_TEXT" value="true"/>
@@ -120,7 +120,7 @@
             <option name="JSP" value="true"/>
         </context>
     </template>
-    <template name="zf-cdn-initialize" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/$VERS$/$VALUE$&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/plugins/foundation.$VALUE1$.js&quot;&gt;&lt;/script&gt;&#10;$LIBSUPP$$LAST$&#10;&lt;script&gt;$(document).foundation();&lt;/script&gt;" description="CDN Initialize Foundation 6" toReformat="true" toShortenFQNames="true">
+    <template name="zf-cdn-initialize" value="&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/$VERS$/$VALUE$&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.4/js/foundation.min.js&quot;&gt;&lt;/script&gt;&#10;&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.4/js/plugins/foundation.$VALUE1$.js&quot;&gt;&lt;/script&gt;&#10;$LIBSUPP$$LAST$&#10;&lt;script&gt;$(document).foundation();&lt;/script&gt;" description="CDN Initialize Foundation 6" toReformat="true" toShortenFQNames="true">
         <variable name="VERS" expression="enum(&quot;2.2.0&quot;, &quot;3.0.0&quot;, &quot;3.1.1&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="VALUE" expression="enum(&quot;jquery.js&quot;, &quot;jquery.min.js&quot;, &quot;jquery.min.map&quot;)" defaultValue="" alwaysStopAt="true" />
         <variable name="VALUE1" expression="enum(&quot;abide&quot;, &quot;accordion&quot;, &quot;accordionMenu&quot;, &quot;core&quot;, &quot;drilldown&quot;, &quot;dropdown&quot;, &quot;dropdownMenu&quot;, &quot;equalizer&quot;, &quot;interchange&quot;, &quot;magellan&quot;, &quot;offcanvas&quot;, &quot;orbit&quot;, &quot;responsiveMenu&quot;, &quot;responsiveToggle&quot;, &quot;zf.responsiveAccordionTabs&quot;, &quot;reveal&quot;, &quot;slider&quot;, &quot;sticky&quot;, &quot;tabs&quot;, &quot;toggler&quot;, &quot;tooltip&quot;)" defaultValue="" alwaysStopAt="true" />
